@@ -1,0 +1,11 @@
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\bin\Debug\net8.0\Eticaret.Core.deps.json
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\bin\Debug\net8.0\Eticaret.Core.dll
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\bin\Debug\net8.0\Eticaret.Core.pdb
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.Core.AssemblyInfoInputs.cache
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.Core.AssemblyInfo.cs
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.Core.csproj.CoreCompileInputs.cache
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.Core.dll
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\refint\Eticaret.Core.dll
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.Core.pdb
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\ref\Eticaret.Core.dll
