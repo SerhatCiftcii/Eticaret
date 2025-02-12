@@ -1,6 +1,6 @@
 ﻿namespace Eticaret.Core.Entities
 {
-    internal class News : IEntity
+    public class News : IEntity
     {
         public int Id { get; set; }
         public string? Description { get; set; }

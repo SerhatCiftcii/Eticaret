@@ -1,6 +1,6 @@
 ﻿namespace Eticaret.Core.Entities
 {
-    internal class Contact:IEntity
+    public class Contact:IEntity
     {
         public int Id { get; set; }
         public string Name { get; set; }
