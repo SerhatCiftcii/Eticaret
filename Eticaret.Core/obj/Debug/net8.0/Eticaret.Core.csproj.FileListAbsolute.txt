@@ -9,3 +9,4 @@ C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.C
 C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\refint\Eticaret.Core.dll
 C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.Core.pdb
 C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\ref\Eticaret.Core.dll
+C:\Users\Serhatt\source\repos\Eticaret\Eticaret.Core\obj\Debug\net8.0\Eticaret.Core.sourcelink.json
