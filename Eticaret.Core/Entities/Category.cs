@@ -9,8 +9,8 @@
         public bool IsActive { get; set; }
         public bool IsTopMenu { get; set; }//katogriy üst menuda gözüksün mü
         public int? ParentId { get; set; }//ana katogry alt kategory oluturma
-        public string OrderNo { get; set; }//sıralama
-        public DateTime CreateDate { get; set; }
+        public int OrderNo { get; set; }//sıralama
+        public DateTime CreateDate { get; set; }=DateTime.Now;
         public IList<Product>? Products { get; set; }
     }
 }

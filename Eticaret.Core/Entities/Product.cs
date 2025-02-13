@@ -7,7 +7,7 @@
         public string? Description { get; set; }
         public string? Image { get; set; }
         public Decimal Price { get; set; }
-        public string ProductCode { get; set; }//ürünkodu
+        public string? ProductCode { get; set; }//ürünkodu
         public int Stock { get; set; }
         public bool IsActive { get; set; }
         public bool IsHome { get; set; }

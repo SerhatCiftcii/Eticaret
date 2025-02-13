@@ -7,7 +7,7 @@
         public string? Description { get; set; }
         public string? Logo { get; set; }
         public bool IsActive { get; set; }
-        public string OrderNo { get; set; }//sıralama
+        public int OrderNo { get; set; }//sıralama
         public DateTime CreateDate { get; set; }
         public IList<Product>? Products { get; set; }
 
