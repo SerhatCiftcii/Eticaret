@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/fNo8LBVAuPdiyZGlhMSE3qh1EGahB4CxzLet4Btgac=",
+  "Hash": "tOmbBBmSFop/ZY/j16xeoLouxJXdnewYpmo+lNe8xBY=",
   "Source": "Eticaret.WebUI",
   "BasePath": "_content/Eticaret.WebUI",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "hf3fdfute7",
-      "Integrity": "HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI=",
+      "Fingerprint": "zl5xs6940e",
+      "Integrity": "WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Eticaret.WebUI.styles.css"
@@ -52,11 +52,410 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "hf3fdfute7",
-      "Integrity": "HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI=",
+      "Fingerprint": "zl5xs6940e",
+      "Integrity": "WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Eticaret.WebUI.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\401.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/401#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ed1cmteubn",
+      "Integrity": "DqRZkqm8/gyIdhUggz7sbp4BcaD84CbN0fBQvxZ0C9s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\401.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\404.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/404#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0yvhnfoay9",
+      "Integrity": "CDH4RcRt/gzWJTMM1JNr9BsfrzF+xXoBSI2wAHLTNPA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\404.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\500.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/500#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pz577iulhu",
+      "Integrity": "FSlgt0gPkE0nkbiyOCSWnFkvc4s9RnOIGaDs5KhzPXQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\500.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-area-demo.js",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/assets/demo/chart-area-demo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8flq4k35dk",
+      "Integrity": "9LLP7XKqyptnrNbmQqIjm5rIDw5zwE9KWE4hVhK5Jvk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-bar-demo.js",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/assets/demo/chart-bar-demo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qbt6h4ox5y",
+      "Integrity": "9tpvm3R5RdFWxUDIA09CWwnWxpLxiJYWKom8gdLwl3I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-pie-demo.js",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/assets/demo/chart-pie-demo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hw7eaup9v4",
+      "Integrity": "gXHh8OZnGFZ8Pb+CoSlwJ7lx7tZD1amOLrSASwI8Neo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\datatables-demo.js",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/assets/demo/datatables-demo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w9gruc5uo1",
+      "Integrity": "3BYZ/ie9x2nIWSAO1N9M0VISPR5FfP5Wg0EKHZzNOoo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\img\\error-404-monochrome.svg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/assets/img/error-404-monochrome#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yp87i3fbss",
+      "Integrity": "GuryUo0+xyzRuEVttjuLmS8hqxoE9FucfaX/mboMWj8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\charts.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/charts#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ik2twnqj2o",
+      "Integrity": "Qu716OnNf0hzsxHmE1szwVyiDoCnyAqbDsJbVVH9tL8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\charts.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\css\\styles.css",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/css/styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mf45fbw2f4",
+      "Integrity": "Tl/JSPdgPPXWVWSUewZbpR6kZW1nVf8f6PA1SpwxpFo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\css\\styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\index.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4o1skwuezl",
+      "Integrity": "dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\js\\datatables-simple-demo.js",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/js/datatables-simple-demo#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xnqwbb6zwd",
+      "Integrity": "A5r4X24Y4UOeA7FBC6HS3voj76xkmczywh9qO+Ly5hQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\js\\scripts.js",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/js/scripts#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dqle62frat",
+      "Integrity": "hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\js\\scripts.js"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\layout-sidenav-light.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/layout-sidenav-light#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4wxmkhwny7",
+      "Integrity": "FI3tRbfp+V1sj68+/dRSYx5ZNoq89gTAtzwDTYLRF5Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\layout-sidenav-light.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\layout-static.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/layout-static#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aa3b6xt5ip",
+      "Integrity": "Yt/i2JtCe7gPXaP1MxFOvwS/p/wI0cYe18/KFxt8xjU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\layout-static.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\login.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t5t5xgdyxs",
+      "Integrity": "H4waiN2OI02CdJioVQr9A5PvVwgO6i5mdjPxxV4/bCE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\login.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\password.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/password#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iw65oiscvq",
+      "Integrity": "zu0Nug5K2CCmRPnOWyspaHoOgqU2yEMzLc/A83RRlhw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\password.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\register.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/register#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dsks8jkhg2",
+      "Integrity": "w/OcO23HYODwlcjoL3hhzwW7sG6Uhpiy8XLL0E+BkUI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\register.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\tables.html",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "admin/tables#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dsd8ubslv9",
+      "Integrity": "zeHfV/0tkIwprw+c8oU1WmjuYKQO5n0MUFZIoCLZ1xU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\tables.html"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\site.css",
@@ -1321,6 +1720,1564 @@
   ],
   "Endpoints": [
     {
+      "Route": "admin/401.ed1cmteubn.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\401.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DqRZkqm8/gyIdhUggz7sbp4BcaD84CbN0fBQvxZ0C9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ed1cmteubn"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/401.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DqRZkqm8/gyIdhUggz7sbp4BcaD84CbN0fBQvxZ0C9s="
+        }
+      ]
+    },
+    {
+      "Route": "admin/401.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\401.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DqRZkqm8/gyIdhUggz7sbp4BcaD84CbN0fBQvxZ0C9s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DqRZkqm8/gyIdhUggz7sbp4BcaD84CbN0fBQvxZ0C9s="
+        }
+      ]
+    },
+    {
+      "Route": "admin/404.0yvhnfoay9.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\404.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CDH4RcRt/gzWJTMM1JNr9BsfrzF+xXoBSI2wAHLTNPA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0yvhnfoay9"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/404.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CDH4RcRt/gzWJTMM1JNr9BsfrzF+xXoBSI2wAHLTNPA="
+        }
+      ]
+    },
+    {
+      "Route": "admin/404.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\404.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2407"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CDH4RcRt/gzWJTMM1JNr9BsfrzF+xXoBSI2wAHLTNPA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CDH4RcRt/gzWJTMM1JNr9BsfrzF+xXoBSI2wAHLTNPA="
+        }
+      ]
+    },
+    {
+      "Route": "admin/500.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\500.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FSlgt0gPkE0nkbiyOCSWnFkvc4s9RnOIGaDs5KhzPXQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FSlgt0gPkE0nkbiyOCSWnFkvc4s9RnOIGaDs5KhzPXQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/500.pz577iulhu.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\500.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FSlgt0gPkE0nkbiyOCSWnFkvc4s9RnOIGaDs5KhzPXQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pz577iulhu"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/500.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FSlgt0gPkE0nkbiyOCSWnFkvc4s9RnOIGaDs5KhzPXQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/demo/chart-area-demo.8flq4k35dk.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-area-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1530"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9LLP7XKqyptnrNbmQqIjm5rIDw5zwE9KWE4hVhK5Jvk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8flq4k35dk"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/assets/demo/chart-area-demo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9LLP7XKqyptnrNbmQqIjm5rIDw5zwE9KWE4hVhK5Jvk="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/demo/chart-area-demo.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-area-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1530"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9LLP7XKqyptnrNbmQqIjm5rIDw5zwE9KWE4hVhK5Jvk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9LLP7XKqyptnrNbmQqIjm5rIDw5zwE9KWE4hVhK5Jvk="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/demo/chart-bar-demo.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-bar-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9tpvm3R5RdFWxUDIA09CWwnWxpLxiJYWKom8gdLwl3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9tpvm3R5RdFWxUDIA09CWwnWxpLxiJYWKom8gdLwl3I="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/demo/chart-bar-demo.qbt6h4ox5y.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-bar-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9tpvm3R5RdFWxUDIA09CWwnWxpLxiJYWKom8gdLwl3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qbt6h4ox5y"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/assets/demo/chart-bar-demo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9tpvm3R5RdFWxUDIA09CWwnWxpLxiJYWKom8gdLwl3I="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/demo/chart-pie-demo.hw7eaup9v4.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-pie-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gXHh8OZnGFZ8Pb+CoSlwJ7lx7tZD1amOLrSASwI8Neo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hw7eaup9v4"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/assets/demo/chart-pie-demo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gXHh8OZnGFZ8Pb+CoSlwJ7lx7tZD1amOLrSASwI8Neo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/demo/chart-pie-demo.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\chart-pie-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "597"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gXHh8OZnGFZ8Pb+CoSlwJ7lx7tZD1amOLrSASwI8Neo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gXHh8OZnGFZ8Pb+CoSlwJ7lx7tZD1amOLrSASwI8Neo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/demo/datatables-demo.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\datatables-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3BYZ/ie9x2nIWSAO1N9M0VISPR5FfP5Wg0EKHZzNOoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3BYZ/ie9x2nIWSAO1N9M0VISPR5FfP5Wg0EKHZzNOoo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/demo/datatables-demo.w9gruc5uo1.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\demo\\datatables-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3BYZ/ie9x2nIWSAO1N9M0VISPR5FfP5Wg0EKHZzNOoo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w9gruc5uo1"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/assets/demo/datatables-demo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3BYZ/ie9x2nIWSAO1N9M0VISPR5FfP5Wg0EKHZzNOoo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/img/error-404-monochrome.svg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\img\\error-404-monochrome.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GuryUo0+xyzRuEVttjuLmS8hqxoE9FucfaX/mboMWj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GuryUo0+xyzRuEVttjuLmS8hqxoE9FucfaX/mboMWj8="
+        }
+      ]
+    },
+    {
+      "Route": "admin/assets/img/error-404-monochrome.yp87i3fbss.svg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\assets\\img\\error-404-monochrome.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GuryUo0+xyzRuEVttjuLmS8hqxoE9FucfaX/mboMWj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yp87i3fbss"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/assets/img/error-404-monochrome.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GuryUo0+xyzRuEVttjuLmS8hqxoE9FucfaX/mboMWj8="
+        }
+      ]
+    },
+    {
+      "Route": "admin/charts.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\charts.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qu716OnNf0hzsxHmE1szwVyiDoCnyAqbDsJbVVH9tL8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qu716OnNf0hzsxHmE1szwVyiDoCnyAqbDsJbVVH9tL8="
+        }
+      ]
+    },
+    {
+      "Route": "admin/charts.ik2twnqj2o.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\charts.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Qu716OnNf0hzsxHmE1szwVyiDoCnyAqbDsJbVVH9tL8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ik2twnqj2o"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/charts.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Qu716OnNf0hzsxHmE1szwVyiDoCnyAqbDsJbVVH9tL8="
+        }
+      ]
+    },
+    {
+      "Route": "admin/css/styles.css",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "250226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tl/JSPdgPPXWVWSUewZbpR6kZW1nVf8f6PA1SpwxpFo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tl/JSPdgPPXWVWSUewZbpR6kZW1nVf8f6PA1SpwxpFo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/css/styles.mf45fbw2f4.css",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "250226"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Tl/JSPdgPPXWVWSUewZbpR6kZW1nVf8f6PA1SpwxpFo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mf45fbw2f4"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Tl/JSPdgPPXWVWSUewZbpR6kZW1nVf8f6PA1SpwxpFo="
+        }
+      ]
+    },
+    {
+      "Route": "admin/index.4o1skwuezl.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41881"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 12:41:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4o1skwuezl"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI="
+        }
+      ]
+    },
+    {
+      "Route": "admin/index.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41881"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 12:41:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI="
+        }
+      ]
+    },
+    {
+      "Route": "admin/js/datatables-simple-demo.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\js\\datatables-simple-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A5r4X24Y4UOeA7FBC6HS3voj76xkmczywh9qO+Ly5hQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A5r4X24Y4UOeA7FBC6HS3voj76xkmczywh9qO+Ly5hQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/js/datatables-simple-demo.xnqwbb6zwd.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\js\\datatables-simple-demo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "312"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A5r4X24Y4UOeA7FBC6HS3voj76xkmczywh9qO+Ly5hQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xnqwbb6zwd"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/js/datatables-simple-demo.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A5r4X24Y4UOeA7FBC6HS3voj76xkmczywh9qO+Ly5hQ="
+        }
+      ]
+    },
+    {
+      "Route": "admin/js/scripts.dqle62frat.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\js\\scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dqle62frat"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/js/scripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720="
+        }
+      ]
+    },
+    {
+      "Route": "admin/js/scripts.js",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\js\\scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hSOKtaoLbtAX3QLxogVcaVg8Fv7Y6HTCcpJqVePv720="
+        }
+      ]
+    },
+    {
+      "Route": "admin/layout-sidenav-light.4wxmkhwny7.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\layout-sidenav-light.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FI3tRbfp+V1sj68+/dRSYx5ZNoq89gTAtzwDTYLRF5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4wxmkhwny7"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/layout-sidenav-light.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FI3tRbfp+V1sj68+/dRSYx5ZNoq89gTAtzwDTYLRF5Y="
+        }
+      ]
+    },
+    {
+      "Route": "admin/layout-sidenav-light.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\layout-sidenav-light.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FI3tRbfp+V1sj68+/dRSYx5ZNoq89gTAtzwDTYLRF5Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FI3tRbfp+V1sj68+/dRSYx5ZNoq89gTAtzwDTYLRF5Y="
+        }
+      ]
+    },
+    {
+      "Route": "admin/layout-static.aa3b6xt5ip.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\layout-static.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yt/i2JtCe7gPXaP1MxFOvwS/p/wI0cYe18/KFxt8xjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aa3b6xt5ip"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/layout-static.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yt/i2JtCe7gPXaP1MxFOvwS/p/wI0cYe18/KFxt8xjU="
+        }
+      ]
+    },
+    {
+      "Route": "admin/layout-static.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\layout-static.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yt/i2JtCe7gPXaP1MxFOvwS/p/wI0cYe18/KFxt8xjU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yt/i2JtCe7gPXaP1MxFOvwS/p/wI0cYe18/KFxt8xjU="
+        }
+      ]
+    },
+    {
+      "Route": "admin/login.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H4waiN2OI02CdJioVQr9A5PvVwgO6i5mdjPxxV4/bCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H4waiN2OI02CdJioVQr9A5PvVwgO6i5mdjPxxV4/bCE="
+        }
+      ]
+    },
+    {
+      "Route": "admin/login.t5t5xgdyxs.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H4waiN2OI02CdJioVQr9A5PvVwgO6i5mdjPxxV4/bCE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t5t5xgdyxs"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H4waiN2OI02CdJioVQr9A5PvVwgO6i5mdjPxxV4/bCE="
+        }
+      ]
+    },
+    {
+      "Route": "admin/password.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\password.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zu0Nug5K2CCmRPnOWyspaHoOgqU2yEMzLc/A83RRlhw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zu0Nug5K2CCmRPnOWyspaHoOgqU2yEMzLc/A83RRlhw="
+        }
+      ]
+    },
+    {
+      "Route": "admin/password.iw65oiscvq.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\password.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3508"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zu0Nug5K2CCmRPnOWyspaHoOgqU2yEMzLc/A83RRlhw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iw65oiscvq"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/password.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zu0Nug5K2CCmRPnOWyspaHoOgqU2yEMzLc/A83RRlhw="
+        }
+      ]
+    },
+    {
+      "Route": "admin/register.dsks8jkhg2.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w/OcO23HYODwlcjoL3hhzwW7sG6Uhpiy8XLL0E+BkUI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dsks8jkhg2"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/register.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w/OcO23HYODwlcjoL3hhzwW7sG6Uhpiy8XLL0E+BkUI="
+        }
+      ]
+    },
+    {
+      "Route": "admin/register.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\register.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w/OcO23HYODwlcjoL3hhzwW7sG6Uhpiy8XLL0E+BkUI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w/OcO23HYODwlcjoL3hhzwW7sG6Uhpiy8XLL0E+BkUI="
+        }
+      ]
+    },
+    {
+      "Route": "admin/tables.dsd8ubslv9.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\tables.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zeHfV/0tkIwprw+c8oU1WmjuYKQO5n0MUFZIoCLZ1xU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dsd8ubslv9"
+        },
+        {
+          "Name": "label",
+          "Value": "admin/tables.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zeHfV/0tkIwprw+c8oU1WmjuYKQO5n0MUFZIoCLZ1xU="
+        }
+      ]
+    },
+    {
+      "Route": "admin/tables.html",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\tables.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38311"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zeHfV/0tkIwprw+c8oU1WmjuYKQO5n0MUFZIoCLZ1xU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 11:40:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zeHfV/0tkIwprw+c8oU1WmjuYKQO5n0MUFZIoCLZ1xU="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1413,7 +3370,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1132"
+          "Value": "3419"
         },
         {
           "Name": "Content-Type",
@@ -1421,11 +3378,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI=\""
+          "Value": "\"WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:30:29 GMT"
+          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1435,97 +3392,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI="
-        }
-      ]
-    },
-    {
-      "Route": "Eticaret.WebUI.hf3fdfute7.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Eticaret.WebUI.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1132"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:30:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hf3fdfute7"
-        },
-        {
-          "Name": "label",
-          "Value": "Eticaret.WebUI.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI="
-        }
-      ]
-    },
-    {
-      "Route": "Eticaret.WebUI.hf3fdfute7.styles.css",
-      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Eticaret.WebUI.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1132"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:30:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hf3fdfute7"
-        },
-        {
-          "Name": "label",
-          "Value": "Eticaret.WebUI.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI="
+          "Value": "sha256-WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA="
         }
       ]
     },
@@ -1540,7 +3407,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1132"
+          "Value": "3419"
         },
         {
           "Name": "Content-Type",
@@ -1548,11 +3415,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI=\""
+          "Value": "\"WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:30:29 GMT"
+          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1562,7 +3429,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HaiyzixOm2YpUYxb/4I5zWgWbKTESC2mAJhcIz6spzI="
+          "Value": "sha256-WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA="
+        }
+      ]
+    },
+    {
+      "Route": "Eticaret.WebUI.zl5xs6940e.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Eticaret.WebUI.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zl5xs6940e"
+        },
+        {
+          "Name": "label",
+          "Value": "Eticaret.WebUI.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA="
+        }
+      ]
+    },
+    {
+      "Route": "Eticaret.WebUI.zl5xs6940e.styles.css",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Eticaret.WebUI.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3419"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zl5xs6940e"
+        },
+        {
+          "Name": "label",
+          "Value": "Eticaret.WebUI.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA="
         }
       ]
     },

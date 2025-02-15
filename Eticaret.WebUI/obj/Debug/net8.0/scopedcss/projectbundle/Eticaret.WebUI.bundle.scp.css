@@ -1,3 +1,52 @@
+/* _content/Eticaret.WebUI/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-f8kmml4nt0] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-f8kmml4nt0] {
+  color: #0077cc;
+}
+
+.btn-primary[b-f8kmml4nt0] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-f8kmml4nt0], .nav-pills .show > .nav-link[b-f8kmml4nt0] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-f8kmml4nt0] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-f8kmml4nt0] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-f8kmml4nt0] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-f8kmml4nt0] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-f8kmml4nt0] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
 /* _content/Eticaret.WebUI/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
@@ -41,6 +90,55 @@ button.accept-policy[b-254zhhu70z] {
 }
 
 .footer[b-254zhhu70z] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/Eticaret.WebUI/Views/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-zjf4j88z93] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-zjf4j88z93] {
+  color: #0077cc;
+}
+
+.btn-primary[b-zjf4j88z93] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-zjf4j88z93], .nav-pills .show > .nav-link[b-zjf4j88z93] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-zjf4j88z93] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-zjf4j88z93] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-zjf4j88z93] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-zjf4j88z93] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-zjf4j88z93] {
   position: absolute;
   bottom: 0;
   width: 100%;
