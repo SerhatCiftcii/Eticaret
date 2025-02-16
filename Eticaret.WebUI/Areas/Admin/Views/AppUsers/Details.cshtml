@@ -1,13 +1,11 @@
-﻿@model Eticaret.Core.Entities.AppUser
+﻿@model AppUser
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
 
 <div>
-    <h4>AppUser</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -73,8 +71,12 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id" onclick="return confirm('Silmek istediğine emin misin?');">
-        Edit
+    <a asp-action="Edit" class="btn btn-sm btn-warning" asp-route-id="@Model?.Id">
+        <i class="fa-solid fa-arrow-left"></i>  go to edit
         </a> |
-    <a asp-action="Index">Back to List</a>
+    <div>
+        <a asp-action="Index" class="btn btn-sm btn-danger mt-2">
+            <i class="fa-solid fa-arrow-left"></i>Back to List
+        </a>
+    </div>
 </div>

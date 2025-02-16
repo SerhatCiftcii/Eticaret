@@ -1,13 +1,15 @@
 ﻿@model IEnumerable<Eticaret.Core.Entities.AppUser>
 
 @{
-    ViewData["Title"] = "Kullanıcı Listesi";
+    ViewData["Title"] = "Kullanici Yonetimi";
 }
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-outline-primary "> 
+        <i class="fa-solid fa-plus"></i>Create New</a>
 </p>
-<table class="table table-hover table-striped">
+<div class="table-responsive">
+<table class="table table-hover table-striped table-bordered shadow">
     <thead>
         <tr>
             <th>
@@ -70,3 +72,4 @@
 }
     </tbody>
 </table>
+</div>
