@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "kZj4shcu94w=",
+  "dgSpecHash": "5BiNirBbSl8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\Eticaret.WebUI.csproj",
   "expectedPackageFiles": [
@@ -82,6 +82,7 @@
     "C:\\Users\\Serhatt\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.13\\microsoft.entityframeworkcore.design.8.0.13.nupkg.sha512",
     "C:\\Users\\Serhatt\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.13\\microsoft.entityframeworkcore.relational.8.0.13.nupkg.sha512",
     "C:\\Users\\Serhatt\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.13\\microsoft.entityframeworkcore.sqlserver.8.0.13.nupkg.sha512",
+    "C:\\Users\\Serhatt\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.11\\microsoft.entityframeworkcore.tools.8.0.11.nupkg.sha512",
     "C:\\Users\\Serhatt\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Serhatt\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
     "C:\\Users\\Serhatt\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

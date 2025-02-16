@@ -18,7 +18,7 @@ namespace Eticaret.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=SERHAT\SQLEXPRESS; 
-            Database=EticaretDb; Trusted_Connection=True; TrustServerCertificate=True;");
+            Database=EcommerceDb; Trusted_Connection=True; TrustServerCertificate=True;");
             base.OnConfiguring(optionsBuilder);
         }
         //yapılandırmaları (configureleri tanıtıcaz efcora) 

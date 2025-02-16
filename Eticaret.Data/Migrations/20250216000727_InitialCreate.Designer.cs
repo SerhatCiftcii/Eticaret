@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Eticaret.Data.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20250213141709_InitialCreate")]
+    [Migration("20250216000727_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -81,14 +81,14 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2025, 2, 13, 17, 17, 8, 758, DateTimeKind.Local).AddTicks(2039),
+                            CreateDate = new DateTime(2025, 2, 16, 3, 7, 26, 920, DateTimeKind.Local).AddTicks(2439),
                             Email = "admin@serhat.com",
                             IsActive = true,
                             IsAdmin = true,
                             Name = "Test",
                             Password = "12345Aa",
                             Surname = "Test",
-                            UserGuid = new Guid("6bc3c4f6-0713-4ba4-a917-535180da7fbb"),
+                            UserGuid = new Guid("f1249c54-453a-48fc-bd31-5491f0226f28"),
                             UserName = "Admin"
                         });
                 });
@@ -170,7 +170,7 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2025, 2, 13, 17, 17, 8, 758, DateTimeKind.Local).AddTicks(4604),
+                            CreateDate = new DateTime(2025, 2, 16, 3, 7, 26, 920, DateTimeKind.Local).AddTicks(5083),
                             IsActive = true,
                             IsTopMenu = true,
                             Name = "Elektronik",
@@ -180,7 +180,7 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2025, 2, 13, 17, 17, 8, 758, DateTimeKind.Local).AddTicks(4612),
+                            CreateDate = new DateTime(2025, 2, 16, 3, 7, 26, 920, DateTimeKind.Local).AddTicks(5144),
                             IsActive = true,
                             IsTopMenu = true,
                             Name = "BiLgisayar",

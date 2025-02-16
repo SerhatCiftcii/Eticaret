@@ -1,7 +1,12 @@
+using Eticaret.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//database tanýt
+builder.Services.AddDbContext<DatabaseContext>();
 
 var app = builder.Build();
 
