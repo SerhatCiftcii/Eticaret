@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Eticaret.Core.Entities;
 using Eticaret.Data;
+using Eticaret.WebUI.Utils;
 
 namespace Eticaret.WebUI.Areas.Admin.Controllers
 {
@@ -46,14 +47,14 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
         }
 
         // POST: Admin/Brands/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Brand brand)
+        public async Task<IActionResult> Create(Brand brand,IFormFile? Logo)
         {
             if (ModelState.IsValid)
             {
+                brand.Logo = await FileHelper.FileLoaderAsync(Logo);
                 _context.Add(brand);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
