@@ -29,7 +29,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
+          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
         }
       ],
       "EndpointProperties": [
@@ -66,7 +66,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
+          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
         }
       ],
       "EndpointProperties": [
@@ -111,7 +111,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 14:40:42 GMT"
+          "Value": "Tue, 18 Feb 2025 19:55:22 GMT"
         }
       ],
       "EndpointProperties": [
@@ -156,13 +156,95 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 14:40:42 GMT"
+          "Value": "Tue, 18 Feb 2025 19:55:22 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
           "Value": "sha256-H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/casper-logo-1-1.mu6g4tsb3y.webp",
+      "AssetFile": "Img/casper-logo-1-1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 19:57:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mu6g4tsb3y"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0="
+        },
+        {
+          "Name": "label",
+          "Value": "Img/casper-logo-1-1.webp"
+        }
+      ]
+    },
+    {
+      "Route": "Img/casper-logo-1-1.webp",
+      "AssetFile": "Img/casper-logo-1-1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 19:57:10 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0="
         }
       ]
     },

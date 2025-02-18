@@ -6,9 +6,11 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
+            <!-- #region logo değeri tutlucak editde gösterlicek  -->
+            <input type="hidden" asp-for="Logo" />
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
@@ -16,13 +18,20 @@
             </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
+                <textarea asp-for="Description" class="form-control" rows="4"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Logo" class="control-label"></label>
-                <input asp-for="Logo" class="form-control" />
+                <input asp-for="Logo" class="form-control" type="file" />
                 <span asp-validation-for="Logo" class="text-danger"></span>
+                @if(Model.Logo !=null && !string.IsNullOrWhiteSpace(Model.Logo))
+                {
+                    <img src="/Img/@Model.Logo" height="75"/>
+                    <label class="form-check-label">
+                        @Html.CheckBox("DeleteLogo") Delete Logo
+                    </label>
+                }
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">

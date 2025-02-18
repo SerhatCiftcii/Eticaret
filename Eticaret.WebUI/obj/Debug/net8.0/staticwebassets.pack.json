@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Img\\asus.jpg"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\casper-logo-1-1.webp",
+      "PackagePath": "staticwebassets\\Img\\casper-logo-1-1.webp"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\401.html",
       "PackagePath": "staticwebassets\\admin\\401.html"
     },

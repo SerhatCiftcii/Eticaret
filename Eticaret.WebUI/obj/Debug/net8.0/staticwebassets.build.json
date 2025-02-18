@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j3VF8zuF2W6GU26Pv83me+0AEodlRw9Np/7e1KzUNDg=",
+  "Hash": "nYbhJAuNvq4cZ3npgPP/FJJII40fMtsPHulMUvxju9A=",
   "Source": "Eticaret.WebUI",
   "BasePath": "_content/Eticaret.WebUI",
   "Mode": "Default",
@@ -519,6 +519,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\asus.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\casper-logo-1-1.webp",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/casper-logo-1-1#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mu6g4tsb3y",
+      "Integrity": "UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\casper-logo-1-1.webp"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\js\\site.js",
@@ -3403,7 +3424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
+          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3440,7 +3461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
+          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3477,7 +3498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
+          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3522,7 +3543,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Feb 2025 14:41:10 GMT"
+          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3649,7 +3670,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 14:40:42 GMT"
+          "Value": "Tue, 18 Feb 2025 19:55:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3694,7 +3715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 14:40:42 GMT"
+          "Value": "Tue, 18 Feb 2025 19:55:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3705,6 +3726,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/casper-logo-1-1.mu6g4tsb3y.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\casper-logo-1-1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 19:57:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mu6g4tsb3y"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/casper-logo-1-1.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0="
+        }
+      ]
+    },
+    {
+      "Route": "Img/casper-logo-1-1.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\casper-logo-1-1.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28142"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Feb 2025 19:57:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0="
         }
       ]
     },

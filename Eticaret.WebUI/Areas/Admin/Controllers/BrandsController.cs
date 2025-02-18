@@ -57,6 +57,7 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
                 brand.Logo = await FileHelper.FileLoaderAsync(Logo);
                 _context.Add(brand);
                 await _context.SaveChangesAsync();
+                
                 return RedirectToAction(nameof(Index));
             }
             return View(brand);
@@ -78,12 +79,11 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             return View(brand);
         }
 
-        // POST: Admin/Brands/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id,Brand brand)
+        public async Task<IActionResult> Edit(int id,Brand brand,IFormFile? Logo,bool DeleteLogo= false)
         {
             if (id != brand.Id)
             {
@@ -94,6 +94,12 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             {
                 try
                 {
+                    if (DeleteLogo)
+                    {
+                        brand.Logo = string.Empty;
+                    }
+                    if (Logo is not null)
+                        brand.Logo = await FileHelper.FileLoaderAsync(Logo);
                     _context.Update(brand);
                     await _context.SaveChangesAsync();
                 }
@@ -139,6 +145,10 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             var brand = await _context.Brands.FindAsync(id);
             if (brand != null)
             {
+                if(!string.IsNullOrEmpty(brand.Logo))//boş değilse sunucdan siilicez
+                {
+                    FileHelper.FileRemover(brand.Logo);
+                }
                 _context.Brands.Remove(brand);
             }
 
