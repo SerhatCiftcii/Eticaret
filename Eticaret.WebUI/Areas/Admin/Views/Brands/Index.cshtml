@@ -26,6 +26,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.OrderNo)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateDate)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -45,6 +48,9 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.OrderNo)
+                </td>
+                <td>
+                    @item.CreateDate.ToShortDateString()
                 </td>
                 <td>
 

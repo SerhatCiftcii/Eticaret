@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nYbhJAuNvq4cZ3npgPP/FJJII40fMtsPHulMUvxju9A=",
+  "Hash": "GEIQ1qJyZs/pqUrhMpn4SPSWrJ0795TdGDW//0Oc8DA=",
   "Source": "Eticaret.WebUI",
   "BasePath": "_content/Eticaret.WebUI",
   "Mode": "Default",
@@ -540,6 +540,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\casper-logo-1-1.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\Elektronik.jpg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Categories/Elektronik#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xtr1wakzvv",
+      "Integrity": "JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\Elektronik.jpg"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\js\\site.js",
@@ -3424,7 +3445,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
+          "Value": "Thu, 20 Feb 2025 16:45:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3461,7 +3482,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
+          "Value": "Thu, 20 Feb 2025 16:45:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3498,7 +3519,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
+          "Value": "Thu, 20 Feb 2025 16:45:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3543,7 +3564,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 19:03:24 GMT"
+          "Value": "Thu, 20 Feb 2025 16:45:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3808,6 +3829,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-UuH7MSX2au291nmSev3EFwI5DsjvQqCwfw86RQZ0tR0="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/Elektronik.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\Elektronik.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51123"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 21:19:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/Elektronik.xtr1wakzvv.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\Elektronik.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51123"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 21:19:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtr1wakzvv"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Categories/Elektronik.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8="
         }
       ]
     },

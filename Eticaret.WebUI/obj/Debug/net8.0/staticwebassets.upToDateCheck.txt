@@ -21,6 +21,7 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\Img\asus.jpg
 wwwroot\Img\casper-logo-1-1.webp
+wwwroot\Img\Categories\Elektronik.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
