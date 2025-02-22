@@ -1,20 +1,17 @@
-﻿@model IEnumerable<Category>
+﻿@model IEnumerable<News>
 
 @{
-    ViewData["Title"] = "Kategori Yönetimi";
+    ViewData["Title"] = "Kampanya ve Duyurular";
 }
 <link href="~/css/resimindex.css" rel="stylesheet" />
-    <a asp-action="Create" class="btn btn-outline-primary ">
+<p>
+    <a asp-action="Create" class="btn btn-outline-primary">
         <i class="fa-solid fa-plus"></i>Create New
     </a>
-</p>
 </p>
 <table class="table table-hover table-striped table-bordered shadow">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -27,15 +24,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.IsActive)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsTopMenu)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ParentId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.OrderNo)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -43,33 +31,21 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td> 
-            <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
                     @item.CreateDate.ToShortDateString()
             </td>
-            <td>
-                    @if (!string.IsNullOrEmpty(item.Image)){
-                    <img src="/Img/Categories/@item.Image" alt="" style="width: 60px; height: 30px; object-fit: cover; border-radius: 5px;" class="news-image" />
+                <td>
+                    @if (!string.IsNullOrEmpty(item.Image))
+                    {
+                    <img src="/Img/News/@item.Image" alt="" style="width: 60px; height: 30px; object-fit: cover; border-radius: 5px;" class="news-image"  />
                     }
                 </td>
             <td>
                 @Html.DisplayFor(modelItem => item.IsActive)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IsTopMenu)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ParentId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OrderNo)
-            </td>
-            <td>
-
                     <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">
                         <i class="fas fa-edit"></i> Edit
                     </a>

@@ -17,11 +17,17 @@ wwwroot\admin\login.html
 wwwroot\admin\password.html
 wwwroot\admin\register.html
 wwwroot\admin\tables.html
+wwwroot\css\resimindex.css
 wwwroot\css\site.css
+wwwroot\css\SolMenu.css
 wwwroot\favicon.ico
 wwwroot\Img\asus.jpg
 wwwroot\Img\casper-logo-1-1.webp
 wwwroot\Img\Categories\Elektronik.jpg
+wwwroot\Img\Categories\kampanya1.jpeg
+wwwroot\Img\News\asus.jpg
+wwwroot\Img\News\kampanya1.jpeg
+wwwroot\Img\News\kampanya2.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

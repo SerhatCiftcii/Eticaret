@@ -1,50 +1,45 @@
-﻿@model Brand
+﻿@model News
 
 @{
-    ViewData["Title"] = "Brand Edit";
+    ViewData["Title"] = "News Edit";
 }
+
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
-            <!-- #region logo değeri tutlucak editde gösterlicek  -->
-            <input type="hidden" asp-for="Logo" />
             <input type="hidden" asp-for="CreateDate" />
-            <div class="form-group">
+            <input type="hidden" asp-for="Image" />
+            <div class="form-group fw-bold">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group fw-bold mb-2 ">
                 <label asp-for="Description" class="control-label"></label>
                 <textarea asp-for="Description" class="form-control" rows="4"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Logo" class="control-label"></label>
-                <input asp-for="Logo" class="form-control" type="file" />
-                <span asp-validation-for="Logo" class="text-danger"></span>
-                @if(Model.Logo !=null && !string.IsNullOrWhiteSpace(Model.Logo))
+                @if (Model.Image != null && !string.IsNullOrWhiteSpace(Model.Image))
                 {
-                    <img src="/Img/@Model.Logo" height="75"/>
-                    <label class="form-check-label">
-                        @Html.CheckBox("DeleteLogo") Delete Logo
-                    </label>
+                        <img src="/Img/News/@Model.Image" height="80" />
+                        <label class="form-check-label">
+                        @Html.CheckBox("DeleteImage") Delete Image
+                        </label>
                 }
+            </div>
+            <div class="form-group fw-bold mt-2">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" class="form-control" type="file" />
+                <span asp-validation-for="Image" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
                     <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
                 </label>
             </div>
-            <div class="form-group">
-                <label asp-for="OrderNo" class="control-label"></label>
-                <input asp-for="OrderNo" class="form-control" />
-                <span asp-validation-for="OrderNo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
+            <div class="form-group fw-bold">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>

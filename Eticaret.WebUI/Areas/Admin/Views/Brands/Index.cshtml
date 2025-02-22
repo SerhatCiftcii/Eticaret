@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Brands";
 }
-
+<link href="~/css/resimindex.css" rel="stylesheet" />
 <p>
     <a asp-action="Create" class="btn btn-outline-primary">
         <i class="fa-solid fa-plus"></i>Create New
@@ -41,7 +41,10 @@
                 </td>
 
                 <td>
-                    <img src="~/Img/@Html.DisplayFor(modelItem => item.Logo)" alt="" height="30" />
+                    @if (!string.IsNullOrEmpty(item.Logo))
+                    {
+                        <img src="~/Img/@item.Logo" alt="" style="width: 60px; height: 30px; object-fit: cover; border-radius: 5px;" class="news-image" />
+                    }
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.IsActive)
@@ -65,7 +68,9 @@
                     </a>
                 </td>
             </tr>
+           
         }
     </tbody>
 </table>
+
 

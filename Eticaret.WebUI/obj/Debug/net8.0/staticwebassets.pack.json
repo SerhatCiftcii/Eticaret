@@ -9,6 +9,22 @@
       "PackagePath": "staticwebassets\\Img\\Categories\\Elektronik.jpg"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya1.jpeg",
+      "PackagePath": "staticwebassets\\Img\\Categories\\kampanya1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\asus.jpg",
+      "PackagePath": "staticwebassets\\Img\\News\\asus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\kampanya1.jpeg",
+      "PackagePath": "staticwebassets\\Img\\News\\kampanya1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\kampanya2.jpg",
+      "PackagePath": "staticwebassets\\Img\\News\\kampanya2.jpg"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\asus.jpg",
       "PackagePath": "staticwebassets\\Img\\asus.jpg"
     },
@@ -91,6 +107,14 @@
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\tables.html",
       "PackagePath": "staticwebassets\\admin\\tables.html"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\SolMenu.css",
+      "PackagePath": "staticwebassets\\css\\SolMenu.css"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\resimindex.css",
+      "PackagePath": "staticwebassets\\css\\resimindex.css"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\site.css",
