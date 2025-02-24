@@ -23,11 +23,14 @@ wwwroot\css\SolMenu.css
 wwwroot\favicon.ico
 wwwroot\Img\asus.jpg
 wwwroot\Img\casper-logo-1-1.webp
+wwwroot\Img\Categories\asus.jpg
 wwwroot\Img\Categories\Elektronik.jpg
 wwwroot\Img\Categories\kampanya1.jpeg
+wwwroot\Img\Categories\samsunglogo.avif
 wwwroot\Img\News\asus.jpg
 wwwroot\Img\News\kampanya1.jpeg
 wwwroot\Img\News\kampanya2.jpg
+wwwroot\Img\Products\asus.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

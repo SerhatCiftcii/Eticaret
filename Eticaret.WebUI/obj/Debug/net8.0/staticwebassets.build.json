@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cTQ7tH8KZZ4Kwn/6JQ8wD/GRtsf72vsk03BmizSu0Gw=",
+  "Hash": "FvLSXb7aQjLDzPSnIXI98bayKiw5gDsCXwMcBXKrKpQ=",
   "Source": "Eticaret.WebUI",
   "BasePath": "_content/Eticaret.WebUI",
   "Mode": "Default",
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4o1skwuezl",
-      "Integrity": "dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI=",
+      "Fingerprint": "4e82tzsuv9",
+      "Integrity": "BIA+6NMj7NS5qXwao9udmfQE1DGPv4rRKdMYzlN4Jro=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\index.html"
@@ -584,6 +584,27 @@
       "OriginalItemSpec": "wwwroot\\Img\\casper-logo-1-1.webp"
     },
     {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\asus.jpg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Categories/asus#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dhfub9rp4z",
+      "Integrity": "H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\asus.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\Elektronik.jpg",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
@@ -624,6 +645,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\Categories\\kampanya1.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\samsunglogo.avif",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Categories/samsunglogo#[.{fingerprint}]?.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7nb2ssgy3x",
+      "Integrity": "jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\samsunglogo.avif"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\asus.jpg",
@@ -687,6 +729,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\News\\kampanya2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\asus.jpg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/asus#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dhfub9rp4z",
+      "Integrity": "H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\asus.jpg"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\js\\site.js",
@@ -2729,7 +2792,7 @@
       ]
     },
     {
-      "Route": "admin/index.4o1skwuezl.html",
+      "Route": "admin/index.4e82tzsuv9.html",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\admin\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2739,7 +2802,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41881"
+          "Value": "41882"
         },
         {
           "Name": "Content-Type",
@@ -2747,11 +2810,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI=\""
+          "Value": "\"BIA+6NMj7NS5qXwao9udmfQE1DGPv4rRKdMYzlN4Jro=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 12:41:20 GMT"
+          "Value": "Sun, 23 Feb 2025 19:46:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2761,7 +2824,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4o1skwuezl"
+          "Value": "4e82tzsuv9"
         },
         {
           "Name": "label",
@@ -2769,7 +2832,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI="
+          "Value": "sha256-BIA+6NMj7NS5qXwao9udmfQE1DGPv4rRKdMYzlN4Jro="
         }
       ]
     },
@@ -2784,7 +2847,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41881"
+          "Value": "41882"
         },
         {
           "Name": "Content-Type",
@@ -2792,11 +2855,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI=\""
+          "Value": "\"BIA+6NMj7NS5qXwao9udmfQE1DGPv4rRKdMYzlN4Jro=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 12:41:20 GMT"
+          "Value": "Sun, 23 Feb 2025 19:46:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2806,7 +2869,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dGs7QsQHDIVJXWDUs177ICjYEm33hqyaKkYfFX7dPXI="
+          "Value": "sha256-BIA+6NMj7NS5qXwao9udmfQE1DGPv4rRKdMYzlN4Jro="
         }
       ]
     },
@@ -4123,6 +4186,88 @@
       ]
     },
     {
+      "Route": "Img/Categories/asus.dhfub9rp4z.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\asus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 19:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dhfub9rp4z"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Categories/asus.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/asus.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\asus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 19:44:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ="
+        }
+      ]
+    },
+    {
       "Route": "Img/Categories/Elektronik.jpg",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\Elektronik.jpg",
       "Selectors": [],
@@ -4283,6 +4428,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/samsunglogo.7nb2ssgy3x.avif",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\samsunglogo.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 19:43:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7nb2ssgy3x"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Categories/samsunglogo.avif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/samsunglogo.avif",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\samsunglogo.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 19:43:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y="
         }
       ]
     },
@@ -4529,6 +4756,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/asus.dhfub9rp4z.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\asus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 19:48:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dhfub9rp4z"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/asus.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/asus.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\asus.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48993"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 19:48:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ="
         }
       ]
     },

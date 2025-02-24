@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets\\Img\\Categories\\Elektronik.jpg"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\asus.jpg",
+      "PackagePath": "staticwebassets\\Img\\Categories\\asus.jpg"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya1.jpeg",
       "PackagePath": "staticwebassets\\Img\\Categories\\kampanya1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\samsunglogo.avif",
+      "PackagePath": "staticwebassets\\Img\\Categories\\samsunglogo.avif"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\asus.jpg",
@@ -23,6 +31,10 @@
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\kampanya2.jpg",
       "PackagePath": "staticwebassets\\Img\\News\\kampanya2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\asus.jpg",
+      "PackagePath": "staticwebassets\\Img\\Products\\asus.jpg"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\asus.jpg",
