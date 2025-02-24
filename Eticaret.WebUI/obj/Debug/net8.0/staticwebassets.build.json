@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FvLSXb7aQjLDzPSnIXI98bayKiw5gDsCXwMcBXKrKpQ=",
+  "Hash": "XjGm0ZDDwLD6F0O2KZD9R86f/JBNaad7NzZGd/VR1qc=",
   "Source": "Eticaret.WebUI",
   "BasePath": "_content/Eticaret.WebUI",
   "Mode": "Default",
@@ -750,6 +750,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\Products\\asus.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\doctor.jpg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/doctor#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h7anfwyx7d",
+      "Integrity": "beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\doctor.jpg"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\js\\site.js",
@@ -4782,7 +4803,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 19:48:07 GMT"
+          "Value": "Mon, 24 Feb 2025 21:07:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4827,7 +4848,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 19:48:07 GMT"
+          "Value": "Mon, 24 Feb 2025 21:07:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4838,6 +4859,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-H7fV7CFyHYaeQVg0/xfJw+erUqdgw3sx2c0DMqPFceQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/doctor.h7anfwyx7d.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\doctor.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "537995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 20:30:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h7anfwyx7d"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/doctor.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/doctor.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\doctor.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "537995"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 20:30:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48="
         }
       ]
     },

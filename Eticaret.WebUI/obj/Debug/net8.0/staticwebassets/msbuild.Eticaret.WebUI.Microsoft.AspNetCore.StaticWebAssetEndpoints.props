@@ -400,13 +400,25 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Products\asus.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dhfub9rp4z"},{"Name":"integrity","Value":"sha256-H7fV7CFyHYaeQVg0/xfJw\u002BerUqdgw3sx2c0DMqPFceQ="},{"Name":"label","Value":"_content/Eticaret.WebUI/Img/Products/asus.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"48993"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022H7fV7CFyHYaeQVg0/xfJw\u002BerUqdgw3sx2c0DMqPFceQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 19:48:07 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"48993"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022H7fV7CFyHYaeQVg0/xfJw\u002BerUqdgw3sx2c0DMqPFceQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 21:07:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Products/asus.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Products\asus.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-H7fV7CFyHYaeQVg0/xfJw\u002BerUqdgw3sx2c0DMqPFceQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"48993"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022H7fV7CFyHYaeQVg0/xfJw\u002BerUqdgw3sx2c0DMqPFceQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 19:48:07 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"48993"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022H7fV7CFyHYaeQVg0/xfJw\u002BerUqdgw3sx2c0DMqPFceQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 21:07:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Products/doctor.h7anfwyx7d.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Products\doctor.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h7anfwyx7d"},{"Name":"integrity","Value":"sha256-beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48="},{"Name":"label","Value":"_content/Eticaret.WebUI/Img/Products/doctor.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"537995"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 20:30:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Products/doctor.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Products\doctor.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"537995"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022beJGcXmjcpc/g57Lf7Pz6VwcNNuNQorDtTAH9NEq/48=\u0022"},{"Name":"Last-Modified","Value":"Mon, 24 Feb 2025 20:30:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

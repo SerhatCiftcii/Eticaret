@@ -162,6 +162,10 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             var product = await _context.Products.FindAsync(id);
             if (product != null)
             {
+                if (!string.IsNullOrEmpty(product.Image))//boş değilse sunucdan siilicez
+                {
+                    FileHelper.FileRemover(product.Image, "/Img/Product/");
+                }
                 _context.Products.Remove(product);
             }
 

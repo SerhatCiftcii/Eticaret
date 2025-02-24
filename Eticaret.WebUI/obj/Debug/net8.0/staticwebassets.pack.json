@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\Img\\Products\\asus.jpg"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\doctor.jpg",
+      "PackagePath": "staticwebassets\\Img\\Products\\doctor.jpg"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\asus.jpg",
       "PackagePath": "staticwebassets\\Img\\asus.jpg"
     },
