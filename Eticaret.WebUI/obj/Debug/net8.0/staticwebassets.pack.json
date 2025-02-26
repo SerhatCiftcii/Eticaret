@@ -37,8 +37,20 @@
       "PackagePath": "staticwebassets\\Img\\Products\\asus.jpg"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\casper-logo-1-1.webp",
+      "PackagePath": "staticwebassets\\Img\\Products\\casper-logo-1-1.webp"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\doctor.jpg",
       "PackagePath": "staticwebassets\\Img\\Products\\doctor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Slider\\slider1.png",
+      "PackagePath": "staticwebassets\\Img\\Slider\\slider1.png"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Slider\\slider2.png",
+      "PackagePath": "staticwebassets\\Img\\Slider\\slider2.png"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\asus.jpg",
