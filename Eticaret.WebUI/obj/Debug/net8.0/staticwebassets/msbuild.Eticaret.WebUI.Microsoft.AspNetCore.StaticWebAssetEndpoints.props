@@ -264,17 +264,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WuzrBPB0WOKzYwOO8g2BLOwpMprMy9flm88MWGix9IY="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3758"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WuzrBPB0WOKzYwOO8g2BLOwpMprMy9flm88MWGix9IY=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Feb 2025 18:49:20 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Eticaret.WebUI.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Eticaret.WebUI.zl5xs6940e.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Eticaret.WebUI.2iyqt5cimd.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Eticaret.WebUI.2iyqt5cimd.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3419"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Feb 2025 18:26:37 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2iyqt5cimd"},{"Name":"integrity","Value":"sha256-1h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc="},{"Name":"label","Value":"_content/Eticaret.WebUI/Eticaret.WebUI.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2281"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 00:43:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Eticaret.WebUI.zl5xs6940e.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Eticaret.WebUI.zl5xs6940e.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Eticaret.WebUI.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Eticaret.WebUI.2iyqt5cimd.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zl5xs6940e"},{"Name":"integrity","Value":"sha256-WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA="},{"Name":"label","Value":"_content/Eticaret.WebUI/Eticaret.WebUI.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3419"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022WWEieat30aLjvWxsDUtkahOic1lIRPrxyQv/90jtJcA=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Feb 2025 18:26:37 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2281"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 00:43:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>

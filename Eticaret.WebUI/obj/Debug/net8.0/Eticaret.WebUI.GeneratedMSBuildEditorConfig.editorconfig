@@ -180,6 +180,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -194,18 +198,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/Views/Main/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcTWFpblxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/_ViewImports.cshtml]
@@ -223,7 +215,3 @@ build_metadata.AdditionalFiles.CssScope = b-f8kmml4nt0
 [C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-254zhhu70z
-
-[C:/Users/Serhatt/source/repos/Eticaret/Eticaret.WebUI/Views/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-zjf4j88z93
