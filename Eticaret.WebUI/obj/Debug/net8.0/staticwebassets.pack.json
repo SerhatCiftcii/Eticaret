@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\Img\\Products\\samsunglogo.avif"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\slider1.png",
+      "PackagePath": "staticwebassets\\Img\\Products\\slider1.png"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\slider3.png",
       "PackagePath": "staticwebassets\\Img\\Products\\slider3.png"
     },
@@ -75,6 +79,10 @@
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Slider\\slider2.png",
       "PackagePath": "staticwebassets\\Img\\Slider\\slider2.png"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Slider\\slider3.png",
+      "PackagePath": "staticwebassets\\Img\\Slider\\slider3.png"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\asus.jpg",

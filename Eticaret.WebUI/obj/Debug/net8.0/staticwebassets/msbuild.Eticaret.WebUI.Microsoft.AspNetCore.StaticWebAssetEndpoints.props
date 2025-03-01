@@ -268,13 +268,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Eticaret.WebUI.2iyqt5cimd.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2iyqt5cimd"},{"Name":"integrity","Value":"sha256-1h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc="},{"Name":"label","Value":"_content/Eticaret.WebUI/Eticaret.WebUI.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2281"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 13:54:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2281"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:46:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Eticaret.WebUI.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Eticaret.WebUI.2iyqt5cimd.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2281"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 13:54:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2281"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221h0BF7y67aOwuYw9Io/gi\u002BETJhOnLs8RQmqM3eCcqqc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 17:46:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -328,25 +328,25 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Categories\e-commerce.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD\u002BPDsCE4w="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"86759"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD\u002BPDsCE4w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 12:02:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"86759"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD\u002BPDsCE4w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:27:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Categories/e-commerce.mh0urpx17s.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Categories\e-commerce.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mh0urpx17s"},{"Name":"integrity","Value":"sha256-BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD\u002BPDsCE4w="},{"Name":"label","Value":"_content/Eticaret.WebUI/Img/Categories/e-commerce.jpeg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"86759"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD\u002BPDsCE4w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 12:02:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"86759"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD\u002BPDsCE4w=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:27:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Categories/kampanya2.g6dgs2nms2.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Categories\kampanya2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g6dgs2nms2"},{"Name":"integrity","Value":"sha256-uHrWp3zj6l9ZosieDmI\u002BlJeoWFhfVH\u002BLVy4G1J3Bv7o="},{"Name":"label","Value":"_content/Eticaret.WebUI/Img/Categories/kampanya2.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"400460"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022uHrWp3zj6l9ZosieDmI\u002BlJeoWFhfVH\u002BLVy4G1J3Bv7o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 12:15:55 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"400460"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022uHrWp3zj6l9ZosieDmI\u002BlJeoWFhfVH\u002BLVy4G1J3Bv7o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:28:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Categories/kampanya2.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Categories\kampanya2.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uHrWp3zj6l9ZosieDmI\u002BlJeoWFhfVH\u002BLVy4G1J3Bv7o="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"400460"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022uHrWp3zj6l9ZosieDmI\u002BlJeoWFhfVH\u002BLVy4G1J3Bv7o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 12:15:55 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"400460"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022uHrWp3zj6l9ZosieDmI\u002BlJeoWFhfVH\u002BLVy4G1J3Bv7o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:28:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Categories/samsunglogo.7nb2ssgy3x.avif">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Categories\samsunglogo.avif'))</AssetFile>
@@ -436,13 +436,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\News\kampanya1.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3diy2kyx1e"},{"Name":"integrity","Value":"sha256-dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a\u002Bmtv/XIk="},{"Name":"label","Value":"_content/Eticaret.WebUI/Img/News/kampanya1.jpeg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11531"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a\u002Bmtv/XIk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Feb 2025 20:27:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11531"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a\u002Bmtv/XIk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:21:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/News/kampanya1.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\News\kampanya1.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a\u002Bmtv/XIk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11531"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a\u002Bmtv/XIk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Feb 2025 20:27:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"11531"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a\u002Bmtv/XIk=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:21:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/News/kampanya2.g6dgs2nms2.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\News\kampanya2.jpg'))</AssetFile>
@@ -516,6 +516,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3542"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 12:39:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Products/slider1.leogqvhy4q.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Products\slider1.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"leogqvhy4q"},{"Name":"integrity","Value":"sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="},{"Name":"label","Value":"_content/Eticaret.WebUI/Img/Products/slider1.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"283770"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 15:47:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Products/slider1.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Products\slider1.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"283770"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 15:47:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Products/slider3.29q7g7m4qt.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Products\slider3.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -544,13 +556,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Slider\slider1.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"leogqvhy4q"},{"Name":"integrity","Value":"sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="},{"Name":"label","Value":"_content/Eticaret.WebUI/Img/Slider/slider1.png"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"283770"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Feb 2025 00:45:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"283770"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:26:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Slider/slider1.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Slider\slider1.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"283770"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\u0022"},{"Name":"Last-Modified","Value":"Wed, 26 Feb 2025 00:45:23 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"283770"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:26:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Slider/slider2.3vzexv4c5j.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Slider\slider2.png'))</AssetFile>
@@ -563,6 +575,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-D4oK/iKwhi1G6f3EhZ9jMSrVneo4i90vmkW\u002BPwc9UmQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"444188"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022D4oK/iKwhi1G6f3EhZ9jMSrVneo4i90vmkW\u002BPwc9UmQ=\u0022"},{"Name":"Last-Modified","Value":"Tue, 25 Feb 2025 02:14:24 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Slider/slider3.29q7g7m4qt.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Slider\slider3.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"29q7g7m4qt"},{"Name":"integrity","Value":"sha256-pmzcQ52JULRswQTDHbPD\u002Bz5PAFWfItzxG8kpiIasyZc="},{"Name":"label","Value":"_content/Eticaret.WebUI/Img/Slider/slider3.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"311222"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022pmzcQ52JULRswQTDHbPD\u002Bz5PAFWfItzxG8kpiIasyZc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:26:15 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/Slider/slider3.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\Slider\slider3.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-pmzcQ52JULRswQTDHbPD\u002Bz5PAFWfItzxG8kpiIasyZc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"311222"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022pmzcQ52JULRswQTDHbPD\u002Bz5PAFWfItzxG8kpiIasyZc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 01 Mar 2025 14:26:15 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/Img/slider1.leogqvhy4q.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Img\slider1.png'))</AssetFile>

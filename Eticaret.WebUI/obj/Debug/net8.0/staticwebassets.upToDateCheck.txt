@@ -40,10 +40,12 @@ wwwroot\Img\Products\casper-logo-1-1.webp
 wwwroot\Img\Products\doctor.jpg
 wwwroot\Img\Products\e-commerce.jpeg
 wwwroot\Img\Products\samsunglogo.avif
+wwwroot\Img\Products\slider1.png
 wwwroot\Img\Products\slider3.png
 wwwroot\Img\samsunglogo.avif
 wwwroot\Img\Slider\slider1.png
 wwwroot\Img\Slider\slider2.png
+wwwroot\Img\Slider\slider3.png
 wwwroot\Img\slider1.png
 wwwroot\Img\slider2.png
 wwwroot\Img\slider3.png
