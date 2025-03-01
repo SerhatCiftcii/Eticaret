@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FC0ZU3s14YhC8rVdgOhVguMt/LSrYEA9XNGm4fUXNT0=",
+  "Hash": "h0/NRejhcVmQhluip0F9W5bKbwhxAlC+Y6AyEOrzRnQ=",
   "Source": "Eticaret.WebUI",
   "BasePath": "_content/Eticaret.WebUI",
   "Mode": "Default",
@@ -605,12 +605,12 @@
       "OriginalItemSpec": "wwwroot\\Img\\Categories\\asus.jpg"
     },
     {
-      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\Elektronik.jpg",
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\e-commerce.jpeg",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
       "BasePath": "_content/Eticaret.WebUI",
-      "RelativePath": "Img/Categories/Elektronik#[.{fingerprint}]?.jpg",
+      "RelativePath": "Img/Categories/e-commerce#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -619,19 +619,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtr1wakzvv",
-      "Integrity": "JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8=",
+      "Fingerprint": "mh0urpx17s",
+      "Integrity": "BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Img\\Categories\\Elektronik.jpg"
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\e-commerce.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya1.jpeg",
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya2.jpg",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
       "BasePath": "_content/Eticaret.WebUI",
-      "RelativePath": "Img/Categories/kampanya1#[.{fingerprint}]?.jpeg",
+      "RelativePath": "Img/Categories/kampanya2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -640,11 +640,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3diy2kyx1e",
-      "Integrity": "dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk=",
+      "Fingerprint": "g6dgs2nms2",
+      "Integrity": "uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Img\\Categories\\kampanya1.jpeg"
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\kampanya2.jpg"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\samsunglogo.avif",
@@ -666,6 +666,111 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\Categories\\samsunglogo.avif"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\slider1.png",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Categories/slider1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "leogqvhy4q",
+      "Integrity": "jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\slider1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\slider3.png",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Categories/slider3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "29q7g7m4qt",
+      "Integrity": "pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\slider3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categoriesslider1.png",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Categoriesslider1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "leogqvhy4q",
+      "Integrity": "jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Categoriesslider1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\kampanya1.jpeg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/kampanya1#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3diy2kyx1e",
+      "Integrity": "dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\kampanya1.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\kampanya2.jpg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/kampanya2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g6dgs2nms2",
+      "Integrity": "uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\kampanya2.jpg"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\asus.jpg",
@@ -794,6 +899,90 @@
       "OriginalItemSpec": "wwwroot\\Img\\Products\\doctor.jpg"
     },
     {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\e-commerce.jpeg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/e-commerce#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mh0urpx17s",
+      "Integrity": "BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\e-commerce.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\samsunglogo.avif",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/samsunglogo#[.{fingerprint}]?.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7nb2ssgy3x",
+      "Integrity": "jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\samsunglogo.avif"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\slider3.png",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/slider3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "29q7g7m4qt",
+      "Integrity": "pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\slider3.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\samsunglogo.avif",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/samsunglogo#[.{fingerprint}]?.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7nb2ssgy3x",
+      "Integrity": "jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\samsunglogo.avif"
+    },
+    {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Slider\\slider1.png",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
@@ -834,6 +1023,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\Slider\\slider2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider1.png",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/slider1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "leogqvhy4q",
+      "Integrity": "jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\slider1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider2.png",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/slider2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3vzexv4c5j",
+      "Integrity": "D4oK/iKwhi1G6f3EhZ9jMSrVneo4i90vmkW+Pwc9UmQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\slider2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider3.png",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/slider3#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "29q7g7m4qt",
+      "Integrity": "pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\slider3.png"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\js\\site.js",
@@ -3882,7 +4134,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 00:43:19 GMT"
+          "Value": "Sat, 01 Mar 2025 13:54:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3927,7 +4179,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 00:43:19 GMT"
+          "Value": "Sat, 01 Mar 2025 13:54:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3972,7 +4224,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 00:43:19 GMT"
+          "Value": "Sat, 01 Mar 2025 13:54:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4009,7 +4261,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 00:43:19 GMT"
+          "Value": "Sat, 01 Mar 2025 13:54:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4128,7 +4380,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 19:55:22 GMT"
+          "Value": "Sat, 01 Mar 2025 13:27:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4173,7 +4425,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 18 Feb 2025 19:55:22 GMT"
+          "Value": "Sat, 01 Mar 2025 13:27:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4210,7 +4462,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 18:34:22 GMT"
+          "Value": "Sat, 01 Mar 2025 13:27:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4255,7 +4507,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 18:34:22 GMT"
+          "Value": "Sat, 01 Mar 2025 13:27:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4352,8 +4604,8 @@
       ]
     },
     {
-      "Route": "Img/Categories/Elektronik.jpg",
-      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\Elektronik.jpg",
+      "Route": "Img/Categories/e-commerce.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\e-commerce.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4362,7 +4614,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51123"
+          "Value": "86759"
         },
         {
           "Name": "Content-Type",
@@ -4370,11 +4622,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8=\""
+          "Value": "\"BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 21:19:46 GMT"
+          "Value": "Sat, 01 Mar 2025 12:02:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4384,13 +4636,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8="
+          "Value": "sha256-BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w="
         }
       ]
     },
     {
-      "Route": "Img/Categories/Elektronik.xtr1wakzvv.jpg",
-      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\Elektronik.jpg",
+      "Route": "Img/Categories/e-commerce.mh0urpx17s.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\e-commerce.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4399,7 +4651,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51123"
+          "Value": "86759"
         },
         {
           "Name": "Content-Type",
@@ -4407,11 +4659,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8=\""
+          "Value": "\"BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 21:19:46 GMT"
+          "Value": "Sat, 01 Mar 2025 12:02:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4421,21 +4673,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtr1wakzvv"
+          "Value": "mh0urpx17s"
         },
         {
           "Name": "label",
-          "Value": "Img/Categories/Elektronik.jpg"
+          "Value": "Img/Categories/e-commerce.jpeg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-JcsKoYLzHvRMSWEjnMwTCge1rzfFckBigfJDXi/te/8="
+          "Value": "sha256-BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w="
         }
       ]
     },
     {
-      "Route": "Img/Categories/kampanya1.3diy2kyx1e.jpeg",
-      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya1.jpeg",
+      "Route": "Img/Categories/kampanya2.g6dgs2nms2.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4444,7 +4696,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11531"
+          "Value": "400460"
         },
         {
           "Name": "Content-Type",
@@ -4452,11 +4704,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk=\""
+          "Value": "\"uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 19:14:12 GMT"
+          "Value": "Sat, 01 Mar 2025 12:15:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4466,21 +4718,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3diy2kyx1e"
+          "Value": "g6dgs2nms2"
         },
         {
           "Name": "label",
-          "Value": "Img/Categories/kampanya1.jpeg"
+          "Value": "Img/Categories/kampanya2.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk="
+          "Value": "sha256-uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o="
         }
       ]
     },
     {
-      "Route": "Img/Categories/kampanya1.jpeg",
-      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya1.jpeg",
+      "Route": "Img/Categories/kampanya2.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4489,7 +4741,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11531"
+          "Value": "400460"
         },
         {
           "Name": "Content-Type",
@@ -4497,11 +4749,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk=\""
+          "Value": "\"uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 19:14:12 GMT"
+          "Value": "Sat, 01 Mar 2025 12:15:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4511,7 +4763,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk="
+          "Value": "sha256-uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o="
         }
       ]
     },
@@ -4594,6 +4846,416 @@
         {
           "Name": "integrity",
           "Value": "sha256-jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/slider1.leogqvhy4q.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\slider1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 12:14:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "leogqvhy4q"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Categories/slider1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/slider1.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\slider1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 12:14:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/slider3.29q7g7m4qt.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\slider3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 14:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "29q7g7m4qt"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Categories/slider3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/slider3.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\slider3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 14:00:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categoriesslider1.leogqvhy4q.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categoriesslider1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 12:13:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "leogqvhy4q"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Categoriesslider1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categoriesslider1.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categoriesslider1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 12:13:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="
+        }
+      ]
+    },
+    {
+      "Route": "Img/kampanya1.3diy2kyx1e.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\kampanya1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11531"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 12:02:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3diy2kyx1e"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/kampanya1.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk="
+        }
+      ]
+    },
+    {
+      "Route": "Img/kampanya1.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\kampanya1.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11531"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 12:02:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dwPggDAweggvFmIqOU42GJ1JbRrDdmrtn7a+mtv/XIk="
+        }
+      ]
+    },
+    {
+      "Route": "Img/kampanya2.g6dgs2nms2.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\kampanya2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "400460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 12:11:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g6dgs2nms2"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/kampanya2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o="
+        }
+      ]
+    },
+    {
+      "Route": "Img/kampanya2.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\kampanya2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "400460"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 12:11:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o="
         }
       ]
     },
@@ -4866,7 +5528,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 21:11:29 GMT"
+          "Value": "Fri, 28 Feb 2025 12:39:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4911,7 +5573,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 24 Feb 2025 21:11:29 GMT"
+          "Value": "Fri, 28 Feb 2025 12:39:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5090,6 +5752,334 @@
       ]
     },
     {
+      "Route": "Img/Products/e-commerce.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\e-commerce.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 13:51:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/e-commerce.mh0urpx17s.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\e-commerce.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "86759"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 13:51:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mh0urpx17s"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/e-commerce.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BlNGCnTKbuDcgJJhk9VhEZVa0J48/jhvbtD+PDsCE4w="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/samsunglogo.7nb2ssgy3x.avif",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\samsunglogo.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 12:39:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7nb2ssgy3x"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/samsunglogo.avif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/samsunglogo.avif",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\samsunglogo.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 12:39:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/slider3.29q7g7m4qt.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\slider3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 11:48:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "29q7g7m4qt"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/slider3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/slider3.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\slider3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 11:48:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/samsunglogo.7nb2ssgy3x.avif",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\samsunglogo.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 13:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7nb2ssgy3x"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/samsunglogo.avif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y="
+        }
+      ]
+    },
+    {
+      "Route": "Img/samsunglogo.avif",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\samsunglogo.avif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 13:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jUxKTi0KqbDdS82hq9TL9VeoXlmyX/3EjOhHUFcbP0Y="
+        }
+      ]
+    },
+    {
       "Route": "Img/Slider/slider1.leogqvhy4q.png",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Slider\\slider1.png",
       "Selectors": [],
@@ -5250,6 +6240,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-D4oK/iKwhi1G6f3EhZ9jMSrVneo4i90vmkW+Pwc9UmQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/slider1.leogqvhy4q.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 11:47:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "leogqvhy4q"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/slider1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="
+        }
+      ]
+    },
+    {
+      "Route": "Img/slider1.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "283770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 11:47:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="
+        }
+      ]
+    },
+    {
+      "Route": "Img/slider2.3vzexv4c5j.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "444188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4oK/iKwhi1G6f3EhZ9jMSrVneo4i90vmkW+Pwc9UmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 13:26:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3vzexv4c5j"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/slider2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4oK/iKwhi1G6f3EhZ9jMSrVneo4i90vmkW+Pwc9UmQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/slider2.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "444188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4oK/iKwhi1G6f3EhZ9jMSrVneo4i90vmkW+Pwc9UmQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 13:26:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4oK/iKwhi1G6f3EhZ9jMSrVneo4i90vmkW+Pwc9UmQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/slider3.29q7g7m4qt.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 11:37:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "29q7g7m4qt"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/slider3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/slider3.png",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\slider3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "311222"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 01 Mar 2025 11:37:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pmzcQ52JULRswQTDHbPD+z5PAFWfItzxG8kpiIasyZc="
         }
       ]
     },

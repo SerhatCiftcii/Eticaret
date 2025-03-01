@@ -1,90 +1,114 @@
 ﻿@model Product
 
-@{
-    ViewData["Title"] = "Edit Product";
-}
 
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header bg-warning text-white">
+            <h4 class="card-title mb-0">
+                <i class="fas fa-edit me-2"></i> Edit Product
+            </h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="Image" />
+                <input type="hidden" asp-for="CreateDate" />
 
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <input type="hidden" asp-for="Image" />
-            <input type="hidden" asp-for="CreateDate" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <textarea asp-for="Description" class="form-control" rows="4"></textarea>
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Image" class="control-label"></label>
-                <input asp-for="Image" class="form-control" type="file"/>
-                <span asp-validation-for="Image" class="text-danger"></span>
-                @if(Model.Image !=null && !string.IsNullOrEmpty(Model.Image))
-                {
-                    <img src="/Img/Products/@Model.Image" height="80"/>
+                <!-- Name -->
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <!-- Description -->
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <!-- Image -->
+                <div class="form-group">
+                    <label asp-for="Image" class="control-label"></label>
+                    <input asp-for="Image" class="form-control" type="file" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                    @if (Model.Image != null && !string.IsNullOrEmpty(Model.Image))
+                    {
+                        <img src="/Img/Products/@Model.Image" height="80" />
+                        <label class="form-check-label">
+                            @Html.CheckBox("DeleteImage") Delete Image
+                        </label>
+                    }
+                </div>
+
+                <!-- Price -->
+                <div class="form-group">
+                    <label asp-for="Price" class="control-label"></label>
+                    <input asp-for="Price" class="form-control" />
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <!-- ProductCode -->
+                <div class="form-group">
+                    <label asp-for="ProductCode" class="control-label"></label>
+                    <input asp-for="ProductCode" class="form-control" />
+                    <span asp-validation-for="ProductCode" class="text-danger"></span>
+                </div>
+
+                <!-- Stock -->
+                <div class="form-group">
+                    <label asp-for="Stock" class="control-label"></label>
+                    <input asp-for="Stock" class="form-control" />
+                    <span asp-validation-for="Stock" class="text-danger"></span>
+                </div>
+
+                <!-- IsActive -->
+                <div class="form-group form-check">
                     <label class="form-check-label">
-                        @Html.CheckBox("DeleteImage") Delete Image
+                        <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
                     </label>
-                }
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ProductCode" class="control-label"></label>
-                <input asp-for="ProductCode" class="form-control" />
-                <span asp-validation-for="ProductCode" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Stock" class="control-label"></label>
-                <input asp-for="Stock" class="form-control" />
-                <span asp-validation-for="Stock" class="text-danger"></span>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
-                </label>
-            </div>
-            <div class="form-group form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="IsHome" /> @Html.DisplayNameFor(model => model.IsHome)
-                </label>
-            </div>
-            <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
-                <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.CategoryId"></select>
-                <span asp-validation-for="CategoryId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="BrandId" class="control-label"></label>
-                <select asp-for="BrandId" class="form-select" asp-items="ViewBag.BrandId"></select>
-                <span asp-validation-for="BrandId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="OrderNo" class="control-label"></label>
-                <input asp-for="OrderNo" class="form-control" />
-                <span asp-validation-for="OrderNo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+                </div>
+
+                <!-- IsHome -->
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsHome" /> @Html.DisplayNameFor(model => model.IsHome)
+                    </label>
+                </div>
+
+                <!-- CategoryId -->
+                <div class="form-group">
+                    <label asp-for="CategoryId" class="control-label"></label>
+                    <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.CategoryId"></select>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+
+                <!-- BrandId -->
+                <div class="form-group">
+                    <label asp-for="BrandId" class="control-label"></label>
+                    <select asp-for="BrandId" class="form-select" asp-items="ViewBag.BrandId"></select>
+                    <span asp-validation-for="BrandId" class="text-danger"></span>
+                </div>
+
+                <!-- OrderNo -->
+                <div class="form-group">
+                    <label asp-for="OrderNo" class="control-label"></label>
+                    <input asp-for="OrderNo" class="form-control" />
+                    <span asp-validation-for="OrderNo" class="text-danger"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-end">
+            <a asp-action="Index" class="btn btn-sm btn-danger">
+                <i class="fa-solid fa-arrow-left"></i> Back to List
+            </a>
+        </div>
     </div>
 </div>
-
-<div>
-    <a asp-action="Index" class="btn btn-sm btn-danger mt-2">
-        <i class="fa-solid fa-arrow-left"></i>Back to List
-    </a>
-</div>
-
