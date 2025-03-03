@@ -45,6 +45,14 @@
       "PackagePath": "staticwebassets\\Img\\News\\kampanya2.jpg"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\kampnya4.jpeg",
+      "PackagePath": "staticwebassets\\Img\\News\\kampnya4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\News\\slider1.png",
+      "PackagePath": "staticwebassets\\Img\\News\\slider1.png"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\asus.jpg",
       "PackagePath": "staticwebassets\\Img\\Products\\asus.jpg"
     },
@@ -53,12 +61,20 @@
       "PackagePath": "staticwebassets\\Img\\Products\\casper-logo-1-1.webp"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\casper.jpeg",
+      "PackagePath": "staticwebassets\\Img\\Products\\casper.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\doctor.jpg",
       "PackagePath": "staticwebassets\\Img\\Products\\doctor.jpg"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\e-commerce.jpeg",
       "PackagePath": "staticwebassets\\Img\\Products\\e-commerce.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\monsteri.png",
+      "PackagePath": "staticwebassets\\Img\\Products\\monsteri.png"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\samsunglogo.avif",

@@ -35,10 +35,14 @@ wwwroot\Img\kampanya2.jpg
 wwwroot\Img\News\asus.jpg
 wwwroot\Img\News\kampanya1.jpeg
 wwwroot\Img\News\kampanya2.jpg
+wwwroot\Img\News\kampnya4.jpeg
+wwwroot\Img\News\slider1.png
 wwwroot\Img\Products\asus.jpg
+wwwroot\Img\Products\casper.jpeg
 wwwroot\Img\Products\casper-logo-1-1.webp
 wwwroot\Img\Products\doctor.jpg
 wwwroot\Img\Products\e-commerce.jpeg
+wwwroot\Img\Products\monsteri.png
 wwwroot\Img\Products\samsunglogo.avif
 wwwroot\Img\Products\slider1.png
 wwwroot\Img\Products\slider3.png
