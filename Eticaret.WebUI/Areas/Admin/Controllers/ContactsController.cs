@@ -1,4 +1,5 @@
-﻿using Eticaret.Data;
+﻿using Eticaret.Core.Entities;
+using Eticaret.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,5 +18,58 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             var contacts = await _context.Contacts.ToListAsync();
             return View(contacts);
         }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var model = await _context.Contacts.FindAsync(id);
+            if (model == null)
+            {
+                return NotFound();
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Contact contact)
+        {
+            if (id != contact.Id)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid) 
+            {
+                try
+                {
+                    _context.Update(contact);
+                    await _context.SaveChangesAsync();
+
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ContaxtExists(contact.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index");
+            }
+            return View(contact);
+        }
+
+        private bool ContaxtExists(int id) 
+        { 
+            return _context.Contacts.Any(e => e.Id == id);
+        }
+
     }
 }

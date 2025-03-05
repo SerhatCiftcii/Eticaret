@@ -21,7 +21,7 @@ namespace Eticaret.Core.Entities
 
         [Phone(ErrorMessage = "Lütfen geçerli bir telefon numarası girin.")]
         [Display(Name = "Telefon")]
-        [Required(ErrorMessage = "Telefon numaranız gereklidir.")]
+        
         public string? Phone { get; set; }
 
         [Display(Name = "Mesaj")]

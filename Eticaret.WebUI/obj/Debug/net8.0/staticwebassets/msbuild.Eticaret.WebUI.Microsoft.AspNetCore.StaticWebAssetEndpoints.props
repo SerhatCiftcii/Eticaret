@@ -231,14 +231,14 @@
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/css/Contact.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Contact.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2090"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 02:08:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IsKBzfBe2p7C76OOM6JygPtXTbZa0vaKByRZmMfIa1I="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1719"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IsKBzfBe2p7C76OOM6JygPtXTbZa0vaKByRZmMfIa1I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 02:09:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/css/Contact.w5gg7nykjy.css">
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/css/Contact.qpsai7cwae.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Contact.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w5gg7nykjy"},{"Name":"integrity","Value":"sha256-LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk="},{"Name":"label","Value":"_content/Eticaret.WebUI/css/Contact.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2090"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 02:08:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qpsai7cwae"},{"Name":"integrity","Value":"sha256-IsKBzfBe2p7C76OOM6JygPtXTbZa0vaKByRZmMfIa1I="},{"Name":"label","Value":"_content/Eticaret.WebUI/css/Contact.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1719"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022IsKBzfBe2p7C76OOM6JygPtXTbZa0vaKByRZmMfIa1I=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 02:09:59 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/css/resimindex.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\resimindex.css'))</AssetFile>
