@@ -228,6 +228,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zeHfV/0tkIwprw\u002Bc8oU1WmjuYKQO5n0MUFZIoCLZ1xU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"38311"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022zeHfV/0tkIwprw\u002Bc8oU1WmjuYKQO5n0MUFZIoCLZ1xU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Feb 2025 11:40:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/css/Contact.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Contact.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2090"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 02:08:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/css/Contact.w5gg7nykjy.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Contact.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w5gg7nykjy"},{"Name":"integrity","Value":"sha256-LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk="},{"Name":"label","Value":"_content/Eticaret.WebUI/css/Contact.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2090"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 05 Mar 2025 02:08:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Eticaret.WebUI/css/resimindex.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\resimindex.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

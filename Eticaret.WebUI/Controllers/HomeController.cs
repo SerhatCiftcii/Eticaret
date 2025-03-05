@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Eticaret.Core.Entities;
 using Eticaret.Data;
 using Eticaret.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -22,24 +23,41 @@ namespace Eticaret.WebUI.Controllers
             {
                 Sliders = await _context.Sliders.ToListAsync(),
                 News = await _context.News.ToListAsync(),
-                Products = await _context.Products.Where(x=>x.IsActive && x.IsHome).ToListAsync()
+                Products = await _context.Products.Where(x => x.IsActive && x.IsHome).ToListAsync()
             };
             return View(model);
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+
         public IActionResult ContactUs()
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost]
+        public IActionResult ContactUs(Contact contact)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Contacts.Add(contact);
+                    var sonuc = _context.SaveChanges();
+                    if(sonuc > 0)
+                    {
+                        TempData["Messega"] = @"<div class=""alert alert-success alert-dismissible fade show"" role=""alert"">
+  <strong>Mesajýnýz Ýletiþmiþtir</strong> En kýsa sürede dönüþ yapýlacaktýr.
+  <button type=""button"" class=""btn-close"" data-bs-dismiss=""alert"" aria-label=""Close""></button>
+</div>";
+                        return RedirectToAction("ContactUs");
+                    }
+                  
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("Hata oluþtu", ex.Message);
+                }
+            }
+            return View(contact);
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eD029Ef0gFF2yNTxp3LBp04nnVLKwA43d8GPK0aPX8o=",
+  "Hash": "h10KY0XySr1FLxy+3vAwJOrPu/IKi/cchL+DaN5xKVc=",
   "Source": "Eticaret.WebUI",
   "BasePath": "_content/Eticaret.WebUI",
   "Mode": "Default",
@@ -456,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\tables.html"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\Contact.css",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "css/Contact#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w5gg7nykjy",
+      "Integrity": "LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Contact.css"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\resimindex.css",
@@ -3988,6 +4009,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-zeHfV/0tkIwprw+c8oU1WmjuYKQO5n0MUFZIoCLZ1xU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Contact.css",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\Contact.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 02:08:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk="
+        }
+      ]
+    },
+    {
+      "Route": "css/Contact.w5gg7nykjy.css",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\Contact.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 05 Mar 2025 02:08:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w5gg7nykjy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Contact.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LAeEYfUTEWrERfG5ybh8Bzux6R7MCBYmZxu60w3RwBk="
         }
       ]
     },

@@ -17,6 +17,7 @@ wwwroot\admin\login.html
 wwwroot\admin\password.html
 wwwroot\admin\register.html
 wwwroot\admin\tables.html
+wwwroot\css\Contact.css
 wwwroot\css\resimindex.css
 wwwroot\css\site.css
 wwwroot\css\SolMenu.css

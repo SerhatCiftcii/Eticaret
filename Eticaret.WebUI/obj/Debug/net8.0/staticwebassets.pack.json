@@ -209,6 +209,10 @@
       "PackagePath": "staticwebassets\\admin\\tables.html"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\Contact.css",
+      "PackagePath": "staticwebassets\\css\\Contact.css"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\css\\SolMenu.css",
       "PackagePath": "staticwebassets\\css\\SolMenu.css"
     },
