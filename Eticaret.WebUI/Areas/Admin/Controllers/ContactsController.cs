@@ -52,7 +52,7 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ContaxtExists(contact.Id))
+                    if (!ContactExists(contact.Id))
                     {
                         return NotFound();
                     }
@@ -66,10 +66,55 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             return View(contact);
         }
 
-        private bool ContaxtExists(int id) 
+
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var model = await _context.Contacts.FindAsync(id);
+            if (model == null)
+            {
+                return NotFound();
+            }
+
+            return View(model);
+        }
+        [HttpPost,ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task <IActionResult> DeleteConfirmed(int id)
+        {
+            var contact = await _context.Contacts.FindAsync(id);
+            if (contact != null)
+            {
+                _context.Contacts.Remove(contact);
+            }
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        private bool ContactExists(int id) 
         { 
             return _context.Contacts.Any(e => e.Id == id);
         }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var contact = await _context.Contacts
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+
+            return View(contact);
+        }
+
 
     }
 }

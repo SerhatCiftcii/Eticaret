@@ -13,8 +13,12 @@
       "PackagePath": "staticwebassets\\Img\\Categories\\e-commerce.jpeg"
     },
     {
-      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya2.jpg",
-      "PackagePath": "staticwebassets\\Img\\Categories\\kampanya2.jpg"
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\il_794xn.6554589137_fyff.webp",
+      "PackagePath": "staticwebassets\\Img\\Categories\\il_794xn.6554589137_fyff.webp"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\patinablue2webp.webp",
+      "PackagePath": "staticwebassets\\Img\\Categories\\patinablue2webp.webp"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\samsunglogo.avif",
@@ -27,6 +31,10 @@
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\slider3.png",
       "PackagePath": "staticwebassets\\Img\\Categories\\slider3.png"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\çekiçledövülmüşbakır.jpg",
+      "PackagePath": "staticwebassets\\Img\\Categories\\çekiçledövülmüşbakır.jpg"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categoriesslider1.png",
@@ -53,6 +61,10 @@
       "PackagePath": "staticwebassets\\Img\\News\\slider1.png"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\apple2.webp",
+      "PackagePath": "staticwebassets\\Img\\Products\\apple2.webp"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\asus.jpg",
       "PackagePath": "staticwebassets\\Img\\Products\\asus.jpg"
     },
@@ -73,8 +85,28 @@
       "PackagePath": "staticwebassets\\Img\\Products\\e-commerce.jpeg"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\hayatağacı2webp.webp",
+      "PackagePath": "staticwebassets\\Img\\Products\\hayatağacı2webp.webp"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\il_794xn.6554589137_fyff.webp",
+      "PackagePath": "staticwebassets\\Img\\Products\\il_794xn.6554589137_fyff.webp"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\klasikbakır2.webp",
+      "PackagePath": "staticwebassets\\Img\\Products\\klasikbakır2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\macbook1jpeg.jpeg",
+      "PackagePath": "staticwebassets\\Img\\Products\\macbook1jpeg.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\monsteri.png",
       "PackagePath": "staticwebassets\\Img\\Products\\monsteri.png"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\patinablue2webp.webp",
+      "PackagePath": "staticwebassets\\Img\\Products\\patinablue2webp.webp"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\samsunglogo.avif",
@@ -89,6 +121,10 @@
       "PackagePath": "staticwebassets\\Img\\Products\\slider3.png"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\çekiçledövülmüşbakır.jpg",
+      "PackagePath": "staticwebassets\\Img\\Products\\çekiçledövülmüşbakır.jpg"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Slider\\slider1.png",
       "PackagePath": "staticwebassets\\Img\\Slider\\slider1.png"
     },
@@ -101,12 +137,20 @@
       "PackagePath": "staticwebassets\\Img\\Slider\\slider3.png"
     },
     {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\applelogo.jpeg",
+      "PackagePath": "staticwebassets\\Img\\applelogo.jpeg"
+    },
+    {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\asus.jpg",
       "PackagePath": "staticwebassets\\Img\\asus.jpg"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\casper-logo-1-1.webp",
       "PackagePath": "staticwebassets\\Img\\casper-logo-1-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\il_794xn.6554589137_fyff.webp",
+      "PackagePath": "staticwebassets\\Img\\il_794xn.6554589137_fyff.webp"
     },
     {
       "Id": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\kampanya1.jpeg",

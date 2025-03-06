@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l3MyikVUL4be+f+wFfFXX7onqimksIz5XcDwwv75AtE=",
+  "Hash": "ms8B+MQOytELYhAaj9f96NrU6xfvglIBMYp/xVVlYsA=",
   "Source": "Eticaret.WebUI",
   "BasePath": "_content/Eticaret.WebUI",
   "Mode": "Default",
@@ -563,6 +563,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\applelogo.jpeg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/applelogo#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wxk38k0kkm",
+      "Integrity": "xGQ9ivKGK2Bv9OeMA5vde+XKmKw/BPEucglqZ/CTnbw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\applelogo.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\asus.jpg",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
@@ -626,6 +647,27 @@
       "OriginalItemSpec": "wwwroot\\Img\\Categories\\asus.jpg"
     },
     {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\çekiçledövülmüşbakır.jpg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Categories/çekiçledövülmüşbakır#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0al2tuukhe",
+      "Integrity": "OC3yYFFTHwNuBWgMmxc1jBE4b5Ij/bq0NF4MJp/EwK0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\çekiçledövülmüşbakır.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\e-commerce.jpeg",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
@@ -647,12 +689,12 @@
       "OriginalItemSpec": "wwwroot\\Img\\Categories\\e-commerce.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya2.jpg",
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\il_794xn.6554589137_fyff.webp",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
       "BasePath": "_content/Eticaret.WebUI",
-      "RelativePath": "Img/Categories/kampanya2#[.{fingerprint}]?.jpg",
+      "RelativePath": "Img/Categories/il_794xn.6554589137_fyff#[.{fingerprint}]?.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -661,11 +703,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "g6dgs2nms2",
-      "Integrity": "uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=",
+      "Fingerprint": "qsbtlcxb0r",
+      "Integrity": "+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Img\\Categories\\kampanya2.jpg"
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\il_794xn.6554589137_fyff.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\patinablue2webp.webp",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Categories/patinablue2webp#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "clxil0m9o0",
+      "Integrity": "cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Categories\\patinablue2webp.webp"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\samsunglogo.avif",
@@ -750,6 +813,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\Categoriesslider1.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\il_794xn.6554589137_fyff.webp",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/il_794xn.6554589137_fyff#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qsbtlcxb0r",
+      "Integrity": "+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\il_794xn.6554589137_fyff.webp"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\kampanya1.jpeg",
@@ -899,6 +983,27 @@
       "OriginalItemSpec": "wwwroot\\Img\\News\\slider1.png"
     },
     {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\apple2.webp",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/apple2#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7lt0c2gxnr",
+      "Integrity": "NVbsD9Vy7JaRyFfdR5DhEASvArxjuGd2pcXpxX/vRGc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\apple2.webp"
+    },
+    {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\asus.jpg",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
@@ -962,6 +1067,27 @@
       "OriginalItemSpec": "wwwroot\\Img\\Products\\casper-logo-1-1.webp"
     },
     {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\çekiçledövülmüşbakır.jpg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/çekiçledövülmüşbakır#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zv33leqegx",
+      "Integrity": "b4Mkb4B7oxgGKQUt6J5lSGJlFxKLnji3VL8CSBktlPQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\çekiçledövülmüşbakır.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\doctor.jpg",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
@@ -1004,6 +1130,90 @@
       "OriginalItemSpec": "wwwroot\\Img\\Products\\e-commerce.jpeg"
     },
     {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\hayatağacı2webp.webp",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/hayatağacı2webp#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fiml80nzrf",
+      "Integrity": "N52gR4OVwNhRlZt3W/rkfaUM4mV8HV9L/nYXj43dhhE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\hayatağacı2webp.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\il_794xn.6554589137_fyff.webp",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/il_794xn.6554589137_fyff#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qsbtlcxb0r",
+      "Integrity": "+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\il_794xn.6554589137_fyff.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\klasikbakır2.webp",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/klasikbakır2#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "140c1pg2ny",
+      "Integrity": "b0+Xn/H+ycT/kIS83rBxXUc4Yzwp0M3HEKGMMr3n9m0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\klasikbakır2.webp"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\macbook1jpeg.jpeg",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/macbook1jpeg#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ul8gb5cyb5",
+      "Integrity": "bhFduHusVYOv7DEf5W7cL5RGxp/7vSiG2KZyWovF0mU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\macbook1jpeg.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\monsteri.png",
       "SourceId": "Eticaret.WebUI",
       "SourceType": "Discovered",
@@ -1023,6 +1233,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\Products\\monsteri.png"
+    },
+    {
+      "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\patinablue2webp.webp",
+      "SourceId": "Eticaret.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\",
+      "BasePath": "_content/Eticaret.WebUI",
+      "RelativePath": "Img/Products/patinablue2webp#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "clxil0m9o0",
+      "Integrity": "cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Products\\patinablue2webp.webp"
     },
     {
       "Identity": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\samsunglogo.avif",
@@ -4587,6 +4818,88 @@
       ]
     },
     {
+      "Route": "Img/applelogo.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\applelogo.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xGQ9ivKGK2Bv9OeMA5vde+XKmKw/BPEucglqZ/CTnbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:50:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xGQ9ivKGK2Bv9OeMA5vde+XKmKw/BPEucglqZ/CTnbw="
+        }
+      ]
+    },
+    {
+      "Route": "Img/applelogo.wxk38k0kkm.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\applelogo.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3929"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xGQ9ivKGK2Bv9OeMA5vde+XKmKw/BPEucglqZ/CTnbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:50:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wxk38k0kkm"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/applelogo.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xGQ9ivKGK2Bv9OeMA5vde+XKmKw/BPEucglqZ/CTnbw="
+        }
+      ]
+    },
+    {
       "Route": "Img/asus.dhfub9rp4z.jpg",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\asus.jpg",
       "Selectors": [],
@@ -4833,6 +5146,88 @@
       ]
     },
     {
+      "Route": "Img/Categories/çekiçledövülmüşbakır.0al2tuukhe.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\çekiçledövülmüşbakır.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72285"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OC3yYFFTHwNuBWgMmxc1jBE4b5Ij/bq0NF4MJp/EwK0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:28:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0al2tuukhe"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Categories/çekiçledövülmüşbakır.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OC3yYFFTHwNuBWgMmxc1jBE4b5Ij/bq0NF4MJp/EwK0="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/çekiçledövülmüşbakır.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\çekiçledövülmüşbakır.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72285"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OC3yYFFTHwNuBWgMmxc1jBE4b5Ij/bq0NF4MJp/EwK0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:28:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OC3yYFFTHwNuBWgMmxc1jBE4b5Ij/bq0NF4MJp/EwK0="
+        }
+      ]
+    },
+    {
       "Route": "Img/Categories/e-commerce.jpeg",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\e-commerce.jpeg",
       "Selectors": [],
@@ -4915,8 +5310,8 @@
       ]
     },
     {
-      "Route": "Img/Categories/kampanya2.g6dgs2nms2.jpg",
-      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya2.jpg",
+      "Route": "Img/Categories/il_794xn.6554589137_fyff.qsbtlcxb0r.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\il_794xn.6554589137_fyff.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4925,19 +5320,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "400460"
+          "Value": "64440"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
-          "Value": "\"uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=\""
+          "Value": "\"+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 14:28:18 GMT"
+          "Value": "Thu, 06 Mar 2025 20:30:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4947,21 +5342,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "g6dgs2nms2"
+          "Value": "qsbtlcxb0r"
         },
         {
           "Name": "label",
-          "Value": "Img/Categories/kampanya2.jpg"
+          "Value": "Img/Categories/il_794xn.6554589137_fyff.webp"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o="
+          "Value": "sha256-+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc="
         }
       ]
     },
     {
-      "Route": "Img/Categories/kampanya2.jpg",
-      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\kampanya2.jpg",
+      "Route": "Img/Categories/il_794xn.6554589137_fyff.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\il_794xn.6554589137_fyff.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4970,19 +5365,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "400460"
+          "Value": "64440"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/jpeg"
+          "Value": "image/webp"
         },
         {
           "Name": "ETag",
-          "Value": "\"uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o=\""
+          "Value": "\"+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 01 Mar 2025 14:28:18 GMT"
+          "Value": "Thu, 06 Mar 2025 20:30:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4992,7 +5387,89 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uHrWp3zj6l9ZosieDmI+lJeoWFhfVH+LVy4G1J3Bv7o="
+          "Value": "sha256-+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/patinablue2webp.clxil0m9o0.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\patinablue2webp.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:32:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "clxil0m9o0"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Categories/patinablue2webp.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Categories/patinablue2webp.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Categories\\patinablue2webp.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:32:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik="
         }
       ]
     },
@@ -5321,6 +5798,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-jaUQaZxwiDNsg53MR1ydA7Kms9mgWic4F8Y4Tlhau2U="
+        }
+      ]
+    },
+    {
+      "Route": "Img/il_794xn.6554589137_fyff.qsbtlcxb0r.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\il_794xn.6554589137_fyff.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qsbtlcxb0r"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/il_794xn.6554589137_fyff.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/il_794xn.6554589137_fyff.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\il_794xn.6554589137_fyff.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:24:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc="
         }
       ]
     },
@@ -5899,6 +6458,88 @@
       ]
     },
     {
+      "Route": "Img/Products/apple2.7lt0c2gxnr.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\apple2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5056"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NVbsD9Vy7JaRyFfdR5DhEASvArxjuGd2pcXpxX/vRGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:53:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7lt0c2gxnr"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/apple2.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NVbsD9Vy7JaRyFfdR5DhEASvArxjuGd2pcXpxX/vRGc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/apple2.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\apple2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5056"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NVbsD9Vy7JaRyFfdR5DhEASvArxjuGd2pcXpxX/vRGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:53:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NVbsD9Vy7JaRyFfdR5DhEASvArxjuGd2pcXpxX/vRGc="
+        }
+      ]
+    },
+    {
       "Route": "Img/Products/asus.dhfub9rp4z.jpg",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\asus.jpg",
       "Selectors": [],
@@ -6145,6 +6786,88 @@
       ]
     },
     {
+      "Route": "Img/Products/çekiçledövülmüşbakır.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\çekiçledövülmüşbakır.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b4Mkb4B7oxgGKQUt6J5lSGJlFxKLnji3VL8CSBktlPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:34:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b4Mkb4B7oxgGKQUt6J5lSGJlFxKLnji3VL8CSBktlPQ="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/çekiçledövülmüşbakır.zv33leqegx.jpg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\çekiçledövülmüşbakır.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59933"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b4Mkb4B7oxgGKQUt6J5lSGJlFxKLnji3VL8CSBktlPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:34:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zv33leqegx"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/çekiçledövülmüşbakır.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b4Mkb4B7oxgGKQUt6J5lSGJlFxKLnji3VL8CSBktlPQ="
+        }
+      ]
+    },
+    {
       "Route": "Img/Products/doctor.h7anfwyx7d.jpg",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\doctor.jpg",
       "Selectors": [],
@@ -6309,6 +7032,334 @@
       ]
     },
     {
+      "Route": "Img/Products/hayatağacı2webp.fiml80nzrf.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\hayatağacı2webp.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N52gR4OVwNhRlZt3W/rkfaUM4mV8HV9L/nYXj43dhhE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:37:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fiml80nzrf"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/hayatağacı2webp.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N52gR4OVwNhRlZt3W/rkfaUM4mV8HV9L/nYXj43dhhE="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/hayatağacı2webp.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\hayatağacı2webp.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N52gR4OVwNhRlZt3W/rkfaUM4mV8HV9L/nYXj43dhhE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:37:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N52gR4OVwNhRlZt3W/rkfaUM4mV8HV9L/nYXj43dhhE="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/il_794xn.6554589137_fyff.qsbtlcxb0r.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\il_794xn.6554589137_fyff.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:35:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qsbtlcxb0r"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/il_794xn.6554589137_fyff.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/il_794xn.6554589137_fyff.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\il_794xn.6554589137_fyff.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64440"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:35:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+pUYRbC0xREy+GWZ6iUnnWJeF7Am1hTTqrqueEfLqpc="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/klasikbakır2.140c1pg2ny.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\klasikbakır2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b0+Xn/H+ycT/kIS83rBxXUc4Yzwp0M3HEKGMMr3n9m0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:40:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "140c1pg2ny"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/klasikbakır2.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-b0+Xn/H+ycT/kIS83rBxXUc4Yzwp0M3HEKGMMr3n9m0="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/klasikbakır2.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\klasikbakır2.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "71944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"b0+Xn/H+ycT/kIS83rBxXUc4Yzwp0M3HEKGMMr3n9m0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:40:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-b0+Xn/H+ycT/kIS83rBxXUc4Yzwp0M3HEKGMMr3n9m0="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/macbook1jpeg.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\macbook1jpeg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bhFduHusVYOv7DEf5W7cL5RGxp/7vSiG2KZyWovF0mU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:51:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bhFduHusVYOv7DEf5W7cL5RGxp/7vSiG2KZyWovF0mU="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/macbook1jpeg.ul8gb5cyb5.jpeg",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\macbook1jpeg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bhFduHusVYOv7DEf5W7cL5RGxp/7vSiG2KZyWovF0mU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:51:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ul8gb5cyb5"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/macbook1jpeg.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bhFduHusVYOv7DEf5W7cL5RGxp/7vSiG2KZyWovF0mU="
+        }
+      ]
+    },
+    {
       "Route": "Img/Products/monsteri.png",
       "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\monsteri.png",
       "Selectors": [],
@@ -6387,6 +7438,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Htvmounm3qbCNP8lJ9P+9qff48KVipAB8awtiUbg0fI="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/patinablue2webp.clxil0m9o0.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\patinablue2webp.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:38:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "clxil0m9o0"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Products/patinablue2webp.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Products/patinablue2webp.webp",
+      "AssetFile": "C:\\Users\\Serhatt\\source\\repos\\Eticaret\\Eticaret.WebUI\\wwwroot\\Img\\Products\\patinablue2webp.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:38:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cLCEI6YqDoGq6omQM/Lmd/AY/mvf17aCLW7BhCav6ik="
         }
       ]
     },
