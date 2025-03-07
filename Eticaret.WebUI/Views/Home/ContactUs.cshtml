@@ -1,8 +1,6 @@
-﻿@model Eticaret.Core.Entities.Contact
+﻿@model Contact
 
-@{
-    ViewData["Title"] = "İletişim";
-}
+
 <link href="~/css/contact.css" rel="stylesheet" />
 <h3 class="text-center gradient-brand-color ">İletişim</h3>
 <hr />
@@ -52,27 +50,16 @@
     </div>
 
     <!-- Sağ tarafta harita -->
-   <div class="col-md-6 d-flex flex-column ">
-    <div class="p-4 bg-light rounded shadow-lg">
-        <h3 class="text-center mb-4 gradient-brand-color" style="font-size: 2rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; background: linear-gradient(135deg, #ff7e5f, #feb47b); color: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-            Bize Ulaşın
-        </h3>
-        <p class="text-muted text-center">
-            📍 Ofis Adresi: Kayseri Organize Sanayi, 123. Cadde No:45, Kayseri / Türkiye
-        </p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.6180170857933!2d35.36986818953676!3d38.72657808396391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152b05a45ac0b537%3A0xedd3ed6cadb95ba3!2zS2F5c2VyaSBPcmdhbml6ZSBTYW5heWkgQsO2bGdlc2kgTcO8ZMO8cmzDvMSfw7w!5e0!3m2!1str!2str!4v1741137473039!5m2!1str!2str"
-                width="100%"
-                height="500"
-                style="border:0; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+    <div class="col-md-6 d-flex flex-column ">
+        <div class="p-4 bg-light rounded shadow-lg">
+            <h3 class="text-center mb-4 gradient-brand-color" style="font-size: 2rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; background: linear-gradient(135deg, #ff7e5f, #feb47b); color: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                Bize Ulaşın
+            </h3>
+            <p class="text-muted text-center">
+                📍 Ofis Adresi: Kayseri Organize Sanayi, 123. Cadde No:45, Kayseri / Türkiye
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99603.78224002184!2d35.222303797265646!3d38.726574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152b05a45ac0b537%3A0xedd3ed6cadb95ba3!2zS2F5c2VyaSBPcmdhbml6ZSBTYW5heWkgQsO2bGdlc2kgTcO8ZMO8cmzDvMSfw7w!5e0!3m2!1str!2sus!4v1741360698842!5m2!1str!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
 </div>
-</div>
 
-
-
-
-<!-- Bu yapıyla form solda, harita sağda olacak. Dilersen padding ve margin ayarlarıyla daha fazla ince ayar yapabiliriz. -->

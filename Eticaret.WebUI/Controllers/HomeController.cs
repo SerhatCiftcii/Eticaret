@@ -2,19 +2,20 @@ using System.Diagnostics;
 using Eticaret.Core.Entities;
 using Eticaret.Data;
 using Eticaret.WebUI.Models;
+using Eticaret.WebUI.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 namespace Eticaret.WebUI.Controllers
 {
     public class HomeController : Controller
     {
         //slider için databse context ve indexe model eklendi  categories de component kullandýðýmýz için database çekmemize gerek kalmamýþtý
         private readonly DatabaseContext _context;
-
-        public HomeController(DatabaseContext context)
+        private readonly IEmailService _emailService;
+        public HomeController(DatabaseContext context,IEmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
         public async Task<IActionResult> Index()
@@ -33,31 +34,41 @@ namespace Eticaret.WebUI.Controllers
         {
             return View();
         }
+        [AutoValidateAntiforgeryToken]
         [HttpPost]
-        public IActionResult ContactUs(Contact contact)
+        public async Task<IActionResult> ContactUs(Contact contact)
         {
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Contacts.Add(contact);
-                    var sonuc = _context.SaveChanges();
-                    if(sonuc > 0)
-                    {
-                        TempData["Messega"] = @"<div class=""alert alert-success alert-dismissible fade show"" role=""alert"">
-  <strong>Mesajýnýz Ýletiþmiþtir</strong> En kýsa sürede dönüþ yapýlacaktýr.
-  <button type=""button"" class=""btn-close"" data-bs-dismiss=""alert"" aria-label=""Close""></button>
-</div>";
-                        return RedirectToAction("ContactUs");
-                    }
-                  
+                    // Admin'e e-posta gönderme
+                    string adminSubject = "Siteden mesaj geldi";
+                    string adminBody = $"Ýsim: {contact.Name} - Soyisim: {contact.Surname} - Email: {contact.Email} - Telefon: {contact.Phone} - Mesaj: {contact.Message}";
+                    await _emailService.SendEmailAsync("s.ciftci561@gmail.com", adminSubject, adminBody);  // Admin maili
+
+                    // Kullanýcýya e-posta gönderme
+                    string userSubject = "Mesajýnýz baþarýyla alýndý";
+                    string userBody = $"Merhaba {contact.Name},\n\nMesajýnýz baþarýyla alýndý. En kýsa sürede size geri dönüþ yapacaðýz.\n\nMesajýnýz:\n{contact.Message}";
+                    await _emailService.SendEmailAsync(contact.Email, userSubject, userBody);  // Kullanýcý maili
+
+                    // ViewData ile baþarý mesajý gönderme
+                    ViewData["Message"] = @"<div class=""alert alert-success alert-dismissible fade show"" role=""alert"">
+                                    <strong>Mesajýnýz baþarýyla iletilmiþtir!</strong>
+                                    <button type=""button"" class=""btn-close"" data-bs-dismiss=""alert"" aria-label=""Close""></button>
+                                </div>";
                 }
                 catch (Exception ex)
                 {
-                    ModelState.AddModelError("Hata oluþtu", ex.Message);
+                    // Hata mesajý
+                    ViewData["Message"] = @"<div class=""alert alert-danger alert-dismissible fade show"" role=""alert"">
+                                    <strong>Mesaj gönderme sýrasýnda bir hata oluþtu!</strong>
+                                    <button type=""button"" class=""btn-close"" data-bs-dismiss=""alert"" aria-label=""Close""></button>
+                                </div>";
                 }
             }
-            return View(contact);
+
+            return View(contact); // Ayný sayfada kalýnýr
         }
     }
 }
