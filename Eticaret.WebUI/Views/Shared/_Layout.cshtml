@@ -12,7 +12,7 @@
 <body>
    <partial name="_Header"/>
     <div class="container">
-        @Html.Raw(ViewData["Message"])
+        @Html.Raw(TempData["Message"])
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

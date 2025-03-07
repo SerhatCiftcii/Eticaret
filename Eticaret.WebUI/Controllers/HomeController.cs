@@ -12,7 +12,7 @@ namespace Eticaret.WebUI.Controllers
         //slider için databse context ve indexe model eklendi  categories de component kullandýðýmýz için database çekmemize gerek kalmamýþtý
         private readonly DatabaseContext _context;
         private readonly IEmailService _emailService;
-        public HomeController(DatabaseContext context,IEmailService emailService)
+        public HomeController(DatabaseContext context, IEmailService emailService)
         {
             _context = context;
             _emailService = emailService;
@@ -42,33 +42,66 @@ namespace Eticaret.WebUI.Controllers
             {
                 try
                 {
-                    // Admin'e e-posta gönderme
-                    string adminSubject = "Siteden mesaj geldi";
-                    string adminBody = $"Ýsim: {contact.Name} - Soyisim: {contact.Surname} - Email: {contact.Email} - Telefon: {contact.Phone} - Mesaj: {contact.Message}";
-                    await _emailService.SendEmailAsync("s.ciftci561@gmail.com", adminSubject, adminBody);  // Admin maili
+                    // Veritabanýna ekleme
+                    await _context.Contacts.AddAsync(contact);
+                    var sonuc = await _context.SaveChangesAsync();
 
-                    // Kullanýcýya e-posta gönderme
-                    string userSubject = "Mesajýnýz baþarýyla alýndý";
-                    string userBody = $"Merhaba {contact.Name},\n\nMesajýnýz baþarýyla alýndý. En kýsa sürede size geri dönüþ yapacaðýz.\n\nMesajýnýz:\n{contact.Message}";
-                    await _emailService.SendEmailAsync(contact.Email, userSubject, userBody);  // Kullanýcý maili
+                    if (sonuc > 0)
+                    {
+                        // Admin'e e-posta gönderme
+                        string adminSubject = "Eticaret Sitesinden Yeni Mesaj Geldi";
+                        string adminBody = $@"
+                    <h2>Yeni Ýletiþim Mesajý</h2>
+                    <table style='width: 100%; border-collapse: collapse;'>
+                        <tr><th>Alan</th><th>Detay</th></tr>
+                        <tr><td>Ýsim</td><td>{contact.Name}</td></tr>
+                        <tr><td>Soyisim</td><td>{contact.Surname}</td></tr>
+                        <tr><td>Email</td><td>{contact.Email}</td></tr>
+                        <tr><td>Telefon</td><td>{contact.Phone}</td></tr>
+                        <tr><td>Mesaj</td><td>{contact.Message}</td></tr>
+                    </table>
+                    <p style='color: #888;'>Bu mesaj e-ticaret siteniz üzerinden gönderilmiþtir.</p>
+                ";
+                        await _emailService.SendEmailAsync("s.ciftci561@gmail.com", adminSubject, adminBody);
 
-                    // ViewData ile baþarý mesajý gönderme
-                    ViewData["Message"] = @"<div class=""alert alert-success alert-dismissible fade show"" role=""alert"">
-                                    <strong>Mesajýnýz baþarýyla iletilmiþtir!</strong>
-                                    <button type=""button"" class=""btn-close"" data-bs-dismiss=""alert"" aria-label=""Close""></button>
-                                </div>";
+                        // Kullanýcýya e-posta gönderme
+                        string userSubject = "Mesajýnýz Baþarýyla Alýndý - E-Ticaret Sitesi";
+                        string userBody = $@"
+                    <div style='font-family: Arial, sans-serif;'>
+                        <h3>Merhaba {contact.Name},</h3>
+                        <p>Mesajýnýzý aldýk! En kýsa sürede sizinle iletiþime geçeceðiz.</p>
+                        <h4>Gönderdiðiniz Mesaj:</h4>
+                        <blockquote style='border-left: 4px solid #007bff; padding-left: 10px;'>{contact.Message}</blockquote>
+                        <p>Teþekkür ederiz!</p>
+                    </div>
+                ";
+                        await _emailService.SendEmailAsync(contact.Email, userSubject, userBody);
+
+                        // Baþarý mesajý
+                        TempData["Message"] = @"<div class='alert alert-success alert-dismissible fade show' role='alert'>
+                                        <strong>Mesajýnýz baþarýyla kaydedildi ve iletildi!</strong>
+                                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                                    </div>";
+                    }
+                    else
+                    {
+                        TempData["Message"] = @"<div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                                        <strong>Mesaj veritabanýna kaydedilemedi!</strong> Lütfen tekrar deneyin.
+                                        <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+                                    </div>";
+                    }
                 }
                 catch (Exception ex)
                 {
-                    // Hata mesajý
-                    ViewData["Message"] = @"<div class=""alert alert-danger alert-dismissible fade show"" role=""alert"">
+                    TempData["Message"] = @"<div class='alert alert-danger alert-dismissible fade show' role='alert'>
                                     <strong>Mesaj gönderme sýrasýnda bir hata oluþtu!</strong>
-                                    <button type=""button"" class=""btn-close"" data-bs-dismiss=""alert"" aria-label=""Close""></button>
+                                    <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
                                 </div>";
                 }
             }
 
-            return View(contact); // Ayný sayfada kalýnýr
+            return View(contact);
         }
     }
 }
+    
