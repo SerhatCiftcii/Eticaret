@@ -36,7 +36,7 @@
 <main class="form-signin w-100 m-auto shadow rounded my-5">
     <form asp-action="SignIn" method="post">
         <h1 class="h3 mb-3 fw-normal">Üye Girişi</h1>
-
+        <div asp-validation-summary="All" class="text-danger"></div>
         <div class="form-floating">
             <input asp-for="Email" class="form-control" id="floatingInput" placeholder="name@example.com" />
             <label for="floatingInput">Email adresi</label>
@@ -58,6 +58,6 @@
 
         <input type="hidden" asp-for="ReturnUrl" value="@Context.Request.Query["ReturnUrl"]" />
         <button class="btn btn-primary w-100 py-2" type="submit">Giriş Yap</button>
-        <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
+       
     </form>
 </main>

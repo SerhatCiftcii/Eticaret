@@ -11,6 +11,8 @@ namespace Eticaret.Core.Entities
         public string Name { get; set; }
         [Display(Name = "Soyadı")]
         public string Surname { get; set; }
+        [DataType(DataType.EmailAddress), Required(ErrorMessage = "Email boş geçilemez")]
+        [Display(Name = "E-Posta")]
         public string Email { get; set; }
         [Display(Name = "Telefon")]
         public string? Phone { get; set; }

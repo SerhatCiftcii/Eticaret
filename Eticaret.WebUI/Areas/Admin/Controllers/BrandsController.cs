@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Eticaret.WebUI.Areas.Admin.Controllers
 {
-    [Area("Admin"), Authorize]
+    [Area("Admin"), Authorize(Policy = "AdminPolicy")]
     public class BrandsController : Controller
     {
         private readonly DatabaseContext _context;

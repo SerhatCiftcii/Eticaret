@@ -41,8 +41,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label asp-for="Phone" class="control-label"></label>
-                            <input asp-for="Phone" class="form-control" />
+                            <label asp-for="Phone" class="control-label fw-bold">Telefon Numaranız</label>
+                            <input asp-for="Phone" class="form-control" placeholder="05xx-xxx-xxxx"
+                                   pattern="^0\d{10}$" title="Telefon numarası başında 0 ile başlamalı ve 11 hane olmalıdır." />
                             <span asp-validation-for="Phone" class="text-danger"></span>
                         </div>
 

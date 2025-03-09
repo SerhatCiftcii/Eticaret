@@ -49,7 +49,7 @@ namespace Eticaret.WebUI.Controllers
                     if (account == null)
                     {
                         // Eğer kullanıcı bulunamazsa hata mesajı ekliyoruz
-                        ModelState.AddModelError("", "Giriş Başarısız!");
+                        ModelState.AddModelError("", "Şifre veya Email hatalı");
                     }
                     else
                     {
@@ -95,7 +95,7 @@ namespace Eticaret.WebUI.Controllers
 
         // Kayıt işlemi (POST)
         [HttpPost]
-        public async Task<IActionResult> SignUp(AppUser appUser)
+        public async Task<IActionResult> SignUpAsync(AppUser appUser)
         {
             appUser.IsAdmin = false;
 
@@ -158,6 +158,13 @@ namespace Eticaret.WebUI.Controllers
             TempData["SuccessMessage"] = "Hesabınız başarıyla doğrulandı!";
 
             // Giriş sayfasına yönlendiriyoruz
+            return RedirectToAction("SignIn");
+        }
+        public  async Task<IActionResult> SignOutAsync()
+        {
+            // Kullanıcıyı oturumdan çıkartıyoruz
+            await HttpContext.SignOutAsync();
+            // Anasayfaya yönlendiriyoruz
             return RedirectToAction("SignIn");
         }
     }

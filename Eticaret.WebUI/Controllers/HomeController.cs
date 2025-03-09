@@ -102,6 +102,15 @@ namespace Eticaret.WebUI.Controllers
 
             return View(contact);
         }
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+        [Route("AccessDenied")]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }
     
