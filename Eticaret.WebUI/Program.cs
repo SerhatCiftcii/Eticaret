@@ -1,6 +1,9 @@
 using Eticaret.Core.Entities;
 using Eticaret.Data;
 using Eticaret.Service;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Options;
+using System.Security.Claims;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,10 +12,31 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IEmailService,EmailService>();
 
+// Session yapýlandýrmasý
+builder.Services.AddDistributedMemoryCache(); // Cache kullanmak için
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Session süresi (opsiyonel)
+    options.Cookie.IsEssential = true; // Session çerezi için gerekli ayar (opsiyonel)
+});
+
 
 //database tanýt
 builder.Services.AddDbContext<DatabaseContext>();
-
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(x=>
+    {
+        x.LoginPath = "/Account/SignIn";
+        x.AccessDeniedPath = "/AccessDenied"; //yetkisiz eriþim
+        x.Cookie.Name = "Account";
+        x.Cookie.MaxAge = TimeSpan.FromDays(7);
+        x.Cookie.IsEssential = true; //kalýcý cokkie
+    });
+builder.Services.AddAuthorization(x =>
+{
+    x.AddPolicy("AdminPolicy", policy => policy.RequireClaim(ClaimTypes.Role, "Admin"));
+    x.AddPolicy("UserPolicy", policy => policy.RequireClaim(ClaimTypes.Role, "Admin","User","Customer"));
+});
 var app = builder.Build();
 
 
@@ -25,12 +49,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 app.UseHttpsRedirection();
-
+app.UseSession();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseAuthorization();
+app.UseAuthentication();// Autuhorization dan önce gelmeli önce outurm açma
+app.UseAuthorization();//sonra yetkilendirme yapýlmalý
 
 app.MapControllerRoute(
   name: "admin",

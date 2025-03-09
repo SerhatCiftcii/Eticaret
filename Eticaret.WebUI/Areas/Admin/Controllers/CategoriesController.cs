@@ -3,11 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Eticaret.Core.Entities;
 using Eticaret.Data;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Eticaret.WebUI.Utils;//SelectList
+using Eticaret.WebUI.Utils;
+using Microsoft.AspNetCore.Authorization;//SelectList
 
 namespace Eticaret.WebUI.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"), Authorize]
     public class CategoriesController : Controller
     {
         private readonly DatabaseContext _context;

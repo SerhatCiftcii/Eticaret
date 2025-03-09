@@ -1,5 +1,6 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Eticaret.Core.Entities
 {
@@ -13,8 +14,22 @@ namespace Eticaret.Core.Entities
         public string Email { get; set; }
         [Display(Name = "Telefon")]
         public string? Phone { get; set; }
+
         [Display(Name = "Şifre")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
+
+        [NotMapped]//veri tabanına yansımaz
+        [Display(Name = "Şifre Tekrar")]
+        [DataType(DataType.Password)]
+        [Compare("Password", ErrorMessage = "Şifreler eşleşmiyor.")]
+        public string PasswordConfirm { get; set; }
+
+        
+        [Display(Name = "Doğrulama Kodu")]
+        public string? VerificationCode { get; set; }
+
+
         [Display(Name = "Kullanıcı Adı")]
         public string? UserName { get; set; }
         [Display(Name = "Aktif mi?")]

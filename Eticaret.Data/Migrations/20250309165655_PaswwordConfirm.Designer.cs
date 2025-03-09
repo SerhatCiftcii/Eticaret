@@ -4,6 +4,7 @@ using Eticaret.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Eticaret.Data.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20250309165655_PaswwordConfirm")]
+    partial class PaswwordConfirm
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,10 +73,6 @@ namespace Eticaret.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.Property<string>("VerificationCode")
-                        .HasMaxLength(6)
-                        .HasColumnType("varchar(6)");
-
                     b.HasKey("Id");
 
                     b.ToTable("AppUsers");
@@ -82,14 +81,14 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2025, 3, 9, 21, 25, 57, 6, DateTimeKind.Local).AddTicks(2299),
+                            CreateDate = new DateTime(2025, 3, 9, 19, 56, 55, 125, DateTimeKind.Local).AddTicks(3323),
                             Email = "admin@serhat.com",
                             IsActive = true,
                             IsAdmin = true,
                             Name = "Test",
                             Password = "12345Aa",
                             Surname = "Test",
-                            UserGuid = new Guid("f301da6b-13a2-43bc-9f95-7cbf23fa7c44"),
+                            UserGuid = new Guid("f4855330-aa2a-45c2-a37f-4b60a1953c68"),
                             UserName = "Admin"
                         });
                 });
@@ -171,7 +170,7 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2025, 3, 9, 21, 25, 57, 6, DateTimeKind.Local).AddTicks(4452),
+                            CreateDate = new DateTime(2025, 3, 9, 19, 56, 55, 125, DateTimeKind.Local).AddTicks(5847),
                             IsActive = true,
                             IsTopMenu = true,
                             Name = "Elektronik",
@@ -181,7 +180,7 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2025, 3, 9, 21, 25, 57, 6, DateTimeKind.Local).AddTicks(4469),
+                            CreateDate = new DateTime(2025, 3, 9, 19, 56, 55, 125, DateTimeKind.Local).AddTicks(5854),
                             IsActive = true,
                             IsTopMenu = true,
                             Name = "BiLgisayar",
