@@ -25,7 +25,7 @@ namespace Eticaret.Core.Entities
         [Display(Name = "Şifre Tekrar")]
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Şifreler eşleşmiyor.")]
-        public string PasswordConfirm { get; set; }
+        public string? PasswordConfirm { get; set; }
 
         
         [Display(Name = "Doğrulama Kodu")]

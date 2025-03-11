@@ -1,30 +1,39 @@
 ﻿@model Product
-<div class="col mb-5">
-    <div class="card h-100">
-        <!-- Sale badge-->
-        <!-- Product image-->
-        <div class="">
-        <a href="/Products/Details/@Model.Id">
-            <img class="card-img-top" src="/Img/Products/@Model.Image" alt="@Model.Name">
-        </a>
+<div class="col mb-4">
+    <div class="card h-100 shadow-sm product-card position-relative" style="border-radius: 8px; transition: all 0.3s ease;">
+        <!-- Favori ikonu -->
+        <div class="position-absolute" style="top: 8px; right: 8px; z-index: 100;">
+            <form asp-action="Add" asp-controller="Favorites">
+                <input type="hidden" name="ProductId" value="@Model.Id" />
+                <button class="btn p-0" type="submit" style="background-color: white; width: 32px; height: 32px; border-radius: 50%; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; border: none;">
+                    <i class="bi-heart" style="color: #f01c41; font-size: 16px;"></i>
+                </button>
+            </form>
         </div>
-       
-        <!-- Product details-->
-        <div class="card-body p-4">
-            <div class="text-center">
-                <!-- Product name-->
-                <h5 class="fw-bolder">@Model.Name</h5>
-                <!-- Product price--> 
-                @Model.Price.ToString("c")
-            </div>
+
+        
+        <div style="height: 200px; padding: 16px; background-color: #fff; display: flex; align-items: center; justify-content: center;">
+            <a href="/Products/Details/@Model.Id" style="display: flex; width: 100%; height: 100%; align-items: center; justify-content: center;">
+                <img src="/Img/Products/@Model.Image" alt="@Model.Name"
+                     style="max-width: 100%; max-height: 100%; object-fit: contain;">
+            </a>
         </div>
-        <!-- Product actions-->
-        <div class="card-footer p-4 pt-2 border-top-0 bg-transparent">
-            <div class="d-flex justify-content-center gap-3">
-                <a class="btn btn-outline-dark mt-auto" href="#">Sepete Ekle</a>
-                <a class="btn btn-outline-dark mt-auto" href="/Products/Details/@Model.Id">Ürün Detay</a>
+
+        <!-- Ürün detayları -->
+        <div class="card-body p-3">
+            <!-- Ürün adı - 2 satırla sınırlı -->
+            <h6 class="card-title mb-2" style="font-size: 14px; font-weight: 500; height: 40px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color: #484848;">@Model.Name</h6>
+
+            <!-- Ürün fiyatı -->
+            <div class="d-flex align-items-baseline mb-2">
+                <span style="font-size: 18px; font-weight: 700; color: #000;">@Model.Price.ToString("c")</span>
             </div>
 
+            <!-- Sepete ekle butonu -->
+            <div class="mt-auto">
+                <a class="btn w-100 mb-2" href="#" style="background-color: #ff6000; color: white; border: none; padding: 8px; font-size: 14px; border-radius: 6px; font-weight: 600;">Sepete Ekle</a>
+                <a class="btn btn-outline-secondary w-100" href="/Products/Details/@Model.Id" style="font-size: 14px; border-radius: 6px; padding: 8px; font-weight: 500;">Ürün Detay</a>
+            </div>
         </div>
     </div>
 </div>

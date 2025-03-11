@@ -6,7 +6,7 @@
 <partial name="_Slider" model="Model.Sliders" />
 
 <div class="my-3">
-    <h1 class="text-center">Sana Özel Ürünlerimiz</h1>
+    <h1 class="text-center fw-bold mb-3" style="color: #ff6000;">Sana Özel Ürünlerimiz</h1>
     <div class="row row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
         @foreach (var item in Model.Products)
         {
@@ -17,7 +17,7 @@
 
 
 <div class="col">
-    <h1 class="text-center">Kampanyalarımız</h1>
+    <h1 class="text-center fw-bold mb-3" style="color: #ff6000;">Kampanyalarımız</h1>
     <div class="row gx-3  justify-content-center">
         @if (Model.News != null && Model.News.Any())
         {

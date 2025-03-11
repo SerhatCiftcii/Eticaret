@@ -16,8 +16,11 @@ builder.Services.AddScoped<IEmailService,EmailService>();
 builder.Services.AddDistributedMemoryCache(); // Cache kullanmak için
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Session süresi (opsiyonel)
+    options.Cookie.Name = "Eticaret.Session"; // Session çerezi adý
+    options.Cookie.HttpOnly = true; // Tarayýcý tarafýndan eriþilebilirlik
+    options.IdleTimeout = TimeSpan.FromDays(1); // Session süresi (opsiyonel)
     options.Cookie.IsEssential = true; // Session çerezi için gerekli ayar (opsiyonel)
+    options.IOTimeout= TimeSpan.FromMinutes(10);
 });
 
 
@@ -49,10 +52,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 app.UseHttpsRedirection();
-app.UseSession();
 app.UseStaticFiles();
-
 app.UseRouting();
+app.UseSession(); // Session kullanýmý
 app.UseAuthentication();// Autuhorization dan önce gelmeli önce outurm açma
 app.UseAuthorization();//sonra yetkilendirme yapýlmalý
 

@@ -82,13 +82,13 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
         // POST: Admin/AppUsers/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id,  AppUser appUser)
+        public async Task<IActionResult> Edit(int id, AppUser appUser)
         {
             if (id != appUser.Id)
             {
                 return NotFound();
             }
-
+            ModelState.Remove("PasswordConfirm");
             if (ModelState.IsValid)
             {
                 try
