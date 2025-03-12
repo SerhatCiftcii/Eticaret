@@ -1,13 +1,7 @@
 ﻿using Eticaret.Core.Entities;
 using Eticaret.Data;
 using Eticaret.WebUI.ExtensionMethods;
-using Eticaret.WebUI.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Eticaret.WebUI.Controllers
 {
@@ -26,6 +20,11 @@ namespace Eticaret.WebUI.Controllers
             var favoriler = GetFavorites();
             return View(favoriler);
         }
+        private List<Product> GetFavorites()
+        {
+            return HttpContext.Session.GetJson<List<Product>>("GetFavorites")?? [];
+              // Eğer favoriler boşsa, yeni liste döndür
+        }
 
         // Favorilere ürün ekleme
         public async Task<IActionResult> Add(int ProductId)
@@ -36,23 +35,28 @@ namespace Eticaret.WebUI.Controllers
             if (product != null && !favoriler.Any(p => p.Id == product.Id))  // Ürün favoriye eklenmemişse
             {
                 favoriler.Add(product);  // Favorilere ekle
-                SetFavorites(favoriler);  // Yeni favori listesini session'a kaydet
+                HttpContext.Session.SetJson("GetFavorites",favoriler);  // Yeni favori listesini session'a kaydet
             }
 
             return RedirectToAction("Index");
         }
 
         // Favori ürünleri Session'dan al
-        private List<Product> GetFavorites()
-        {
-            var favorites = HttpContext.Session.GetJson<List<Product>>("GetFavorites");
-            return favorites ?? new List<Product>();  // Eğer favoriler boşsa, yeni liste döndür
-        }
+  
 
         // Favori ürünleri Session'a kaydet
-        private void SetFavorites(List<Product> favorites)
+      
+
+        public async Task<IActionResult> Remove(int ProductId)
         {
-            HttpContext.Session.SetJson("GetFavorites", favorites);
+            var favoriler = GetFavorites();  // Favori listesini al
+            var product = await _context.Products.FindAsync(ProductId);  // Ürünü bul
+            if (product != null && favoriler.Any(p => p.Id == product.Id))  // Ürün favoriye eklenmişse
+            {
+                favoriler.RemoveAll(i=>i.Id==product.Id);  // Favorilerden çıkar
+                HttpContext.Session.SetJson("GetFavorites", favoriler);   // Yeni favori listesini session'a kaydet
+            }
+            return RedirectToAction("Index");
         }
     }
 }

@@ -23,13 +23,52 @@ namespace Eticaret.WebUI.Controllers
         }
         [Authorize]
         // Index sayfası
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+           AppUser user =await _context.AppUsers.FirstOrDefaultAsync(x=>x.UserGuid.ToString()==HttpContext.User.FindFirst("UserGuid").Value);
+            if(user is null)
+            {
+                return NotFound();
+            }
+            var model = new UserEditViewModel()
+            {
+                Id = user.Id,
+                Name = user.Name,
+                Surname = user.Surname,
+                Email = user.Email,
+                Phone = user.Phone
+            };  
+            return View(model);
         }
 
-        // Giriş sayfası
-        // Giriş sayfası (GET)
+
+        [HttpPost,Authorize]
+        public async Task<IActionResult> Index(UserEditViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    AppUser user = await _context.AppUsers.FirstOrDefaultAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
+                    if(user is not null)
+                    {
+                        user.Name = model.Name;
+                        user.Surname = model.Surname;
+                        user.Email = model.Email;
+                        user.Phone = model.Phone;
+                        _context.Update(user);
+                        await _context.SaveChangesAsync();
+                        TempData["SuccessMessage"] = "Profiliniz başarıyla güncellendi!";
+                    }
+                }
+                catch (Exception)
+                {
+                    ModelState.AddModelError("", "Bir hata oluştu. Lütfen tekrar deneyin.");
+                }
+            }
+            return View();
+            // Giriş sayfası
+        }
         public IActionResult SignIn()
         {
             return View();

@@ -54,7 +54,7 @@
 @*                                             <a href="/Cart/AddToCart/@item.Id" class="btn btn-sm btn-outline-success" title="Sepete Ekle">
                                                 <i class="bi bi-cart-plus"></i> 
                                             </a> *@
-                                           <form action="/" method="post" class="d-inline">
+                                           <form asp-action="Remove" asp-controller="Favorites" method="post" class="d-inline">
                                                 <input type="hidden" name="ProductId" value="@item.Id" />
                                                 <button class="btn btn-sm btn-outline-danger" type="submit" title="Favorilerden Çıkar">
                                                     <i class="bi bi-heart-fill"></i>
@@ -79,7 +79,7 @@
                     <i class="bi bi-heart fs-1 d-block mb-3"></i>
                     <h4>Favori listenizde henüz ürün bulunmuyor.</h4>
                     <p class="mb-4">Beğendiğiniz ürünleri favori listenize ekleyerek daha sonra kolayca ulaşabilirsiniz.</p>
-                    <a href="/Products" class="btn btn-primary">Ürünleri Keşfedin</a>
+                    <a href="/" class="btn btn-primary">Ürünleri Keşfedin</a>
                 </div>
             }
         </div>
