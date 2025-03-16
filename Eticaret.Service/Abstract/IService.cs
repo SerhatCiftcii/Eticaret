@@ -1,9 +1,5 @@
 ﻿using Eticaret.Core.Entities;
-using System;
-using System.Collections.Generic;
 using System.Linq.Expressions; //GetAllın içinde kullandık
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Eticaret.Service.Abstract
 {
@@ -30,7 +26,7 @@ namespace Eticaret.Service.Abstract
         Task<List<T>> GetAllAsync(Expression<Func<T, bool>> expression);// T tipinde bir liste döndürecek ve bu liste filtreli olacak
 
         Task AddAsync(T entity); // T tipinde bir nesne alacak ve bu nesneyi ekleyecek
-      Task<int> FindAsyncAsync(); // Değişiklikleri kaydedecek
+      Task<int> SaveChangesAsync(); // Değişiklikleri kaydedecek
 
     }
 }
