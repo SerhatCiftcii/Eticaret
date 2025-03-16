@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Eticaret.Core.Entities;
 using Eticaret.Data;
+using Eticaret.Service.Abstract;
 using Eticaret.WebUI.Models;
 using Eticaret.WebUI.Utils;
 using Microsoft.AspNetCore.Mvc;
@@ -10,21 +11,36 @@ namespace Eticaret.WebUI.Controllers
     public class HomeController : Controller
     {
         //slider için databse context ve indexe model eklendi  categories de component kullandýðýmýz için database çekmemize gerek kalmamýþtý
-        private readonly DatabaseContext _context;
+      /*  private readonly DatabaseContext _context;
         private readonly IEmailService _emailService;
         public HomeController(DatabaseContext context, IEmailService emailService)
         {
             _context = context;
             _emailService = emailService;
+        }*/
+
+        private readonly IService<Product> _serviceProduct;
+        private readonly IService<Slider> _serviceSlider;
+        private readonly IService<News> _serviceNews;
+        private readonly IService<Contact> _serviceContact;
+        private readonly IEmailService _emailService;
+        public HomeController(IEmailService emailService, IService<Product> serviceProduct, IService<Slider> serviceSlider, IService<News> serviceNews, IService<Contact> serviceContact)
+        {
+            _serviceProduct = serviceProduct;
+            _serviceSlider = serviceSlider;
+            _emailService = emailService;
+            _serviceNews = serviceNews;
+            _serviceContact = serviceContact;
         }
 
         public async Task<IActionResult> Index()
         {
             var model = new HomePageViewModel()
             {
-                Sliders = await _context.Sliders.ToListAsync(),
-                News = await _context.News.ToListAsync(),
-                Products = await _context.Products.Where(x => x.IsActive && x.IsHome).ToListAsync()
+                Sliders = await _serviceSlider.GetAllAsync(),
+               // News = await _context.News.ToListAsync(),
+               News = await _serviceNews.GetAllAsync(),
+                Products = await _serviceProduct.GetAllAsync(x => x.IsActive && x.IsHome)
             };
             return View(model);
         }
@@ -43,8 +59,8 @@ namespace Eticaret.WebUI.Controllers
                 try
                 {
                     // Veritabanýna ekleme
-                    await _context.Contacts.AddAsync(contact);
-                    var sonuc = await _context.SaveChangesAsync();
+                    await _serviceContact.AddAsync(contact);
+                    var sonuc = await _serviceContact.SaveChangesAsync();
 
                     if (sonuc > 0)
                     {

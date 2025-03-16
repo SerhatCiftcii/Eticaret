@@ -1,5 +1,6 @@
 ﻿using Eticaret.Core.Entities;
 using Eticaret.Data;
+using Eticaret.Service.Abstract;
 using Eticaret.WebUI.ExtensionMethods;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,11 +8,18 @@ namespace Eticaret.WebUI.Controllers
 {
     public class FavoritesController : Controller
     {
-        private readonly DatabaseContext _context;
+        //private readonly DatabaseContext _context;
 
-        public FavoritesController(DatabaseContext context)
+        //public FavoritesController(DatabaseContext context)
+        //{
+        //    _context = context;
+        //}
+
+        private readonly IService<Product> _service;
+        public FavoritesController(IService<Product> service)
         {
-            _context = context;
+            _service = service;
+
         }
 
         public IActionResult Index()
@@ -30,7 +38,7 @@ namespace Eticaret.WebUI.Controllers
         public async Task<IActionResult> Add(int ProductId)
         {
             var favoriler = GetFavorites();  // Favori listesini al
-            var product = await _context.Products.FindAsync(ProductId);  // Ürünü bul
+            var product = await _service.FindAsync(ProductId);  // Ürünü bul
 
             if (product != null && !favoriler.Any(p => p.Id == product.Id))  // Ürün favoriye eklenmemişse
             {
@@ -50,7 +58,7 @@ namespace Eticaret.WebUI.Controllers
         public async Task<IActionResult> Remove(int ProductId)
         {
             var favoriler = GetFavorites();  // Favori listesini al
-            var product = await _context.Products.FindAsync(ProductId);  // Ürünü bul
+            var product = await _service.FindAsync(ProductId);  // Ürünü bul
             if (product != null && favoriler.Any(p => p.Id == product.Id))  // Ürün favoriye eklenmişse
             {
                 favoriler.RemoveAll(i=>i.Id==product.Id);  // Favorilerden çıkar
