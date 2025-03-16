@@ -1,6 +1,8 @@
 using Eticaret.Core.Entities;
 using Eticaret.Data;
 using Eticaret.Service;
+using Eticaret.Service.Abstract;
+using Eticaret.Service.Concrete;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
@@ -26,6 +28,10 @@ builder.Services.AddSession(options =>
 
 //database tanýt
 builder.Services.AddDbContext<DatabaseContext>();
+
+builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
+
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(x=>
     {

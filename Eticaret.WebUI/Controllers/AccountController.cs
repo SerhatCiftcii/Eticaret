@@ -1,31 +1,36 @@
 ﻿using Eticaret.Core.Entities;
 using Eticaret.Data;
+using Eticaret.Service.Abstract;
 using Eticaret.WebUI.Models;
 using Microsoft.AspNetCore.Authentication;//login
 using Microsoft.AspNetCore.Authorization;//login
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Security.Claims;///login
+using System.Security.Claims;
+///login
 using System.Threading.Tasks;
 
 namespace Eticaret.WebUI.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly DatabaseContext _context;
-        private readonly IEmailService _emailService;
 
-        public AccountController(DatabaseContext context, IEmailService emailService)
+        private readonly IEmailService _emailService;
+        private readonly IService<AppUser> _service;
+
+        public AccountController(IEmailService emailService, IService<AppUser> service)
         {
-            _context = context;
             _emailService = emailService;
+            _service = service;
         }
+
+
         [Authorize]
         // Index sayfası
         public async Task<IActionResult> Index()
         {
-           AppUser user =await _context.AppUsers.FirstOrDefaultAsync(x=>x.UserGuid.ToString()==HttpContext.User.FindFirst("UserGuid").Value);
+           AppUser user =await _service.GetAsync(x=>x.UserGuid.ToString()==HttpContext.User.FindFirst("UserGuid").Value);
             if(user is null)
             {
                 return NotFound();
@@ -49,15 +54,15 @@ namespace Eticaret.WebUI.Controllers
             {
                 try
                 {
-                    AppUser user = await _context.AppUsers.FirstOrDefaultAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
+                    AppUser user = await _service.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
                     if(user is not null)
                     {
                         user.Name = model.Name;
                         user.Surname = model.Surname;
                         user.Email = model.Email;
                         user.Phone = model.Phone;
-                        _context.Update(user);
-                        await _context.SaveChangesAsync();
+                        _service.Update(user);
+                        await _service.SaveChangesAsync();
                         TempData["SuccessMessage"] = "Profiliniz başarıyla güncellendi!";
                     }
                 }
@@ -82,8 +87,7 @@ namespace Eticaret.WebUI.Controllers
                 try
                 {
                     // Kullanıcıyı e-posta ve şifre ile veritabanından buluyoruz
-                    var account = await _context.AppUsers
-                        .FirstOrDefaultAsync(x => x.Email == loginViewModel.Email && x.Password == loginViewModel.Password && x.IsActive);
+                    var account = await _service.GetAsync(x => x.Email == loginViewModel.Email && x.Password == loginViewModel.Password && x.IsActive);
 
                     if (account == null)
                     {
@@ -156,8 +160,8 @@ namespace Eticaret.WebUI.Controllers
             appUser.VerificationCode = random.Next(100000, 999999).ToString();
 
             // Kullanıcıyı veritabanına ekliyoruz
-            await _context.AddAsync(appUser);
-            await _context.SaveChangesAsync();
+            await _service.AddAsync(appUser);
+            await _service.SaveChangesAsync();
 
             // Doğrulama kodunu e-posta ile gönderiyoruz
             await _emailService.SendEmailAsync(appUser.Email, "Doğrulama Kodu", $"Doğrulama kodunuz: {appUser.VerificationCode}");
@@ -179,8 +183,7 @@ namespace Eticaret.WebUI.Controllers
         public async Task<IActionResult> VerifyEmail(string verificationCode)
         {
             // Kullanıcıyı doğrulama kodu ile buluyoruz
-            var appUser = await _context.AppUsers
-                .FirstOrDefaultAsync(u => u.VerificationCode == verificationCode);
+            var appUser = await _service.GetAsync(u => u.VerificationCode == verificationCode);
 
             // Geçersiz doğrulama kodu durumunda hata mesajı gösteriyoruz
             if (appUser == null)
@@ -191,8 +194,8 @@ namespace Eticaret.WebUI.Controllers
 
             // Doğrulama kodu doğruysa kullanıcıyı aktif yapıyoruz
             appUser.IsActive = true;
-            _context.Update(appUser);
-            await _context.SaveChangesAsync();
+            _service.Update(appUser);
+            await _service.SaveChangesAsync();
 
             TempData["SuccessMessage"] = "Hesabınız başarıyla doğrulandı!";
 
