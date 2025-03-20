@@ -2,6 +2,7 @@
 using Eticaret.Service.Abstract;
 using Eticaret.Service.Concrete;
 using Eticaret.WebUI.ExtensionMethods;
+using Eticaret.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Eticaret.WebUI.Controllers
@@ -16,7 +17,13 @@ namespace Eticaret.WebUI.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var cart=GetCart();
+            var model = new CartViewModel()
+            {
+                CartLines = cart.CartLines,
+                TotalPrice = cart.TotalPrice()
+            };
+            return View(model);
         } 
         public IActionResult Add(int ProuctId, int quantitiy=1)
         {
