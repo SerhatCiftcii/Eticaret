@@ -14,27 +14,51 @@ namespace Eticaret.Service.Concrete
         public List<CartLine> CartLines = new();
         public void AddProduct(Product product, int quantity)
         {
-            throw new NotImplementedException();
+            var urun = CartLines.FirstOrDefault(p => p.Product.Id == product.Id);
+            if (urun != null)
+            {
+                urun.Quantity += quantity;
+            }
+            else
+            {
+                CartLines.Add(new CartLine
+                {
+                    Quantity = quantity,
+                    Product = product
+                });
+            }
         }
 
         public void ClearAll()
         {
-            throw new NotImplementedException();
+          CartLines.Clear();
         }
 
         public void RemoveProduct(Product product)
         {
-            throw new NotImplementedException();
+            CartLines.RemoveAll(p=>product.Id==p.Product.Id);
         }
 
-        public decimal TotalPrice()
+        public decimal TotalPrice() //SEPET TOPLAMI
         {
-            throw new NotImplementedException();
+            return CartLines.Sum(c=>c.Product.Price * c.Quantity);
         }
 
         public void UpdateProduct(Product product, int quantity)
         {
-            throw new NotImplementedException();
+            var urun = CartLines.FirstOrDefault(p=>p.Product.Id == product.Id);
+            if (urun != null)
+            {
+                urun.Quantity = quantity;
+            }
+            else
+            {
+                CartLines.Add(new CartLine
+                {
+                    Quantity = quantity,
+                    Product = product
+                });
+            }
         }
     }
 }
