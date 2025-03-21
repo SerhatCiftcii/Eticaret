@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eticaret.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bfa6222ad6c379d19b09f7cc3be110e08be2c89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93e47e2d942498e5790b2977fe40eca2ffd6b3fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eticaret.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eticaret.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
