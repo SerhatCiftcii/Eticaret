@@ -4,6 +4,7 @@ using Eticaret.Service.Concrete;
 using Eticaret.WebUI.ExtensionMethods;
 using Eticaret.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 
 namespace Eticaret.WebUI.Controllers
 {
@@ -24,10 +25,12 @@ namespace Eticaret.WebUI.Controllers
                 TotalPrice = cart.TotalPrice()
             };
             return View(model);
-        } 
-        public IActionResult Add(int ProuctId, int quantitiy=1)
+        }
+
+        
+        public IActionResult Add(int ProductId, int quantitiy=1)
         {
-            var product = _serviceProduct.Find(ProuctId);
+            var product = _serviceProduct.Find(ProductId);
             if (product != null)
             {
                 var cart = GetCart();
@@ -36,9 +39,9 @@ namespace Eticaret.WebUI.Controllers
             }
             return RedirectToAction("Index");
         }
-        public IActionResult Update(int ProuctId, int quantitiy=1)
+        public IActionResult Update(int ProductId, int quantitiy=1)
         {
-            var product = _serviceProduct.Find(ProuctId);
+            var product = _serviceProduct.Find(ProductId);
             if (product != null)
             {
                 var cart = GetCart();
@@ -47,9 +50,9 @@ namespace Eticaret.WebUI.Controllers
             }
             return RedirectToAction("Index");
         }  
-        public IActionResult Remove(int ProuctId)
+        public IActionResult Remove(int ProductId)
         {
-            var product = _serviceProduct.Find(ProuctId);
+            var product = _serviceProduct.Find(ProductId);
             if (product != null)
             {
                 var cart = GetCart();

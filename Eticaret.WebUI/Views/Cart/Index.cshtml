@@ -54,7 +54,7 @@
                                             @*                                             <a href="/Cart/AddToCart/@item.Id" class="btn btn-sm btn-outline-success" title="Sepete Ekle">
                                                 <i class="bi bi-cart-plus"></i> 
                                             </a> *@
-                                            <form asp-action="Remove" asp-controller="Favorites" method="post" class="d-inline">
+                                            <form asp-action="Remove" asp-controller="Cart"  class="d-inline">
                                                 <input type="hidden" name="ProductId" value="@item.Id" />
                                                 <button class="btn btn-sm btn-outline-danger" type="submit" title="Sepetten Çıkar">
                                                     <i class="bi bi-cart-plus"></i>

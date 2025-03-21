@@ -31,9 +31,17 @@
 
             <!-- Sepete ekle butonu -->
             <div class="mt-auto">
-                <a class="btn w-100 mb-2" href="#" style="background-color: #ff6000; color: white; border: none; padding: 8px; font-size: 14px; border-radius: 6px; font-weight: 600;">Sepete Ekle</a>
+                <form action="/Cart/Add" > 
+                    <input type="hidden" name="ProductId" value="@Model.Id" />
+                <button class="btn w-100 mb-2" type="submit"  style="background-color: #ff6000; color: white; border: none; padding: 8px; font-size: 14px; border-radius: 6px; font-weight: 600;">Sepete Ekle
+
+                </button>
+             
                 <a class="btn btn-outline-secondary w-100" href="/Products/Details/@Model.Id" style="font-size: 14px; border-radius: 6px; padding: 8px; font-weight: 500;">Ürün Detay</a>
+
+                </form>
             </div>
+              
         </div>
     </div>
 </div>
