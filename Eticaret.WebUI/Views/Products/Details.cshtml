@@ -23,8 +23,8 @@
                 </p>
             </div>
             <div class="d-flex mt-4">
-                <form asp-action="Add" asp-controller="Cart">
-               <input type="hidden" name="ProuctId" value="@Model.Product.Id" />
+                <form asp-action="Add" asp-controller="Cart" >
+               <input type="hidden" name="ProductId" value="@Model.Product.Id" />
                 <input class="form-control text-center me-3 border-primary"
                        id="inputQuantity"
                        type="number"
