@@ -4,28 +4,21 @@
 }
 
 <section class="container py-4">
-    <div class="row">
-        <div class="col-12">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sepetim</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-
-    <div class="row mb-4">
-        <div class="col-12">
-            <h1 class="h3 mb-3">Sepetim</h1>
-            <hr>
-        </div>
-    </div>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sepetim</li>
+        </ol>
+    </nav>
+    <h1 class="h3 mb-3">Sepetim</h1>
+    <hr>
 
     <div class="row">
-        <div class="col-lg-9">
-            @if (Model.CartLines.Any())
+         @if (Model.CartLines.Any())
             {
+        <!-- Sepet Ürünleri Listesi -->
+        <div class="col-lg-8">
+           
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead class="table-light">
@@ -80,21 +73,51 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="d-flex justify-content-end mt-3">
-                    <a href="/" class="btn btn-outline-secondary me-2">
+
+        </div>
+
+        <!-- Sepet Toplamı Kolonu -->
+        <div class="col-lg-4">
+            <div class="border rounded p-4 shadow-sm mb-4">
+                <h4 class="mb-3">Sepet Toplamı</h4>
+                <table class="table table-borderless">
+                    <tr>
+                        <td><strong>Aratoplam:</strong></td>
+                        <td>@Model.TotalPrice.ToString("c")</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kargo Ücreti:</strong></td>
+                        <td>
+                            @(Model.TotalPrice > 999 ? "Ücretsiz" : Model.CartLines.Any() ? "99₺" : "0₺")
+                        </td>
+                    </tr>
+                    <tr class="fw-bold">
+                        <td><strong>Sipariş Toplamı:</strong></td>
+                        <td>
+                            @(Model.TotalPrice > 999 ? Model.TotalPrice.ToString("c") : (Model.CartLines.Any() ? (Model.TotalPrice + 99).ToString("c") : Model.TotalPrice.ToString("c")))
+                        </td>
+                    </tr>
+                </table>
+                <div class="d-grid gap-2">
+                    @if (Model.CartLines.Any())
+                    {
+                        <a href="#" class="btn btn-primary">Ödeme Yap</a>
+                    }
+                    <a href="/" class="btn btn-outline-secondary">
                         <i class="bi bi-arrow-left"></i> Alışverişe Devam Et
                     </a>
                 </div>
-            }
-            else
-            {
-                <div class="alert alert-info text-center py-5">
-                    <i class="bi bi-cart-plus"></i>
-                    <h4>Sepetinizde Ürün Bulunmamaktadır</h4>
-                    <p class="mb-4">Beğendiğiniz ürünleri sepet listenize ekleyerek daha sonra kolayca ulaşabilirsiniz.</p>
-                    <a href="/" class="btn btn-primary">Ürünleri Keşfedin</a>
-                </div>
-            }
+            </div>
         </div>
+        }
+        else
+        {
+            <div class="alert alert-info text-center py-5">
+                <i class="bi bi-cart-plus"></i>
+                <h4>Sepetinizde Ürün Bulunmamaktadır</h4>
+                <p class="mb-4">Beğendiğiniz ürünleri sepet listenize ekleyerek daha sonra kolayca ulaşabilirsiniz.</p>
+                <a href="/" class="btn btn-primary">Ürünleri Keşfedin</a>
+            </div>
+        }
     </div>
 </section>

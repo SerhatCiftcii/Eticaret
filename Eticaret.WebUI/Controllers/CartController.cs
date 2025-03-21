@@ -28,24 +28,24 @@ namespace Eticaret.WebUI.Controllers
         }
 
         
-        public IActionResult Add(int ProductId, int quantitiy=1)
+        public IActionResult Add(int ProductId, int quantity = 1)
         {
             var product = _serviceProduct.Find(ProductId);
             if (product != null)
             {
                 var cart = GetCart();
-                cart.AddProduct(product,quantitiy);
+                cart.AddProduct(product, quantity);
                 HttpContext.Session.SetJson("Cart", cart);
             }
             return RedirectToAction("Index");
         }
-        public IActionResult Update(int ProductId, int quantitiy=1)
+        public IActionResult Update(int ProductId, int quantity = 1)
         {
             var product = _serviceProduct.Find(ProductId);
             if (product != null)
             {
                 var cart = GetCart();
-                cart.UpdateProduct(product,quantitiy);
+                cart.UpdateProduct(product, quantity);
                 HttpContext.Session.SetJson("Cart", cart);
             }
             return RedirectToAction("Index");
