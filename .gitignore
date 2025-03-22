@@ -1,3 +1,10 @@
+# .NET Core build outputs
 .vs/
 bin/
 obj/
+
+# PDB dosyaları
+*.pdb
+
+# Assembly info cache dosyaları
+*.cache
