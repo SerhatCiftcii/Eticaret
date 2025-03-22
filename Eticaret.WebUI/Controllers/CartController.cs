@@ -36,6 +36,7 @@ namespace Eticaret.WebUI.Controllers
                 var cart = GetCart();
                 cart.AddProduct(product, quantity);
                 HttpContext.Session.SetJson("Cart", cart);
+                return Redirect(Request.Headers["Referer"].ToString()); //kullanıcın bi önceki referaensı
             }
             return RedirectToAction("Index");
         }
