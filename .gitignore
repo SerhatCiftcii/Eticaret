@@ -1,10 +1,38 @@
 # .NET Core build outputs
-.vs/
 bin/
 obj/
 
-# PDB dosyaları
-*.pdb
+# Visual Studio Code ve Visual Studio ilgili dosyalar
+.vs/
+*.user
+*.suo
 
-# Assembly info cache dosyaları
+# Paket bağımlılıkları
+packages/
+!packages/repositories.config
+node_modules/
+
+# Log dosyaları
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Güvenlik nedeniyle gizli dosyalar
+.env
+secrets.json
+
+# Çalışma zamanında oluşan dosyalar
+*.pid
+*.tar
+*.gz
+
+# Debug ve Release çıktıları
+*.pdb
 *.cache
+*.dll
+*.exe
+
+# Resharper ve Rider dosyaları
+.idea/
+*.sln.DotSettings
