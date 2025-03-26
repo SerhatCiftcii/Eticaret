@@ -63,7 +63,7 @@ namespace Eticaret.WebUI.Controllers
             return RedirectToAction("Index");
         }
         //satın al sayfası
-        public IActionResult Cehckout()
+        public IActionResult Checkout()
         {
             var cart = GetCart();
             var model = new CheckoutViewModel()
