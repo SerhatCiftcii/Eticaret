@@ -1,0 +1,88 @@
+﻿@model ProductDetailViewModel
+    @{
+    ViewBag.Title = "@Model.Product.Name";
+}
+<!-- Product section-->
+<section class="py-4 bg-light">
+    <div class="row gx-4 gx-lg-5 align-items-center bg-white rounded shadow p-4">
+        <div class="col-md-6">
+            <img class="card-img-top mb-5 mb-md-0 rounded" src="~/Img/Products/@Model.Product?.Image" alt="..."
+                 style="object-fit: cover; max-height: 400px;">
+        </div>
+        <div class="col-md-6">
+            <div class="small mb-1 fw-bold text-secondary bg-light p-2 rounded">Ürün Kodu: @Model.Product?.ProductCode</div>
+            <div class="fw-bold fs-3 my-3 text-primary">
+                Ürün Adı: @Model.Product?.Name
+            </div>
+            <div class="fs-5 mb-4 fw-bold text-dark bg-light p-2 rounded">
+                <span>Ürün Fiyatı: @Model.Product?.Price.ToString("c") </span>
+            </div>
+            <div class="p-2 rounded mb-3">
+                <p class="lead fw-bold text-secondary mb-0">
+                    Açıklama: <span class="fw-normal text-dark">@Model.Product?.Description</span>
+                </p>
+            </div>
+          <div class="d-flex align-items-center mt-4">
+                <div class="d-flex align-items-center mt-4">
+                    <form asp-action="Add" asp-controller="Cart" class="w-100">
+                        <input type="hidden" name="ProductId" value="@Model.Product.Id" />
+                        <div class="d-flex align-items-center w-100">
+                            <input class="form-control text-center me-3 border-primary"
+                                   name="quantity"
+                                   id="inputQuantity"
+                                   type="number"
+                                   value="1"
+                                   min="1"
+                                   style="width: 80px; height: 40px;">
+                            <button class="btn btn-primary flex-shrink-0 px-4 py-2 shadow-sm" type="submit">
+                                <i class="bi-cart-fill me-1"></i>
+                                Sepete Ekle
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-flex align-items-center mt-4">
+                    <form asp-action="Add" asp-controller="Favorites" class="w-100 ms-3">
+                        <input type="hidden" name="ProductId" value="@Model.Product.Id" />
+                        <div class="d-flex align-items-center w-100">
+                            <button class="btn btn-primary flex-shrink-0 px-4 py-2 shadow-sm" type="submit">
+                                <i class="bi-heart-fill me-1"></i>
+                                Favorilere Ekle
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Related items section-->
+
+<section class="py-2 bg-light">
+    <div class="container px-4 px-lg-5 ">
+        <h2 class="text-center fw-bold mb-3" style="color: #ff6000;">İlişkili ürünler</h2>
+
+        <div class="row gx-4 gx-lg-4 row-cols-2 row-cols-md-3 justify-content-center">
+            @if (Model.RelatedProducts != null && Model.RelatedProducts.Any())
+            {
+                @foreach (var item in Model.RelatedProducts)
+                {
+                    <partial name="_ProductView" model="item" />
+                }
+            }
+            else
+            {
+                <div class="col-12 text-center">
+                    <div class="alert alert-warning" role="alert">
+                        <h5 class="fw-bold">İlişkili Ürün Bulunamadı</h5>
+                        <p>Bu ürünle ilgili başka bir ürün mevcut değil. Diğer kategorilere göz atabilirsiniz.</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

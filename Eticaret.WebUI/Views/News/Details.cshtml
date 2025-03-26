@@ -1,0 +1,28 @@
+﻿@model News
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container my-5">
+    <!-- Başlık -->
+    <h1 class="display-5 text-center mb-4 fw-bold">@Model.Name</h1>
+
+    <!-- Resim ve Açıklama -->
+    <div class="row align-items-stretch g-4">
+        <!-- Resim -->
+        <div class="col-md-6">
+            <div class="ratio ratio-16x9">
+                <!-- 16:9 en-boy oranı -->
+                <img src="~/Img/News/@Model.Image" alt="@Model.Name" class="img-fluid " />
+            </div>
+        </div>
+
+        <!-- Açıklama -->
+        <div class="col-md-6">
+            <div class="h-100 p-4 bg-light rounded shadow-sm">
+                <h2 class="h4 fw-bold mb-3">Açıklama</h2>
+                <p class="mb-0">@Model.Description</p>
+            </div>
+        </div>
+    </div>
+</div>

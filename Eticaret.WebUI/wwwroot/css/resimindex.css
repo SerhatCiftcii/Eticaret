@@ -1,0 +1,12 @@
+.news-image {
+    width: 50px; /* Sabit geniþlik */
+    height: 50px; /* Sabit yükseklik */
+    object-fit: cover; /* Resmi oranlý olarak sýðdýrýr */
+    border-radius: 5px; /* Köþeleri yuvarlar */
+    transition: transform 0.3s ease; /* Yumuþak geçiþ efekti */
+}
+
+    .news-image:hover {
+        transform: scale(4.5); /* Resmi büyüt */
+        cursor: pointer; /* Fare imlecini el iþaretine dönüþtür */
+    }
