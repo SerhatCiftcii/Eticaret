@@ -7,10 +7,10 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Anasayfa</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Sepetim</li>
+            <li class="breadcrumb-item active" aria-current="page">Satın Al</li>
         </ol>
     </nav>
-    <h1 class="h3 mb-3">Sepetim</h1>
+    <h1 class="h3 mb-3">Satın Al</h1>
     <hr>
 
     <div class="row">
@@ -28,7 +28,7 @@
                                 <th scope="col">Fiyat</th>
                                 <th scope="col">Miktar</th>
                                 <th scope="col">Toplam Fiyat</th>
-                                <th scope="col" width="120">İşlemler</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -58,16 +58,7 @@
                                     <td class="align-middle fw-bold text-primary">
                                         @((item.Quantity * item.Product.Price).ToString("c"))
                                     </td>
-                                    <td class="align-middle">
-                                        <div class="d-flex gap-2">
-                                            <form asp-action="Remove" asp-controller="Cart" class="d-inline">
-                                                <input type="hidden" name="ProductId" value="@item.Product.Id" />
-                                                <button class="btn btn-sm btn-outline-danger" type="submit" title="Sepetten Çıkar">
-                                                    <i class="bi bi-trash"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </td>
+                                   
                                 </tr>
                             }
                         </tbody>
@@ -79,10 +70,10 @@
             <!-- Sepet Toplamı Kolonu -->
             <div class="col-lg-4">
                 <div class="border rounded p-4 shadow-sm mb-4">
-                    <h4 class="mb-3">Sepet Toplamı</h4>
+                    <h4 class="mb-3">Sipariş Özeti</h4>
                     <table class="table table-borderless">
                         <tr>
-                            <td><strong>Aratoplam:</strong></td>
+                            <td><strong>Ürün Toplamı:</strong></td>
                             <td>@Model.TotalPrice.ToString("c")</td>
                         </tr>
                         <tr>
@@ -99,10 +90,10 @@
                         </tr>
                     </table>
                     <div class="d-grid gap-2">
-                        @if (Model.CartProducts.Any())
+                       @*  @if (Model.CartProducts.Any())
                         {
                             <a href="#" class="btn btn-primary">Ödeme Yap</a>
-                        }
+                        } *@
                         <a href="/" class="btn btn-outline-secondary">
                             <i class="bi bi-arrow-left"></i> Alışverişe Devam Et
                         </a>

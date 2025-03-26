@@ -3,6 +3,7 @@ using Eticaret.Service.Abstract;
 using Eticaret.Service.Concrete;
 using Eticaret.WebUI.ExtensionMethods;
 using Eticaret.WebUI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 
@@ -62,7 +63,8 @@ namespace Eticaret.WebUI.Controllers
             }
             return RedirectToAction("Index");
         }
-        //satın al sayfası
+        //satın al sayfası onun içinde authrize olması gerekir.
+        [Authorize]
         public IActionResult Checkout()
         {
             var cart = GetCart();
