@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Eticaret.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18a12807d61608f6812ae13ad4619f65b496de56")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e6d0e9c0f441307bda7fd68c480edaa604813d2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Eticaret.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Eticaret.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

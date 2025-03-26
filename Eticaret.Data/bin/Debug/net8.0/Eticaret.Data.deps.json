@@ -927,7 +927,7 @@
       "Eticaret.Core/1.0.0": {
         "runtime": {
           "Eticaret.Core.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
