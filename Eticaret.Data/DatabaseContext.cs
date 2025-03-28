@@ -6,6 +6,7 @@ namespace Eticaret.Data
 {
     public class DatabaseContext : DbContext
     {
+        public DbSet<Address> Addresses { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -13,6 +14,7 @@ namespace Eticaret.Data
         public DbSet<News> News { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Slider> Sliders { get; set; }
+       
 
         //yapılandırmaları (configureleri tanıtıcaz efcora) 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

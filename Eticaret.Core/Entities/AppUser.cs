@@ -41,8 +41,10 @@ namespace Eticaret.Core.Entities
         [Display(Name ="Kayıt Tarihi"),ScaffoldColumn(false)]  // scaffoldcolumn false ile viewde gözükmesini engelledik
         public DateTime CreateDate { get; set; }=DateTime.Now; //kullanıcı oluşturulma tarihi
         [ScaffoldColumn(false)]
-        public Guid? UserGuid { get; set; }= Guid.NewGuid();  
+        public Guid? UserGuid { get; set; }= Guid.NewGuid();
         //public DateTime? UpdateDate { get; set; }
+
+        public List<Address>? Addresses { get; set; }
 
 
     }
