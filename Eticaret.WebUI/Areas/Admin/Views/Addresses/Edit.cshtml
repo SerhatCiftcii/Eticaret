@@ -1,0 +1,69 @@
+﻿@model Eticaret.Core.Entities.Address
+
+@{
+    ViewData["Title"] = "Adres Düzenle";
+}
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white">
+            <h4 class="card-title mb-0">
+                <i class="fas fa-edit me-2"></i> Adres Düzenle
+            </h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <input type="hidden" asp-for="CreateDate" />
+                <input type="hidden" asp-for="AddressGuid"/>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label"></label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="City" class="control-label"></label>
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Destrict" class="control-label"></label>
+                    <input asp-for="Destrict" class="form-control" />
+                    <span asp-validation-for="Destrict" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OpenAddress" class="control-label"></label>
+                    <textarea asp-for="OpenAddress" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="OpenAddress" class="text-danger"></span>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsActive" /> @Html.DisplayNameFor(model => model.IsActive)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsBillingAddress" /> @Html.DisplayNameFor(model => model.IsBillingAddress)
+                    </label>
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="IsDeliveryAddress" /> @Html.DisplayNameFor(model => model.IsDeliveryAddress)
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AppUserId" class="control-label"></label>
+                    <select asp-for="AppUserId" class="form-select" asp-items="ViewBag.AppUserId"></select>
+                    <span asp-validation-for="AppUserId" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-4">
+                    <input type="submit" value="Kaydet" class="btn btn-success btn-md" />
+                    <a asp-action="Index" class="btn btn-danger btn-md ms-2">
+                        <i class="fa-solid fa-arrow-left"></i> Listeye Dön
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
