@@ -13,9 +13,10 @@
     <h1 class="h3 mb-3">Satın Al</h1>
     <hr>
 
-    <div class="row">
-        @if (Model.CartProducts.Any())
-        {
+
+    @if (Model.CartProducts.Any())
+    {
+        <div class="row">
             <!-- Sepet Ürünleri Listesi -->
             <div class="col-lg-8">
 
@@ -28,7 +29,7 @@
                                 <th scope="col">Fiyat</th>
                                 <th scope="col">Miktar</th>
                                 <th scope="col">Toplam Fiyat</th>
-                                
+
                             </tr>
                         </thead>
                         <tbody>
@@ -38,14 +39,14 @@
                                     <td class="align-middle text-center">
                                         <a href="/Products/Details/@item.Product.Id">
                                             <img src="/Img/Products/@item.Product.Image"
-                                                 alt="@item.Product.Name"
-                                                 class="img-thumbnail"
-                                                 style="max-height: 80px; width: auto;" />
+                                            alt="@item.Product.Name"
+                                            class="img-thumbnail"
+                                            style="max-height: 80px; width: auto;" />
                                         </a>
                                     </td>
                                     <td class="align-middle">
                                         <a href="/Products/Details/@item.Product.Id"
-                                           class="text-decoration-none text-dark fw-medium">
+                                        class="text-decoration-none text-dark fw-medium">
                                             @item.Product.Name
                                         </a>
                                     </td>
@@ -58,7 +59,7 @@
                                     <td class="align-middle fw-bold text-primary">
                                         @((item.Quantity * item.Product.Price).ToString("c"))
                                     </td>
-                                   
+
                                 </tr>
                             }
                         </tbody>
@@ -90,7 +91,7 @@
                         </tr>
                     </table>
                     <div class="d-grid gap-2">
-                       @*  @if (Model.CartProducts.Any())
+                        @*  @if (Model.CartProducts.Any())
                         {
                             <a href="#" class="btn btn-primary">Ödeme Yap</a>
                         } *@
@@ -100,7 +101,23 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <hr />
+        if(Model.Addresses is null)
+        {
+            <div class="alert alert-secondary my-5">
+                <h5 class="text-danger">
+                    Kayıtlı Adresiniz Yok!
+                </h5>
+                <h6>
+                    Sipariş verebilmek için en az 1 adres eklemelisin!
+                </h6>
+                <a href="#" class="btn btn-danger">
+                    <i class=" bi-person-plus me-1"></i>
+                    Adres Ekle</a>
+            </div>
         }
+    }
         else
         {
             <div class="alert alert-info text-center py-5">
@@ -110,5 +127,5 @@
                 <a href="/" class="btn btn-primary">Ürünleri Keşfedin</a>
             </div>
         }
-    </div>
+    
 </section>
