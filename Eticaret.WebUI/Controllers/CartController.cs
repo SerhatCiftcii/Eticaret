@@ -11,10 +11,14 @@ namespace Eticaret.WebUI.Controllers
 {
     public class CartController : Controller
     {
+        private readonly IService<AppUser> _serviceAppUser;
         private readonly IService<Product> _serviceProduct;
-        public CartController(IService<Product> serviceProduct)
+        private readonly IService<Address> _seriveceAddress;
+        public CartController(IService<Product> serviceProduct, IService<Address> serviceAddress, IService<AppUser> serviceAppUser)
         {
-            _serviceProduct= serviceProduct;
+            _serviceProduct = serviceProduct;
+            _seriveceAddress = serviceAddress;
+            _serviceAppUser = serviceAppUser;
         }
 
         public IActionResult Index()
@@ -65,13 +69,20 @@ namespace Eticaret.WebUI.Controllers
         }
         //satın al sayfası onun içinde authrize olması gerekir.
         [Authorize]
-        public IActionResult Checkout()
+        public  async Task<IActionResult> CheckoutAsync()
         {
+            var appUser =  await _serviceAppUser.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
+            if(appUser == null)
+            {
+                return RedirectToAction("SignIn", "Account");
+            }
+            var addresses= await _seriveceAddress.GetAllAsync(a=>a.AppUserId==appUser.Id && a.IsActive);
             var cart = GetCart();
             var model = new CheckoutViewModel()
             {
                 CartProducts = cart.CartLines,
-                TotalPrice = cart.TotalPrice()
+                TotalPrice = cart.TotalPrice(),
+                Addresses = addresses 
             };
             return View(model);
         }

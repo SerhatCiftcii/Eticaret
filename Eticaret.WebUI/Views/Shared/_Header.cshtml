@@ -28,7 +28,7 @@
                     </li>
                 </ul>
 
-                @if (Context.User.Identity.IsAuthenticated)
+                @if (Context.User.Identity.IsAuthenticated) //kullanıcı giriş yapmış ise 
                 {
                     <div class="dropdown ">
                         <a class=" dropdown-toggle nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -37,6 +37,7 @@
 
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/Account">Kullanıcı Bilgilerim</a></li>
+                            <li><a class="dropdown-item" href="/MyAddresses">Kayıtlı Adreslerim</a></li>
                             <li><a class="dropdown-item" href="/Account/">Siparişlerim</a></li>
                             <li><a class="dropdown-item" href="/Account/">Degerlendirmelerim</a></li>
                             <li class="text-center"><a class="btn btn-danger " href="/Account/SignOut">Oturumu Kapat</a></li>
