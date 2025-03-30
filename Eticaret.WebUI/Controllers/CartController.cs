@@ -69,7 +69,7 @@ namespace Eticaret.WebUI.Controllers
         }
         //satın al sayfası onun içinde authrize olması gerekir.
         [Authorize]
-        public  async Task<IActionResult> CheckoutAsync()
+        public  async Task<IActionResult> Checkout()
         {
             var appUser =  await _serviceAppUser.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
             if(appUser == null)

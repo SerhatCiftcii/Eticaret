@@ -117,6 +117,47 @@
                     Adres Ekle</a>
             </div>
         }
+        else
+        {
+            <form asp-action="Cechkout">
+                <div class="my-5">
+                    <h3>Teslimat Adresi</h3>
+                    <div class="row row-cols-3">
+                        @foreach(var item in Model.Addresses)
+                        {
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                @Html.RadioButtonFor(model=>model.Addresses,item.AddressGuid,new{ @class="form-check-input"})
+                                                @item.Title
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>
+                                            @item.OpenAddress @item.Destrict
+                                            @item.City
+                                        </p>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="radio" name="BillingAdrdress" value="@item.AddressGuid" />
+                                                Fatura Adresi
+                                                
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+            </form>
+        }
     }
         else
         {
