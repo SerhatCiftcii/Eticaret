@@ -3,6 +3,7 @@ using Eticaret.Service.Abstract;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
@@ -61,6 +62,19 @@ namespace Eticaret.WebUI.Controllers
             ModelState.AddModelError("", "Kayıt Başarısız!");
             return View();
             }
+        public async Task<IActionResult> Edit(string id)
+        {
+            var appUser = await _serviceAppUser.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
+            if (appUser == null)
+            {
+                return NotFound("Kullanıcı Datası Bulunamadı! Lütfen Tekrar Giriş Yapın!");
+            }
+
+            var model= await _serviceAddress.GetAsync(u=>u.AddressGuid.ToString() == id);
+            return View(model);
+        }
+        
+
         }
     }
 
