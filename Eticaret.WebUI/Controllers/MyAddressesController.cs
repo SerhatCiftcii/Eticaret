@@ -117,6 +117,47 @@ namespace Eticaret.WebUI.Controllers
             return View(model);
         }
 
+        public async Task<IActionResult> Delete(string id)
+        {
+            var appUser= await _serviceAppUser.GetAsync(x=>x.UserGuid.ToString()==HttpContext.User.FindFirst("UserGuid").Value);
+            if (appUser == null)
+            {
+                return NotFound("Kullanıcı Datası Bulunamadı! Lütfen Tekrar Giriş Yapın!");
+            }
+            var model= await _serviceAddress.GetAsync(u=>u.AddressGuid.ToString()== id && u.AppUserId==appUser.Id);
+
+            if (model == null)
+                return NotFound("Adres Bilgisi Bulunamadı!");
+                return View(model);
+            
+        }
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public async Task<IActionResult> Delete(string id,Address address)
+        {
+            var appUser= await _serviceAppUser.GetAsync(x=>x.UserGuid.ToString()==HttpContext.User.FindFirst("UserGuid").Value);
+            if (appUser == null)
+            {
+                return NotFound("Kullanıcı Datası Bulunamadı! Lütfen Tekrar Giriş Yapın!");
+            }
+            var model= await _serviceAddress.GetAsync(u=>u.AddressGuid.ToString()== id && u.AppUserId==appUser.Id);
+
+            if (model == null)
+                return NotFound("Adres Bilgisi Bulunamadı!");
+            try
+            {
+                _serviceAddress.Delete(model);
+                await _serviceAddress.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError("", "Hata Oluştu Kullanıcı Adres Sayfası Delete");
+            }
+                return View(model);
+            
+        }
     }
     }
 
