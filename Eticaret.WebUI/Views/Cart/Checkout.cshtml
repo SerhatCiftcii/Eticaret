@@ -103,61 +103,115 @@
             </div>
         </div>
         <hr />
-        if(Model.Addresses is null)
+        @if (Model == null || Model.Addresses == null || !Model.Addresses.Any())
         {
             <div class="alert alert-secondary my-5">
-                <h5 class="text-danger">
-                    Kayıtlı Adresiniz Yok!
-                </h5>
-                <h6>
-                    Sipariş verebilmek için en az 1 adres eklemelisin!
-                </h6>
+                <h5 class="text-danger">Kayıtlı Adresiniz Yok!</h5>
+                <h6>Sipariş verebilmek için en az 1 adres eklemelisin!</h6>
                 <a href="/MyAddresses/Create" class="btn btn-danger">
-                    <i class=" bi-person-plus me-1"></i>
-                    Adres Ekle</a>
+                    <i class="bi-person-plus me-1"></i>
+                    Adres Ekle
+                </a>
             </div>
         }
         else
         {
-            <form asp-action="Cechkout">
-                <div class="my-5">
-                    <h3>Teslimat Adresi</h3>
-                    <div class="row row-cols-3">
-                        @foreach(var item in Model.Addresses)
+            <form asp-action="Checkout" class="container mt-5">
+                <!-- Teslimat Adresi Kartı -->
+                <div class="card p-4 shadow-lg mb-4 border-0 rounded-3">
+                    <h3 class="mb-4 fw-bold text-primary">Teslimat Adresi</h3>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        @foreach (var item in Model.Addresses)
                         {
                             <div class="col">
-                                <div class="card">
-                                    <div class="card-header">
+                                <div class="card h-100 border-primary rounded-3 hover-shadow transition">
+                                    <div class="card-header bg-primary text-white rounded-top">
                                         <div class="form-check">
-                                            <label class="form-check-label">
-                                                @Html.RadioButtonFor(model=>model.Addresses,item.AddressGuid,new{ @class="form-check-input"})
-                                                @item.Title
-                                            </label>
+                                            <input class="form-check-input toggle-radio" type="radio"
+                                                   name="DeliveryAddress" value="@item.AddressGuid"
+                                                   id="delivery-@item.AddressGuid" required
+                                                   onclick="toggleRadio(this)">
+                                            <label class="form-check-label fw-bold" for="delivery-@item.AddressGuid">@item.Title</label>
                                         </div>
                                     </div>
                                     <div class="card-body">
-                                        <p>
-                                            @item.OpenAddress @item.Destrict
-                                            @item.City
-                                        </p>
-                                        <div class="form-check">
-                                            <label class="form-check-label">
-                                                <input type="radio" name="BillingAdrdress" value="@item.AddressGuid" />
-                                                Fatura Adresi
-                                                
-                                            </label>
+                                        <p class="mb-3">@item.OpenAddress, @item.Destrict, @item.City</p>
+                                        <div class="form-check mt-auto">
+                                            <input class="form-check-input toggle-radio" type="radio"
+                                                   name="BillingAddress" value="@item.AddressGuid"
+                                                   id="billing-@item.AddressGuid"
+                                                   onclick="toggleRadio(this)">
+                                            <label class="form-check-label" for="billing-@item.AddressGuid">Fatura Adresi</label>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
                         }
                     </div>
                 </div>
 
+                <!-- Ödeme Seçenekleri Kartı -->
+                <div class="card p-4 shadow-lg mt-4 border-0 rounded-3">
+                    <h3 class="mb-4 fw-bold text-primary">Ödeme Seçenekleri</h3>
+
+                    <div class="card-body bg-light rounded-3 mb-4">
+                        <h5 class="text-secondary mb-4">
+                            <i class="bi bi-credit-card me-2"></i>Banka veya Kredi Kartı ile Ödeme
+                        </h5>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Kart Numarası</label>
+                                <div class="input-group">
+                                    <input type="text" name="CardNumber" class="form-control"
+                                           placeholder="0000 0000 0000 0000" maxlength="16" required>
+                                    <span class="input-group-text">
+                                        <i class="bi bi-credit-card"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Son Kullanma Tarihi</label>
+                                <div class="d-flex gap-2">
+                                    <select class="form-select" name="ExpireMonth" required>
+                                        <option disabled selected>Ay</option>
+                                        @for (int i = 1; i <= 12; i++)
+                                        {
+                                            <option value="@i">@i.ToString("D2")</option>
+                                        }
+                                    </select>
+                                    <select class="form-select" name="ExpireYear" required>
+                                        <option disabled selected>Yıl</option>
+                                        @for (int i = DateTime.Now.Year; i <= DateTime.Now.Year + 10; i++)
+                                        {
+                                            <option value="@i">@i</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">CVV</label>
+                                <input type="text" name="CVV" class="form-control"
+                                       placeholder="000" maxlength="3" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-end mb-3">
+                        <div>
+                            <img src="/img/visa.png" alt="Visa" height="24" class="me-2">
+                            <img src="/img/mastercard.png" alt="Mastercard" height="24" class="me-2">
+                            <img src="/img/troy.png" alt="Troy" height="24">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-25 mt-4">Ödeme Yap</button>
+                </div>
             </form>
-        }
+
+        }   
     }
         else
         {
@@ -170,3 +224,36 @@
         }
     
 </section>
+
+
+<!-- Radio butonlar için JavaScript kodu 
+     // Bu değişkenlerde son seçilen radio butonlar saklanacak
+-->
+<script>
+   
+    let lastSelectedDelivery = null;
+    let lastSelectedBilling = null;
+
+    function toggleRadio(radio) {
+        // Aynı radio butona ikinci kez tıklandığında
+        if (radio.name === 'DeliveryAddress') {
+            if (lastSelectedDelivery === radio) {
+                // Butonu unchecked yapıyoruz
+                radio.checked = false;
+                lastSelectedDelivery = null;
+
+                // Required özelliği olduğu için form doğrulamasını tetiklemek üzere bir event dispatch ediyoruz
+                radio.dispatchEvent(new Event('change'));
+            } else {
+                lastSelectedDelivery = radio;
+            }
+        } else if (radio.name === 'BillingAddress') {
+            if (lastSelectedBilling === radio) {
+                radio.checked = false;
+                lastSelectedBilling = null;
+            } else {
+                lastSelectedBilling = radio;
+            }
+        }
+    }
+</script>
