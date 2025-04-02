@@ -25,7 +25,7 @@ namespace Eticaret.Core.Entities
         [Display(Name = "Sipariş Tarihi")]
 
         public DateTime OrderDate { get; set; } = DateTime.Now;
-
+        public List<OrderLine>? OrderLines { get; set; }
 
     }
 }

@@ -129,6 +129,7 @@
                                         <div class="form-check">
                                             <input class="form-check-input toggle-radio" type="radio"
                                                    name="DeliveryAddress" value="@item.AddressGuid"
+                                                   @(item.IsDeliveryAddress ?  "checked" : "")
                                                    id="delivery-@item.AddressGuid" required
                                                    onclick="toggleRadio(this)">
                                             <label class="form-check-label fw-bold" for="delivery-@item.AddressGuid">@item.Title</label>
@@ -139,8 +140,10 @@
                                         <div class="form-check mt-auto">
                                             <input class="form-check-input toggle-radio" type="radio"
                                                    name="BillingAddress" value="@item.AddressGuid"
+                                                   @(item.IsBillingAddress ? "checked" : "")
                                                    id="billing-@item.AddressGuid"
-                                                   onclick="toggleRadio(this)">
+
+                                                   onclick="toggleRadio(this)" >
                                             <label class="form-check-label" for="billing-@item.AddressGuid">Fatura Adresi</label>
                                         </div>
                                     </div>
