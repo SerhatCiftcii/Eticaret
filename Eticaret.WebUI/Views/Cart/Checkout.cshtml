@@ -116,7 +116,7 @@
         }
         else
         {
-            <form asp-action="Checkout" class="container mt-5">
+            <form asp-action="Checkout" method="post" class="container mt-5">
                 <!-- Teslimat Adresi Kartı -->
                 <div class="card p-4 shadow-lg mb-4 border-0 rounded-3">
                     <h3 class="mb-4 fw-bold text-primary">Teslimat Adresi</h3>
@@ -174,14 +174,14 @@
                             <div class="col-md-3">
                                 <label class="form-label fw-bold">Son Kullanma Tarihi</label>
                                 <div class="d-flex gap-2">
-                                    <select class="form-select" name="ExpireMonth" required>
+                                    <select class="form-select" name="CardMonth" required>
                                         <option disabled selected>Ay</option>
                                         @for (int i = 1; i <= 12; i++)
                                         {
                                             <option value="@i">@i.ToString("D2")</option>
                                         }
                                     </select>
-                                    <select class="form-select" name="ExpireYear" required>
+                                    <select class="form-select" name="CardYear" required>
                                         <option disabled selected>Yıl</option>
                                         @for (int i = DateTime.Now.Year; i <= DateTime.Now.Year + 10; i++)
                                         {
@@ -207,7 +207,7 @@
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-success w-25 mt-4">Ödeme Yap</button>
+                    <button type="submit"  class="btn btn-success w-25 mt-4">Ödeme Yap</button>
                 </div>
             </form>
 

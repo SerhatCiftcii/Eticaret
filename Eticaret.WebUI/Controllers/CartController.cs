@@ -86,6 +86,38 @@ namespace Eticaret.WebUI.Controllers
             };
             return View(model);
         }
+        [Authorize,HttpPost]
+        public async Task<IActionResult> Checkout(string CardNumber, string CardMonth,string CardYear,string CVV,string Addresses,string BillingAddress)
+        {
+            var appUser = await _serviceAppUser.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
+            if (appUser == null)
+            {
+                return RedirectToAction("SignIn", "Account");
+            }
+            var addresses = await _seriveceAddress.GetAllAsync(a => a.AppUserId == appUser.Id && a.IsActive);
+            var cart = GetCart();
+            var model = new CheckoutViewModel()
+            {
+                CartProducts = cart.CartLines,
+                TotalPrice = cart.TotalPrice(),
+                Addresses = addresses
+            };
+            if (string.IsNullOrWhiteSpace(CardNumber) || string.IsNullOrWhiteSpace(CardMonth) || string.IsNullOrWhiteSpace(CardYear) || string.IsNullOrWhiteSpace(CVV) || string.IsNullOrWhiteSpace(Addresses) || string.IsNullOrWhiteSpace(BillingAddress))
+            {
+                return View(model);
+            }
+            var teslimatAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == Addresses);
+            var faturaAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == BillingAddress);
+
+            //ödeme çekme
+            //bankaların örnek dll ile istek gönderir normalde,lyzco ilede anlaşma varsa oda olur ben oyle yapıcam.
+
+
+
+
+
+            return View(model);
+        }
         private CartService GetCart()
         {
             return HttpContext.Session.GetJson<CartService>("Cart") ?? new CartService();
