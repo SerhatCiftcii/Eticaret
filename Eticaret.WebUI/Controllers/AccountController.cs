@@ -18,11 +18,13 @@ namespace Eticaret.WebUI.Controllers
 
         private readonly IEmailService _emailService;
         private readonly IService<AppUser> _service;
+        private readonly IService<Order> _serviceOrder;
 
-        public AccountController(IEmailService emailService, IService<AppUser> service)
+        public AccountController(IEmailService emailService, IService<AppUser> service, IService<Order> serviceOrder)
         {
             _emailService = emailService;
             _service = service;
+            _serviceOrder = serviceOrder;
         }
 
 
@@ -30,8 +32,8 @@ namespace Eticaret.WebUI.Controllers
         // Index sayfası
         public async Task<IActionResult> Index()
         {
-           AppUser user =await _service.GetAsync(x=>x.UserGuid.ToString()==HttpContext.User.FindFirst("UserGuid").Value);
-            if(user is null)
+            AppUser user = await _service.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
+            if (user is null)
             {
                 return NotFound();
             }
@@ -42,12 +44,12 @@ namespace Eticaret.WebUI.Controllers
                 Surname = user.Surname,
                 Email = user.Email,
                 Phone = user.Phone
-            };  
+            };
             return View(model);
         }
 
 
-        [HttpPost,Authorize]
+        [HttpPost, Authorize]
         public async Task<IActionResult> Index(UserEditViewModel model)
         {
             if (ModelState.IsValid)
@@ -55,7 +57,7 @@ namespace Eticaret.WebUI.Controllers
                 try
                 {
                     AppUser user = await _service.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
-                    if(user is not null)
+                    if (user is not null)
                     {
                         user.Name = model.Name;
                         user.Surname = model.Surname;
@@ -73,6 +75,18 @@ namespace Eticaret.WebUI.Controllers
             }
             return View();
             // Giriş sayfası
+        }
+        [Authorize]
+        public async Task<IActionResult> MyOrders()
+        {
+            AppUser user = await _service.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
+            if (user is null)
+            {
+                await HttpContext.SignOutAsync();
+                return RedirectToAction("SignIn");
+            }
+            var model = _serviceOrder.GetQueryable().Where(s => s.AppUserId == user.Id).Include(o=>o.OrderLines).ThenInclude(p=>p.Product);
+            return View(model);
         }
         public IActionResult SignIn()
         {
@@ -202,7 +216,7 @@ namespace Eticaret.WebUI.Controllers
             // Giriş sayfasına yönlendiriyoruz
             return RedirectToAction("SignIn");
         }
-        public  async Task<IActionResult> SignOutAsync()
+        public async Task<IActionResult> SignOutAsync()
         {
             // Kullanıcıyı oturumdan çıkartıyoruz
             await HttpContext.SignOutAsync();
