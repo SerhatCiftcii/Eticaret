@@ -109,8 +109,13 @@ namespace Eticaret.WebUI.Controllers
             var teslimatAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == Addresses);
             var faturaAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == BillingAddress);
 
+
             //ödeme çekme
-            //bankaların örnek dll ile istek gönderir normalde,lyzco ilede anlaşma varsa oda olur ben oyle yapıcam.
+            //bankaların örnek dll ile istek gönderir normalde,lyzco ilerde anlaşma varsa oda olur ben oyle yapıcam.
+            //VERİ TABANINA KAYIT İSLEMİ YAPILICAK ENTİTESCORE'A
+
+
+
 
 
 
