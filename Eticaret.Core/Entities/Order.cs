@@ -26,6 +26,8 @@ namespace Eticaret.Core.Entities
 
         public DateTime OrderDate { get; set; } = DateTime.Now;
         public List<OrderLine>? OrderLines { get; set; }
+        [Display(Name = "Müşteri")]
+        public AppUser? AppUser { get; set; }
 
     }
 }

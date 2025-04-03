@@ -109,8 +109,9 @@ namespace Eticaret.WebUI.Controllers
             {
                 return View(model);
             }
-            var teslimatAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == DeliveryAddress);
-            var faturaAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == BillingAddress);
+            var faturaAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == BillingAddress);//fatura adresi
+            var teslimatAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == DeliveryAddress);//tesliamt adresi
+           
 
 
             //ödeme çekme
@@ -120,10 +121,10 @@ namespace Eticaret.WebUI.Controllers
             var siparis = new Order
             {
                 AppUserId = appUser.Id,
-                BillingAddress=BillingAddress,
+                BillingAddress= $"{faturaAdresi.OpenAddress}  {faturaAdresi.Destrict}{faturaAdresi.City} "      ,//BillingAddress,
                 CustomerId=appUser.UserGuid.ToString(),
-                DeliveryAddress=DeliveryAddress,
-                OrderDate=DateTime.Now,
+                DeliveryAddress= $"{faturaAdresi.OpenAddress}  {faturaAdresi.Destrict}{faturaAdresi.City} ",// DeliveryAddress,
+                OrderDate =DateTime.Now,
                 TotalPrice=cart.TotalPrice(),
                 OrderNumber=Guid.NewGuid().ToString(),
                 OrderLines = []
