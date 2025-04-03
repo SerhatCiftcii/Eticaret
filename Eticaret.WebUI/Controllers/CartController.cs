@@ -121,12 +121,14 @@ namespace Eticaret.WebUI.Controllers
             var siparis = new Order
             {
                 AppUserId = appUser.Id,
-                BillingAddress= $"{faturaAdresi.OpenAddress}  {faturaAdresi.Destrict}{faturaAdresi.City} "      ,//BillingAddress,
+                BillingAddress= $"{faturaAdresi.OpenAddress}  {faturaAdresi.Destrict}{faturaAdresi.City} "  ,//BillingAddress,
                 CustomerId=appUser.UserGuid.ToString(),
                 DeliveryAddress= $"{faturaAdresi.OpenAddress}  {faturaAdresi.Destrict}{faturaAdresi.City} ",// DeliveryAddress,
                 OrderDate =DateTime.Now,
                 TotalPrice=cart.TotalPrice(),
                 OrderNumber=Guid.NewGuid().ToString(),
+                //0 onay bekliyor waiting
+                OrderState=0 ,
                 OrderLines = []
             };
             foreach (var item in cart.CartLines)

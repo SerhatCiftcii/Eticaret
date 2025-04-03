@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<Eticaret.Core.Entities.Order>
+@using Eticaret.WebUI.ExtensionMethods @*   // EnumExtensions metodunu kullanabilmek için *@
 @{
     ViewData["Title"] = "Siparişlerim";
 }
@@ -39,6 +40,7 @@
                                 <div>
                                     <span class="badge bg-success">@item.TotalPrice.ToString("N2") ₺</span>
                                     <span class="badge bg-info ms-2">@item.OrderLines.Count Ürün</span>
+                                    <span class="badge bg-warning">@item.OrderState.GetDisplayName()</span>
                                 </div>
                             </div>
                         </button>
@@ -68,6 +70,10 @@
                                                 <li class="list-group-item d-flex justify-content-between">
                                                     <span>Toplam Ürün:</span>
                                                     <span>@item.OrderLines.Count</span>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between">
+                                                    <span>@Html.DisplayNameFor(modelItem=>item.OrderState) :</span>
+                                                    <span class="badge bg-warning">@item.OrderState.GetDisplayName()</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -119,7 +125,9 @@
                                         }
                                         <tr class="table-dark">
                                             <td colspan="4" class="text-end fw-bold">Genel Toplam:</td>
-                                            <td class="text-end fw-bold">@item.TotalPrice.ToString("N2") ₺</td>
+                                            <td class="text-end fw-bold">
+                                                @item.TotalPrice.ToString("N2") ₺
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -132,9 +140,8 @@
     }
 </div>
 
+
 <!-- Bootstrap ve Bootstrap Icons için gerekli CSS ve JS bağlantıları -->
-
-
 <!-- JavaScript ile Aç/Kapat Sorununu Çöz -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {

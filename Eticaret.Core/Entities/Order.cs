@@ -28,6 +28,23 @@ namespace Eticaret.Core.Entities
         public List<OrderLine>? OrderLines { get; set; }
         [Display(Name = "Müşteri")]
         public AppUser? AppUser { get; set; }
-
+        [Display(Name = "Sipariş Durumu")]
+        public EnumOrderState OrderState { get; set; }
+    }
+    //enum tipinde sipariş durumu :sıralama veriri enum
+    public enum EnumOrderState
+    {
+        [Display(Name = "Onay Bekliyor")]
+        Waiting, //onay beklıyor
+        [Display(Name = "Onaylandı")]
+        Approved, //onaylandı
+        [Display(Name = "Kargoya Verildi")]
+        Shipped, //kargoya verildi
+        [Display(Name = "Tamamlandı")]
+        Completed,
+       [Display(Name = "İptal Edildi")]
+        Cancelled,
+       [Display(Name = "İade Edildi")]
+       Returned
     }
 }
