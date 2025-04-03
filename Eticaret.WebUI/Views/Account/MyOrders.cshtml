@@ -34,8 +34,8 @@
                                 data-bs-target="#collapse-@item.Id" aria-expanded="false" aria-controls="collapse-@item.Id">
                             <div class="d-flex justify-content-between align-items-center w-100 me-3">
                                 <div>
-                                    <span class="badge bg-dark me-2">#@item.Id</span>
-                                    <span class="text-muted small">@item.OrderDate.ToString("dd.MM.yyyy HH:mm")</span>
+                                  
+                                    <span class="text-muted small fw-bold">@item.OrderDate.ToString("dd.MM.yyyy HH:mm")</span>
                                 </div>
                                 <div>
                                     <span class="badge bg-success">@item.TotalPrice.ToString("N2") ₺</span>
@@ -57,7 +57,7 @@
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item d-flex justify-content-between">
                                                     <span>Sipariş No:</span>
-                                                    <span class="fw-bold">#@item.Id</span>
+                                                    <span class="fw-bold">#@item.OrderNumber</span>
                                                 </li>
                                                 <li class="list-group-item d-flex justify-content-between">
                                                     <span>Sipariş Tarihi:</span>

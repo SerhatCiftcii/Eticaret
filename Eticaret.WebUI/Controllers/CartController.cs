@@ -109,7 +109,9 @@ namespace Eticaret.WebUI.Controllers
             {
                 return View(model);
             }
-         
+
+           
+
             var teslimatAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == DeliveryAddress);//tesliamt adresi
             var faturaAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == BillingAddress);//fatura adresi
 
@@ -130,7 +132,7 @@ namespace Eticaret.WebUI.Controllers
                 OrderNumber=Guid.NewGuid().ToString(),
                 //0 onay bekliyor waiting
                 OrderState=0 ,
-                OrderLines = []
+                  OrderLines = new List<OrderLine>()
             };
             foreach (var item in cart.CartLines)
             {
