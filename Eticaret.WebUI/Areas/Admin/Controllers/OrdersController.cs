@@ -74,11 +74,13 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var order = await _context.Orders.FindAsync(id);
+            var order = await _context.Orders.Include(x=>x.AppUser).FirstOrDefaultAsync(x=>x.Id==id);
+           
             if (order == null)
             {
                 return NotFound();
             }
+            ViewBag.OrderStates = new SelectList(Enum.GetValues<EnumOrderState>());
             return View(order);
         }
 
@@ -107,11 +109,12 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
                     }
                     else
                     {
-                        throw;
+                        ModelState.AddModelError("", "Hata Oluştu! Edit");
                     }
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewBag.OrderStates = new SelectList(Enum.GetValues<EnumOrderState>());
             return View(order);
         }
 
@@ -123,7 +126,8 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var order = await _context.Orders
+            var order = await _context.Orders.
+                Include(x=>x.AppUser)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (order == null)
             {

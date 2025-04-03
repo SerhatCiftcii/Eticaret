@@ -109,9 +109,10 @@ namespace Eticaret.WebUI.Controllers
             {
                 return View(model);
             }
-            var faturaAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == BillingAddress);//fatura adresi
+         
             var teslimatAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == DeliveryAddress);//tesliamt adresi
-           
+            var faturaAdresi = addresses.FirstOrDefault(a => a.AddressGuid.ToString() == BillingAddress);//fatura adresi
+
 
 
             //ödeme çekme
