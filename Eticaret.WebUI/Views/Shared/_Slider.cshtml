@@ -11,7 +11,8 @@
             @foreach (var item in Model)
             {
                 <div class="carousel-item @(item == Model.FirstOrDefault() ? "active" : "")" data-bs-interval="3000">
-                    <img src="/Img/Slider/@item.Image" class="d-block w-100" alt="@item.Title">
+                    <a href="@item.Link"> <img src="/Img/Slider/@item.Image" class="d-block w-100" alt="@item.Title"></a>
+                   
                     <div class="carousel-caption d-none d-md-block">
                         <h5>@item.Title</h5>
                         <p>@item.Description</p>
