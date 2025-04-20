@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Kod Doğrulama";
+}
+
+<h2>Kod Doğrulama</h2>
+
+<form asp-action="VerifyResetCode" method="post">
+    <div class="form-group">
+        <label for="verificationCode">Email adresinize gelen 6 haneli kodu girin:</label>
+        <input type="text" class="form-control" name="verificationCode" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Doğrula</button>
+</form>
+
+@foreach (var modelError in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+{
+    <div class="alert alert-danger">@modelError.ErrorMessage</div>
+}

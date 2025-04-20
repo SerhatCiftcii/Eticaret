@@ -223,5 +223,112 @@ namespace Eticaret.WebUI.Controllers
             // Anasayfaya yönlendiriyoruz
             return RedirectToAction("SignIn");
         }
+        public IActionResult PasswordRenew()
+        {
+
+            return View();
+        
+        }
+        [HttpPost]
+        public async Task<IActionResult> PasswordRenewAsync(string Email)
+        {
+            if (string.IsNullOrWhiteSpace(Email))
+            {
+                ModelState.AddModelError("", "Email boş geçilemez");
+                return View();
+            }
+
+            AppUser user = await _service.GetAsync(x => x.Email == Email);
+            if (user is null)
+            {
+                ModelState.AddModelError("", "Girdiğiniz Email Bulunamadı");
+                return View();
+            }
+
+            // 6 haneli doğrulama kodu üret
+            var random = new Random();
+            user.VerificationCode = random.Next(100000, 999999).ToString();
+
+            // Kod güncellensin
+            _service.Update(user);
+            await _service.SaveChangesAsync();
+
+            // Email gönder
+            await _emailService.SendEmailAsync(user.Email, "Şifre Yenileme Kodu", $"Doğrulama kodunuz: {user.VerificationCode}");
+
+            // TempData ile kullanıcıyı geçici tut
+            TempData["Email"] = Email;
+
+            return RedirectToAction("VerifyResetCode");
+        }
+        public IActionResult VerifyResetCode()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> VerifyResetCode(string verificationCode)
+        {
+            var email = TempData["Email"]?.ToString();
+            if (string.IsNullOrEmpty(email))
+            {
+                return RedirectToAction("PasswordRenew");
+            }
+
+            var user = await _service.GetAsync(x => x.Email == email && x.VerificationCode == verificationCode);
+            if (user is null)
+            {
+                ModelState.AddModelError("", "Kod geçersiz veya süresi doldu.");
+                return View();
+            }
+
+            TempData["Email"] = email;
+            return RedirectToAction("ResetPassword");
+        }
+        public IActionResult ResetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(string password, string passwordConfirm)
+        {
+            // Şifrelerin eşleşip eşleşmediğini kontrol et
+            if (password != passwordConfirm)
+            {
+                ModelState.AddModelError("", "Şifreler eşleşmiyor.");
+                return View();
+            }
+
+            // Email bilgisini al
+            var email = TempData["Email"]?.ToString();
+            if (string.IsNullOrEmpty(email))
+            {
+                return RedirectToAction("PasswordRenew");
+            }
+
+            // Kullanıcıyı veritabanından al
+            var user = await _service.GetAsync(x => x.Email == email);
+            if (user is null)
+            {
+                return RedirectToAction("PasswordRenew");
+            }
+
+            // Şifreyi güncelle
+            user.Password = password; // Şifreyi düz metin olarak kaydediyoruz
+
+            // Doğrulama kodunu null yap
+            user.VerificationCode = null;
+
+            // Kullanıcıyı güncelle ve veritabanına kaydet
+            _service.Update(user);
+            await _service.SaveChangesAsync();
+
+            // Başarı mesajını ekle
+            TempData["SuccessMessage"] = "Şifreniz başarıyla güncellendi!";
+            return RedirectToAction("SignIn");
+        }
+
+
     }
 }
