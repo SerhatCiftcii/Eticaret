@@ -15,10 +15,35 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
     public class OrdersController : Controller
     {
         private readonly DatabaseContext _context;
-
-        public OrdersController(DatabaseContext context)
+        private readonly IEmailService _emailService;
+        public OrdersController(DatabaseContext context, IEmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
+        }
+        private async Task SendOrderStateChangedMail(string toEmail, EnumOrderState state)
+        {
+            string subject = "Sipariş Durumunuz Güncellendi";
+            string stateText = state switch
+            {
+                EnumOrderState.Waiting => "Siparişinizi aldık. En kısa sürede işleme alınacaktır.",
+                EnumOrderState.Approved => "Siparişiniz onaylandı.",
+                EnumOrderState.Shipped => "Siparişiniz kargoya verildi.",
+                EnumOrderState.Completed => "Siparişiniz tamamlandı.",
+                EnumOrderState.Cancelled => "Siparişiniz iptal edildi.",
+                EnumOrderState.Returned => "Siparişiniz iade edildi.",
+                _ => "Sipariş durumunuz güncellendi."
+            };
+
+            string body = $@"
+        <p>Merhaba,</p>
+        <p>{stateText}</p>
+        <p>Sipariş durumunuzu hesabınızdan takip edebilirsiniz.</p>
+        <p><a href='https://seninsiten.com/account/orders'>Siparişlerim</a></p>
+        <br/>
+        <p>Teşekkür ederiz.</p>";
+
+            await _emailService.SendEmailAsync(toEmail, subject, body);
         }
 
         // GET: Admin/Orders
@@ -52,15 +77,23 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             return View();
         }
 
-        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create( Order order)
+        public async Task<IActionResult> Create(Order order)
         {
             if (ModelState.IsValid)
             {
+                // Sipariş durumu "Onay Bekliyor" olarak atanır
+                order.OrderState = EnumOrderState.Waiting;
+
+                // Siparişi veritabanına kaydet
                 _context.Add(order);
                 await _context.SaveChangesAsync();
+
+                // Kullanıcıya "Onay Bekliyor" durumu ile ilgili mail gönder
+                await SendOrderStateChangedMail(order.AppUser.Email, EnumOrderState.Waiting);
+
                 return RedirectToAction(nameof(Index));
             }
             return View(order);
@@ -84,7 +117,7 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             return View(order);
         }
 
-      
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Order order)
@@ -98,7 +131,23 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
             {
                 try
                 {
-                    _context.Update(order);
+                    var existingOrder = await _context.Orders
+                        .Include(o => o.AppUser)
+                        .FirstOrDefaultAsync(o => o.Id == id);
+
+                    if (existingOrder == null)
+                        return NotFound();
+
+                    // Durum değişikliği kontrolü: Siparişin durumu değişmişse mail gönder
+                    if (existingOrder.OrderState != order.OrderState)
+                    {
+                        // Kullanıcıya mail gönder
+                        await SendOrderStateChangedMail(existingOrder.AppUser.Email, order.OrderState);
+                    }
+
+                    // Durumu güncelle
+                    existingOrder.OrderState = order.OrderState;
+                    _context.Update(existingOrder);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -109,14 +158,16 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
                     }
                     else
                     {
-                        ModelState.AddModelError("", "Hata Oluştu! Edit");
+                        ModelState.AddModelError("", "Bir hata oluştu.");
                     }
                 }
                 return RedirectToAction(nameof(Index));
             }
+
             ViewBag.OrderStates = new SelectList(Enum.GetValues<EnumOrderState>());
             return View(order);
         }
+
 
         // GET: Admin/Orders/Delete/5
         public async Task<IActionResult> Delete(int? id)
