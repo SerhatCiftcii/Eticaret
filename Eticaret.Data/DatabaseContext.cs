@@ -33,6 +33,14 @@ namespace Eticaret.Data
            // modelBuilder.ApplyConfiguration(new Configurations.BrandConfiguration());
            
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());// çalışan dll in classları kendi otomtoik ayarlar üstteki gibi tek tek tanıtmaya gerek kalmaz
+
+             // Cascade Delete ayarı: AppUser silinince Address'ler de silinsin yapılmazsa adresi olan kullnacılar silinirken hata fırlatır.
+            modelBuilder.Entity<Address>()
+                .HasOne(a => a.AppUser)
+                .WithMany(u => u.Addresses)
+                .HasForeignKey(a => a.AppUserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
             base.OnModelCreating(modelBuilder);
         }
 

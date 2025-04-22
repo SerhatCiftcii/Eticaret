@@ -168,6 +168,12 @@ namespace Eticaret.WebUI.Controllers
                 ModelState.AddModelError("PasswordConfirm", "Şifreler eşleşmiyor!");
                 return View(appUser);
             }
+            var Email= await _service.GetAsync(x=> x.Email == appUser.Email);
+            if (Email != null)
+            {
+                ModelState.AddModelError("Email", "Bu email adresi zaten kayıtlı!");
+                return View(appUser);
+            }
 
             // 6 haneli doğrulama kodu oluşturuluyor
             var random = new Random();
