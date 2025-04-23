@@ -32,6 +32,10 @@ namespace Eticaret.Core.Entities
         [Display(Name = "Sıra No")]
         public string OrderNo { get; set; }//sıralama
         [Display(Name = "Kayıt Tarihi"), ScaffoldColumn(false)]  // scaffoldcolumn false ile viewde gözükmesini engelledik
+        public double AvgRating { get; set; }  // Ortalama puan
         public DateTime CreateDate { get; set; }=DateTime.Now;
+
+        public List<ProductRating>? Ratings { get; set; } // Ürüne ait tüm puanlar
+
     }
 }

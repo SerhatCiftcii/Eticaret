@@ -14,6 +14,7 @@ namespace Eticaret.Service.Abstract
         T Find(int id); // T tipinde bir nesne döndürecek ve bu nesne id'ye göre bulunacak
         void Add(T entity); // T tipinde bir nesne alacak ve bu nesneyi ekleyecek
         void Update(T entity); // T tipinde bir nesne alacak ve bu nesneyi güncelleyecek
+        Task UpdateAsync(T entity); // Asenkron güncelleme
 
         void Delete(T entity); // T tipinde bir nesne alacak ve bu nesneyi silecek
         int SaveChanges(); // Değişiklikleri kaydedecek

@@ -4,6 +4,7 @@ using Eticaret.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Eticaret.Data.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20250423130325_AddProductRatingTable")]
+    partial class AddProductRatingTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -134,14 +137,14 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2025, 4, 23, 16, 22, 9, 350, DateTimeKind.Local).AddTicks(2473),
+                            CreateDate = new DateTime(2025, 4, 23, 16, 3, 24, 707, DateTimeKind.Local).AddTicks(4799),
                             Email = "admin@serhat.com",
                             IsActive = true,
                             IsAdmin = true,
                             Name = "Test",
                             Password = "12345Aa",
                             Surname = "Test",
-                            UserGuid = new Guid("fd483d5e-ec7d-4430-90d5-e37fdcf3a621"),
+                            UserGuid = new Guid("64d772a0-0ba1-46ad-9079-b607cb645b53"),
                             UserName = "Admin"
                         });
                 });
@@ -223,7 +226,7 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2025, 4, 23, 16, 22, 9, 350, DateTimeKind.Local).AddTicks(4839),
+                            CreateDate = new DateTime(2025, 4, 23, 16, 3, 24, 707, DateTimeKind.Local).AddTicks(7407),
                             IsActive = true,
                             IsTopMenu = true,
                             Name = "Elektronik",
@@ -233,7 +236,7 @@ namespace Eticaret.Data.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2025, 4, 23, 16, 22, 9, 350, DateTimeKind.Local).AddTicks(4849),
+                            CreateDate = new DateTime(2025, 4, 23, 16, 3, 24, 707, DateTimeKind.Local).AddTicks(7415),
                             IsActive = true,
                             IsTopMenu = true,
                             Name = "BiLgisayar",
@@ -396,9 +399,6 @@ namespace Eticaret.Data.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<double>("AvgRating")
-                        .HasColumnType("float");
 
                     b.Property<int?>("BrandId")
                         .HasColumnType("int");

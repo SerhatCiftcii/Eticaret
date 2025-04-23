@@ -17,7 +17,8 @@ namespace Eticaret.Data
 
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderLine> OrderLines { get; set; }
-       
+
+        public DbSet<ProductRating> ProductRatings { get; set; }
 
         //yapılandırmaları (configureleri tanıtıcaz efcora) 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -46,6 +46,7 @@ namespace Eticaret.Core.Entities
 
         public List<Address>? Addresses { get; set; }
 
+        public List<ProductRating>? Ratings { get; set; }
 
     }
 }

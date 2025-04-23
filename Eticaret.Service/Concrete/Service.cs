@@ -93,5 +93,10 @@ namespace Eticaret.Service.Concrete
         {
             _dbSet.Update(entity);
         }
+        public async Task UpdateAsync(T entity)
+        {
+            _dbSet.Update(entity);
+            await _context.SaveChangesAsync(); // Asenkron kaydetme işlemi
+        }
     }
 }
