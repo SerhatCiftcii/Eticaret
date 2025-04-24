@@ -25,6 +25,24 @@
                 <span style="font-size: 18px; font-weight: 700; color: #000;">@Model.Price.ToString("c")</span>
             </div>
 
+            <div class="mb-2">
+                @if (Model.Stock > 0)
+                {
+                    if (Model.Stock <= 3)
+                    {
+                        <span class="badge bg-warning text-dark ms-2">Son @Model.Stock adet</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-success ms-2">Stok: @Model.Stock adet</span>
+                    }
+                }
+                else
+                {
+                    <span class="badge bg-danger ms-2">Tükendi</span>
+                }
+            </div>
+
             <div id="ratingError-@Model.Id" class="alert alert-danger mb-2" style="display: none;"></div>
 
             <div class="d-flex mb-2 product-rating" id="rating-@Model.Id" data-product-id="@Model.Id" data-avg-rating="@Model.AvgRating.ToString("N1")">
@@ -41,7 +59,7 @@
             <div class="mt-auto">
                 <form action="/Cart/Add">
                     <input type="hidden" name="ProductId" value="@Model.Id" />
-                    <button class="btn w-100 mb-2" type="submit" style="background-color: #ff6000; color: white; border: none; padding: 8px; font-size: 14px; border-radius: 6px; font-weight: 600;">Sepete Ekle</button>
+                    <button class="btn w-100 mb-2" type="submit" style="background-color: #ff6000; color: white; border: none; padding: 8px; font-size: 14px; border-radius: 6px; font-weight: 600;" @(Model.Stock == 0 ? "disabled" : "")>Sepete Ekle</button>
                     <a class="btn btn-outline-secondary w-100" href="/Products/Details/@Model.Id" style="font-size: 14px; border-radius: 6px; padding: 8px; font-weight: 500;">Ürün Detay</a>
                 </form>
             </div>
@@ -147,20 +165,20 @@
                 });
             });
         });
-
-        function updateStarsVisually(stars, filledCount) {
-            stars.forEach(function (starLink, index) {
-                const icon = starLink.querySelector('i');
-                if (index < filledCount) {
-                    icon.classList.remove('bi-star');
-                    icon.classList.add('bi-star-fill');
-                    icon.style.color = 'gold';
-                } else {
-                    icon.classList.remove('bi-star-fill');
-                    icon.classList.add('bi-star');
-                    icon.style.color = '#ccc';
-                }
-            });
-        }
     });
+
+    function updateStarsVisually(stars, filledCount) {
+        stars.forEach(function (starLink, index) {
+            const icon = starLink.querySelector('i');
+            if (index < filledCount) {
+                icon.classList.remove('bi-star');
+                icon.classList.add('bi-star-fill');
+                icon.style.color = 'gold';
+            } else {
+                icon.classList.remove('bi-star-fill');
+                icon.classList.add('bi-star');
+                icon.style.color = '#ccc';
+            }
+        });
+    }
 </script>

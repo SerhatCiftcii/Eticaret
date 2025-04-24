@@ -11,7 +11,7 @@ namespace Eticaret.Service.Abstract
     {
         void AddProduct(Product product, int quantity);
         void UpdateProduct(Product product, int quantity);
-        void RemoveProduct(Product product);
+        int RemoveProduct(Product product); // Dönüş tipi int olarak değiştirildi
         decimal TotalPrice(); //toplam fiyatı döndürür
         void ClearAll(); //
     }

@@ -33,7 +33,7 @@ namespace Eticaret.WebUI.Controllers
 
         public IActionResult Index()
         {
-            var cart=GetCart();
+            var cart = GetCart();
             var model = new CartViewModel()
             {
                 CartLines = cart.CartLines,
@@ -42,16 +42,29 @@ namespace Eticaret.WebUI.Controllers
             return View(model);
         }
 
-        
+
         public IActionResult Add(int ProductId, int quantity = 1)
         {
             var product = _serviceProduct.Find(ProductId);
             if (product != null)
             {
+                // Stok kontrolü
+                if (product.Stock < quantity)
+                {
+                    TempData["ErrorMessage"] = $"{product.Name} için yeterli stok bulunmamaktadır. Mevcut stok: {product.Stock}";
+                    return Redirect(Request.Headers["Referer"].ToString());
+                }
+
                 var cart = GetCart();
                 cart.AddProduct(product, quantity);
                 HttpContext.Session.SetJson("Cart", cart);
-                return Redirect(Request.Headers["Referer"].ToString()); //kullanıcın bi önceki referaensı
+
+                // Sepete eklendiği anda stoğu azalt
+                product.Stock -= quantity;
+                _serviceProduct.Update(product); // Update metodu async değilse
+                _serviceProduct.SaveChanges();   // SaveChanges metodu async değilse
+
+                return Redirect(Request.Headers["Referer"].ToString()); // Kullanıcının bir önceki sayfasına dön
             }
             return RedirectToAction("Index");
         }
@@ -65,34 +78,43 @@ namespace Eticaret.WebUI.Controllers
                 HttpContext.Session.SetJson("Cart", cart);
             }
             return RedirectToAction("Index");
-        }  
+        }
         public IActionResult Remove(int ProductId)
         {
             var product = _serviceProduct.Find(ProductId);
             if (product != null)
             {
                 var cart = GetCart();
-                cart.RemoveProduct(product);
+                int removedQuantity = cart.RemoveProduct(product); // Çıkarılan adedi al
+
+                if (removedQuantity > 0) // Ürün sepetten başarıyla çıkarıldıysa
+                {
+                    // Stoğu geri artır
+                    product.Stock += removedQuantity;
+                    _serviceProduct.Update(product); // Update metodu async değilse
+                    _serviceProduct.SaveChanges();   // SaveChanges metodu async değilse
+                }
+
                 HttpContext.Session.SetJson("Cart", cart);
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index"); // Sepet sayfasına geri dön
         }
         //satın al sayfası onun içinde authrize olması gerekir.
         [Authorize]
-        public  async Task<IActionResult> Checkout()
+        public async Task<IActionResult> Checkout()
         {
-            var appUser =  await _serviceAppUser.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
-            if(appUser == null)
+            var appUser = await _serviceAppUser.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
+            if (appUser == null)
             {
                 return RedirectToAction("SignIn", "Account");
             }
-            var addresses= await _seriveceAddress.GetAllAsync(a=>a.AppUserId==appUser.Id && a.IsActive);
+            var addresses = await _seriveceAddress.GetAllAsync(a => a.AppUserId == appUser.Id && a.IsActive);
             var cart = GetCart();
             var model = new CheckoutViewModel()
             {
                 CartProducts = cart.CartLines,
                 TotalPrice = cart.TotalPrice(),
-                Addresses = addresses 
+                Addresses = addresses
             };
             return View(model);
         }
@@ -155,15 +177,27 @@ namespace Eticaret.WebUI.Controllers
 
                 if (sonuc > 0)
                 {
+                    // Stok güncelleme işlemi burada yapılacak
+                    foreach (var item in cart.CartLines)
+                    {
+                        var product = await _serviceProduct.FindAsync(item.Product.Id);
+                        if (product != null)
+                        {
+                            product.Stock -= item.Quantity;
+                            await _serviceProduct.UpdateAsync(product);
+                        }
+                    }
+                    await _serviceProduct.SaveChangesAsync(); // Güncellenen stok bilgilerini kaydet
+
                     // Sipariş başarıyla kaydedildikten sonra, kullanıcıya mail gönderimi yapılacak
                     string subject = "Siparişiniz Alındı";
                     string body = $@"
-                <p>Merhaba {appUser.Name},</p>
-                <p>Siparişinizi aldık. En kısa sürede işleme alınacaktır.</p>
-                <p>Sipariş durumunuzu hesabınızdan takip edebilirsiniz.</p>
-                <br/>
-                <p>Teşekkür ederiz.</p>
-                    ";
+    <p>Merhaba {appUser.Name},</p>
+    <p>Siparişinizi aldık. En kısa sürede işleme alınacaktır.</p>
+    <p>Sipariş durumunuzu hesabınızdan takip edebilirsiniz.</p>
+    <br/>
+    <p>Teşekkür ederiz.</p>
+            ";
 
                     await _emailService.SendEmailAsync(appUser.Email, subject, body);
 
@@ -179,7 +213,6 @@ namespace Eticaret.WebUI.Controllers
 
             return View(model);
         }
-
 
         public IActionResult Thanks()
         {
