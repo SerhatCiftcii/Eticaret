@@ -1,0 +1,40 @@
+﻿@model List<Eticaret.Core.Entities.Product>
+
+@{
+    ViewData["Title"] = "Düşük Stoklu Ürünler";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml"; // Eğer bir admin layout'unuz varsa
+}
+
+
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Ürün Adı</th>
+                <th>Ürün Kodu</th>
+                <th>Stok Adedi</th>
+                <th>Fiyat</th>
+                <th>Aktif Mi?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.ProductCode</td>
+                    <td class="@(product.Stock < 3 ? "text-danger fw-bold" : (product.Stock < 5 ? "text-warning fw-bold" : ""))">@product.Stock</td>
+                    <td>@product.Price.ToString("c")</td>
+                    <td>@(product.IsActive ? "Evet" : "Hayır")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Admin/Products" class="btn  btn-primary mt-1">Ürünler Sayfası</a>
+}
+else
+{
+    <p>Stokta 5 adetten az ürün bulunmamaktadır.</p>
+}
