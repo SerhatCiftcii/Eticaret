@@ -3,6 +3,7 @@ using Eticaret.Data;
 using Eticaret.Service;
 using Eticaret.Service.Abstract;
 using Eticaret.Service.Concrete;
+using Eticaret.WebUI.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Options;
 using System.Security.Claims;
@@ -12,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddScoped<IEmailService,EmailService>();
 
 // Session yapýlandýrmasý
