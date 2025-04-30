@@ -153,6 +153,7 @@
                     </div>
                 </div>
 
+              
                 <!-- Ödeme Seçenekleri Kartı -->
                 <div class="card p-4 shadow-lg mt-4 border-0 rounded-3">
                     <h3 class="mb-4 fw-bold text-primary">Ödeme Seçenekleri</h3>
@@ -163,6 +164,7 @@
                         </h5>
 
                         <div class="row g-4">
+                            <!-- Kart Numarası -->
                             <div class="col-md-6">
                                 <label class="form-label fw-bold">Kart Numarası</label>
                                 <div class="input-group">
@@ -174,7 +176,20 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <!-- Kart Üzerindeki İsim -->
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Kart Üzerindeki İsim</label>
+                                <div class="input-group">
+                                    <input type="text" name="CardNameSurname" class="form-control text-uppercase"
+                                           placeholder="Ad Soyad" required>
+                                    <span class="input-group-text">
+                                        <i class="bi bi-person"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Son Kullanma Tarihi -->
+                            <div class="col-md-6">
                                 <label class="form-label fw-bold">Son Kullanma Tarihi</label>
                                 <div class="d-flex gap-2">
                                     <select class="form-select" name="CardMonth" required>
@@ -194,24 +209,33 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
+                            <!-- CVV -->
+                            <div class="col-md-6">
                                 <label class="form-label fw-bold">CVV</label>
-                                <input type="text" name="CVV" class="form-control"
-                                       placeholder="000" maxlength="3" required>
+                                <div class="input-group">
+                                    <input type="text" name="CVV" class="form-control"
+                                           placeholder="3 haneli güvenlik kodu" maxlength="3" required>
+                                    <span class="input-group-text">
+                                        <i class="bi bi-shield-lock"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Kart Logoları -->
                     <div class="text-end mb-3">
-                        <div>
-                            <img src="/img/visa.png" alt="Visa" height="24" class="me-2">
-                            <img src="/img/mastercard.png" alt="Mastercard" height="24" class="me-2">
-                            <img src="/img/troy.png" alt="Troy" height="24">
-                        </div>
+                        <img src="/img/visa.png" alt="Visa" height="24" class="me-2">
+                        <img src="/img/mastercard.png" alt="Mastercard" height="24" class="me-2">
+                        <img src="/img/troy.png" alt="Troy" height="24">
                     </div>
 
-                    <button type="submit"  class="btn btn-success w-25 mt-4">Ödeme Yap</button>
+                    <!-- Ödeme Butonu -->
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-success px-4 py-2">Ödeme Yap</button>
+                    </div>
                 </div>
+
             </form>
 
         }   

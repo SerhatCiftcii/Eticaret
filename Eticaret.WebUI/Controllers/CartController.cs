@@ -126,7 +126,7 @@ namespace Eticaret.WebUI.Controllers
             return View(model);
         }
         [Authorize, HttpPost]
-        public async Task<IActionResult> Checkout(string CardNumber, string CardMonth, string CardYear, string CVV, string DeliveryAddress, string BillingAddress)
+        public async Task<IActionResult> Checkout(string CardNameSurname, string CardNumber, string CardMonth, string CardYear, string CVV, string DeliveryAddress, string BillingAddress)
         {
             var appUser = await _serviceAppUser.GetAsync(x => x.UserGuid.ToString() == HttpContext.User.FindFirst("UserGuid").Value);
             if (appUser == null)
@@ -143,7 +143,8 @@ namespace Eticaret.WebUI.Controllers
                 Addresses = addresses
             };
 
-            if (string.IsNullOrWhiteSpace(CardNumber) || string.IsNullOrWhiteSpace(CardMonth) || string.IsNullOrWhiteSpace(CardYear) || string.IsNullOrWhiteSpace(CVV) || string.IsNullOrWhiteSpace(DeliveryAddress) || string.IsNullOrWhiteSpace(BillingAddress))
+            if (string.IsNullOrWhiteSpace(CardNumber) || string.IsNullOrWhiteSpace(CardMonth) || string.IsNullOrWhiteSpace(CardYear) || string.IsNullOrWhiteSpace(CVV) || string.IsNullOrWhiteSpace(DeliveryAddress) || string.IsNullOrWhiteSpace(BillingAddress) || string.IsNullOrWhiteSpace(CardNameSurname))   
+ 
             {
                 return View(model);
             }
@@ -184,53 +185,53 @@ namespace Eticaret.WebUI.Controllers
 
             CreatePaymentRequest request = new CreatePaymentRequest();
             request.Locale = Locale.TR.ToString();
-            request.ConversationId = "123456789";
-            request.Price = "1";
-            request.PaidPrice = "1.2";
+            request.ConversationId = HttpContext.Session.Id;//benzersiz değer geçerli sessıon bilgisi
+            request.Price = siparis.TotalPrice.ToString();
+            request.PaidPrice = siparis.TotalPrice.ToString(); ;
             request.Currency = Currency.TRY.ToString();
             request.Installment = 1;
-            request.BasketId = "B67832";
+            request.BasketId = "B" +HttpContext.Session.Id;
             request.PaymentChannel = PaymentChannel.WEB.ToString();
             request.PaymentGroup = PaymentGroup.PRODUCT.ToString();
 
             PaymentCard paymentCard = new PaymentCard();
-            paymentCard.CardHolderName = "John Doe";
-            paymentCard.CardNumber = "5528790000000008";
-            paymentCard.ExpireMonth = "12";
-            paymentCard.ExpireYear = "2030";
-            paymentCard.Cvc = "123";
+            paymentCard.CardHolderName = CardNameSurname;//"John Doe";
+            paymentCard.CardNumber = CardNumber;//"5528790000000008";
+            paymentCard.ExpireMonth = CardMonth;//"12";
+            paymentCard.ExpireYear = CardYear;//"2030";
+            paymentCard.Cvc = CVV; //"123";
             paymentCard.RegisterCard = 0;
             request.PaymentCard = paymentCard;
 
             Buyer buyer = new Buyer();
-            buyer.Id = "BY789";
-            buyer.Name = "John";
-            buyer.Surname = "Doe";
-            buyer.GsmNumber = "+905350000000";
-            buyer.Email = "email@email.com";
-            buyer.IdentityNumber = "74300864791";
-            buyer.LastLoginDate = "2015-10-05 12:43:35";
-            buyer.RegistrationDate = "2013-04-21 15:12:09";
-            buyer.RegistrationAddress = "Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1";
-            buyer.Ip = "85.34.78.112";
-            buyer.City = "Istanbul";
+            buyer.Id = "BY"+appUser.Id;
+            buyer.Name = appUser.Name;//"John";
+            buyer.Surname = appUser.Surname;//"Doe";
+            buyer.GsmNumber = appUser.Phone;//"+905350000000";
+            buyer.Email = appUser.Email;//"email@email.com";
+            buyer.IdentityNumber = "11111111111";
+            buyer.LastLoginDate = DateTime.Now.ToString();//"2015-10-05 12:43:35";
+            buyer.RegistrationDate = appUser.CreateDate.ToString(); //"2013-04-21 15:12:09";
+            buyer.RegistrationAddress = siparis.DeliveryAddress;//"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1";
+            buyer.Ip = HttpContext.Connection.RemoteIpAddress?.ToString();//"85.34.78.112";
+            buyer.City = teslimatAdresi.City; //"Istanbul";
             buyer.Country = "Turkey";
             buyer.ZipCode = "34732";
             request.Buyer = buyer;
 
             var shippingAddress = new Iyzipay.Model.Address();
-            shippingAddress.ContactName = "Jane Doe";
-            shippingAddress.City = "Istanbul";
+            shippingAddress.ContactName = appUser.Name + "" + appUser.Surname; 
+            shippingAddress.City = teslimatAdresi.City;//"Istanbul";
             shippingAddress.Country = "Turkey";
-            shippingAddress.Description = "Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1";
+            shippingAddress.Description = teslimatAdresi.OpenAddress;
             shippingAddress.ZipCode = "34742";
             request.ShippingAddress = shippingAddress;
 
             var billingAddress = new Iyzipay.Model.Address();
-            billingAddress.ContactName = "Jane Doe";
-            billingAddress.City = "Istanbul";
+            billingAddress.ContactName = appUser.Name + ""+ appUser.Surname;//"Jane Doe";
+            billingAddress.City = faturaAdresi.City;//"Istanbul";
             billingAddress.Country = "Turkey";
-            billingAddress.Description = "Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1";
+            billingAddress.Description = faturaAdresi.OpenAddress;//açık adres
             billingAddress.ZipCode = "34742";
             request.BillingAddress = billingAddress;
 
