@@ -20,19 +20,22 @@ namespace Eticaret.WebUI.Controllers
         private readonly IService<Product> _serviceProduct;
         private readonly IService<Core.Entities.Address> _seriveceAddress;
         private readonly IService<Order> _seriveceOrder;
+        private readonly IConfiguration _configuration; //ıyzco
         private readonly IEmailService _emailService;  // Burayı doğru şekilde tanımlıyoruz
 
         public CartController(IService<Product> serviceProduct,
                               IService<Core.Entities.Address> serviceAddress,
                               IService<AppUser> serviceAppUser,
                               IService<Order> seriveceOrder,
-                              IEmailService emailService)  // IEmailService parametre olarak alıyoruz
+                              IEmailService emailService,
+                              IConfiguration configuration)  
         {
             _serviceProduct = serviceProduct;
             _seriveceAddress = serviceAddress;
             _serviceAppUser = serviceAppUser;
             _seriveceOrder = seriveceOrder;
             _emailService = emailService;  // Burada _emailService doğru şekilde atanıyor
+            _configuration = configuration;
         }
 
         public IActionResult Index()
@@ -174,9 +177,10 @@ namespace Eticaret.WebUI.Controllers
             }
             #region OdemIslemi
             Options options = new Options();
-            options.ApiKey = "your api key";
-            options.SecretKey = "your secret key";
-            options.BaseUrl = "https://sandbox-api.iyzipay.com";
+            options.ApiKey = _configuration["IyzicOptions:ApiKey"];
+            options.SecretKey = _configuration["IyzicOptions:SecretKey"];
+            options.BaseUrl = _configuration["IyzicOptions:BaseUrl"];                                
+            //"https://sandbox-api.iyzipay.com";
 
             CreatePaymentRequest request = new CreatePaymentRequest();
             request.Locale = Locale.TR.ToString();
@@ -260,30 +264,34 @@ namespace Eticaret.WebUI.Controllers
             request.BasketItems = basketItems;
 
             Payment payment = await Payment.Create(request, options);
+            
             #endregion
             try
             {
-                // Siparişi veritabanına kaydediyoruz
-                await _seriveceOrder.AddAsync(siparis);
-                var sonuc = await _seriveceOrder.SaveChangesAsync();
-
-                if (sonuc > 0)
+                if (payment.Status == "success")
                 {
-                    // Stok güncelleme işlemi burada yapılacak
-                    foreach (var item in cart.CartLines)
-                    {
-                        var product = await _serviceProduct.FindAsync(item.Product.Id);
-                        if (product != null)
-                        {
-                            product.Stock -= item.Quantity;
-                            await _serviceProduct.UpdateAsync(product);
-                        }
-                    }
-                    await _serviceProduct.SaveChangesAsync(); // Güncellenen stok bilgilerini kaydet
+                    //sipariş oluştur
+                    // Siparişi veritabanına kaydediyoruz
+                    await _seriveceOrder.AddAsync(siparis);
+                    var sonuc = await _seriveceOrder.SaveChangesAsync();
 
-                    // Sipariş başarıyla kaydedildikten sonra, kullanıcıya mail gönderimi yapılacak
-                    string subject = "Siparişiniz Alındı";
-                    string body = $@"
+                    if (sonuc > 0)
+                    {
+                        // Stok güncelleme işlemi burada yapılacak
+                        foreach (var item in cart.CartLines)
+                        {
+                            var product = await _serviceProduct.FindAsync(item.Product.Id);
+                            if (product != null)
+                            {
+                                product.Stock -= item.Quantity;
+                                await _serviceProduct.UpdateAsync(product);
+                            }
+                        }
+                        await _serviceProduct.SaveChangesAsync(); // Güncellenen stok bilgilerini kaydet
+
+                        // Sipariş başarıyla kaydedildikten sonra, kullanıcıya mail gönderimi yapılacak
+                        string subject = "Siparişiniz Alındı";
+                        string body = $@"
     <p>Merhaba {appUser.Name},</p>
     <p>Siparişinizi aldık. En kısa sürede işleme alınacaktır.</p>
     <p>Sipariş durumunuzu hesabınızdan takip edebilirsiniz.</p>
@@ -291,12 +299,18 @@ namespace Eticaret.WebUI.Controllers
     <p>Teşekkür ederiz.</p>
             ";
 
-                    await _emailService.SendEmailAsync(appUser.Email, subject, body);
+                        await _emailService.SendEmailAsync(appUser.Email, subject, body);
 
-                    // Sepeti temizleyelim
-                    HttpContext.Session.Remove("Cart");
-                    return RedirectToAction("Thanks"); // Teşekkür sayfasına yönlendirme
+                        // Sepeti temizleyelim
+                        HttpContext.Session.Remove("Cart");
+                        return RedirectToAction("Thanks"); // Teşekkür sayfasına yönlendirme
+                    }
+                    else
+                    {
+                        TempData["Message"] = "Sipariş oluşturulamadı. Lütfen tekrar deneyin.";
+                    }
                 }
+               
             }
             catch (Exception)
             {
