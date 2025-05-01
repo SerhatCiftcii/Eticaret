@@ -64,12 +64,7 @@ namespace Eticaret.WebUI.Controllers
 
                 var cart = GetCart();
                 cart.AddProduct(product, quantity);
-                HttpContext.Session.SetJson("Cart", cart);
-
-                // Sepete eklendiği anda stoğu azalt
-                product.Stock -= quantity;
-                _serviceProduct.Update(product); // Update metodu async değilse
-                _serviceProduct.SaveChanges();   // SaveChanges metodu async değilse
+                HttpContext.Session.SetJson("Cart", cart); // Sepet güncelleniyor
 
                 return Redirect(Request.Headers["Referer"].ToString()); // Kullanıcının bir önceki sayfasına dön
             }
@@ -91,13 +86,23 @@ namespace Eticaret.WebUI.Controllers
             var product = _serviceProduct.Find(ProductId);
             if (product != null)
             {
+                int quantity = 1; // Varsayılan miktar 1
+                // Stok kontrolü: Eğer istenilen ürün miktarı, mevcut stoktan fazla ise işlemi engelle.
+                if (product.Stock < quantity)
+                {
+                    TempData["ErrorMessage"] = $"{product.Name} için yeterli stok bulunmamaktadır. Mevcut stok: {product.Stock}";
+                    return Redirect(Request.Headers["Referer"].ToString());
+                }
+
+
+
                 var cart = GetCart();
                 int removedQuantity = cart.RemoveProduct(product); // Çıkarılan adedi al
 
                 if (removedQuantity > 0) // Ürün sepetten başarıyla çıkarıldıysa
                 {
                     // Stoğu geri artır
-                    product.Stock += removedQuantity;
+                 
                     _serviceProduct.Update(product); // Update metodu async değilse
                     _serviceProduct.SaveChanges();   // SaveChanges metodu async değilse
                 }
@@ -291,7 +296,7 @@ namespace Eticaret.WebUI.Controllers
                             var product = await _serviceProduct.FindAsync(item.Product.Id);
                             if (product != null)
                             {
-                                product.Stock -= item.Quantity;
+                                product.Stock -= item.Quantity; // Stok azalması burada yapılmalı
                                 await _serviceProduct.UpdateAsync(product);
                             }
                         }
@@ -300,12 +305,12 @@ namespace Eticaret.WebUI.Controllers
                         // Mail gönder
                         string subject = "Siparişiniz Alındı";
                         string body = $@"
-<p>Merhaba {appUser.Name},</p>
-<p>Siparişinizi aldık. En kısa sürede işleme alınacaktır.</p>
-<p>Sipariş durumunuzu hesabınızdan takip edebilirsiniz.</p>
-<br/>
-<p>Teşekkür ederiz.</p>
-";
+        <p>Merhaba {appUser.Name},</p>
+        <p>Siparişinizi aldık. En kısa sürede işleme alınacaktır.</p>
+        <p>Sipariş durumunuzu hesabınızdan takip edebilirsiniz.</p>
+        <br/>
+        <p>Teşekkür ederiz.</p>
+        ";
                         // E-posta gönderme işlemi
                         await _emailService.SendEmailAsync(appUser.Email, subject, body);
 
@@ -316,6 +321,7 @@ namespace Eticaret.WebUI.Controllers
                         return RedirectToAction("Thanks");
                     }
                 }
+
                 else
                 {
                     TempData["Message"] = $"<div class='alert alert-danger'>Ödeme İşlemi Başarısız! ({payment.ErrorMessage})</div>";

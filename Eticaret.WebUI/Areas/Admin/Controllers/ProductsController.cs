@@ -52,15 +52,23 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
         // GET: Admin/Products/Create
         public IActionResult Create()
         {
+            // BrandId için SelectList oluşturuluyor
             ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Name");
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
+
+            // ParentId'si 0'dan farklı olan kategoriler için SelectList oluşturuluyor
+            var altKategoriler = _context.Categories
+                .Where(c => c.ParentId != 0)
+                .ToList();
+
+            // altKategoriler'i ViewBag'e atıyoruz
+            ViewBag.altKategoriler = new SelectList(altKategoriler, "Id", "Name");
+
             return View();
         }
 
-       
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create( Product product, IFormFile? Image)
+        public async Task<IActionResult> Create(Product product, IFormFile? Image)
         {
             if (ModelState.IsValid)
             {
@@ -69,8 +77,18 @@ namespace Eticaret.WebUI.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            // POST işleminde BrandId ve CategoryId için SelectList'ler yeniden oluşturuluyor
             ViewData["BrandId"] = new SelectList(_context.Brands, "Id", "Name", product.BrandId);
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name", product.CategoryId);
+
+            // ParentId'si 0'dan farklı olan kategorileri tekrar alıyoruz
+            var altKategoriler = await _context.Categories
+                .Where(c => c.ParentId != 0)
+                .ToListAsync();
+
+            // altKategoriler'i ViewBag'e atıyoruz
+            ViewBag.altKategoriler = new SelectList(altKategoriler, "Id", "Name");
+
             return View(product);
         }
 

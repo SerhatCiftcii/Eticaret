@@ -28,13 +28,13 @@
             <div class="mb-2">
                 @if (Model.Stock > 0)
                 {
-                    if (Model.Stock <= 3)
+                    if (Model.Stock <= 5)
                     {
                         <span class="badge bg-warning text-dark ms-2">Son @Model.Stock adet</span>
                     }
                     else
                     {
-                        <span class="badge bg-success ms-2">Stok: @Model.Stock adet</span>
+                        <span class="badge bg-success ms-2">Stokta </span>
                     }
                 }
                 else
@@ -59,8 +59,17 @@
             <div class="mt-auto">
                 <form action="/Cart/Add">
                     <input type="hidden" name="ProductId" value="@Model.Id" />
-                    <button class="btn w-100 mb-2" type="submit" style="background-color: #ff6000; color: white; border: none; padding: 8px; font-size: 14px; border-radius: 6px; font-weight: 600;" @(Model.Stock == 0 ? "disabled" : "")>Sepete Ekle</button>
-                    <a class="btn btn-outline-secondary w-100" href="/Products/Details/@Model.Id" style="font-size: 14px; border-radius: 6px; padding: 8px; font-weight: 500;">Ürün Detay</a>
+                    <!-- Sepete Ekle Butonu: Stok 0 ise disabled olacak -->
+                    <button class="btn w-100 mb-2" type="submit"
+                            style="background-color: #ff6000; color: white; border: none; padding: 8px; font-size: 14px; border-radius: 6px; font-weight: 600;"
+                    @(Model.Stock <= 0 ? "disabled" : "")>
+                        Sepete Ekle
+                    </button>
+                    <!-- Ürün Detay Linki -->
+                    <a class="btn btn-outline-secondary w-100" href="/Products/Details/@Model.Id"
+                       style="font-size: 14px; border-radius: 6px; padding: 8px; font-weight: 500;">
+                        Ürün Detay
+                    </a>
                 </form>
             </div>
         </div>

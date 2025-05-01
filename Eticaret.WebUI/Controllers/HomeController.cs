@@ -33,55 +33,44 @@ namespace Eticaret.WebUI.Controllers
             _serviceProductRating = serviceProductRating; // Servisi atadýk
         }
 
-        public async Task<IActionResult> Index()
+        // Sayfalama için index parametresi ekliyoruz
+        public async Task<IActionResult> Index(int page = 1)
         {
-            try
+            const int pageSize = 12;
+
+            var allProducts = await _serviceProduct.GetAllAsync(x => x.IsActive && x.IsHome);
+            var pagedProducts = allProducts.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+
+            var productIds = pagedProducts.Select(p => p.Id).ToList();
+            var allRatings = await _serviceProductRating.GetAllAsync(r => productIds.Contains(r.ProductId));
+
+            var ratingsByProduct = allRatings.GroupBy(r => r.ProductId)
+                .ToDictionary(g => g.Key, g => g.ToList());
+
+            foreach (var product in pagedProducts)
             {
-                // Get all active products for homepage
-                var products = await _serviceProduct.GetAllAsync(x => x.IsActive && x.IsHome);
-
-                // Get all ratings for these products in one query for better performance
-                var productIds = products.Select(p => p.Id).ToList();
-                var allRatings = await _serviceProductRating.GetAllAsync(r => productIds.Contains(r.ProductId));
-
-                // Group ratings by product ID
-                var ratingsByProduct = allRatings.GroupBy(r => r.ProductId)
-                    .ToDictionary(g => g.Key, g => g.ToList());
-
-                // Calculate average rating for each product
-                foreach (var product in products)
+                if (ratingsByProduct.TryGetValue(product.Id, out var ratings) && ratings.Any())
                 {
-                    if (ratingsByProduct.TryGetValue(product.Id, out var ratings) && ratings.Any())
-                    {
-                        // Calculate and set average rating
-                        product.AvgRating = ratings.Average(r => r.Rating);
-                    }
-                    else
-                    {
-                        // No ratings for this product
-                        product.AvgRating = 0;
-                    }
+                    product.AvgRating = ratings.Average(r => r.Rating);
                 }
-
-                // Create and return the view model
-                var model = new HomePageViewModel()
+                else
                 {
-                    Sliders = await _serviceSlider.GetAllAsync(),
-                    News = await _serviceNews.GetAllAsync(x => x.IsActive),
-                    Products = products
-                };
-
-                return View(model);
+                    product.AvgRating = 0;
+                }
             }
-            catch (Exception ex)
+
+            var model = new HomePageViewModel
             {
-                // Log the error
-                Console.WriteLine($"Error in Index: {ex.Message}");
+                Sliders = await _serviceSlider.GetAllAsync(),
+                News = await _serviceNews.GetAllAsync(x => x.IsActive), // Kampanyalar her zaman gelir
+                Products = pagedProducts,
+                CurrentPage = page,
+                TotalPages = (int)Math.Ceiling((double)allProducts.Count / pageSize)
+            };
 
-                // Return a basic model or error view
-                return View(new HomePageViewModel());
-            }
+            return View(model);
         }
+
 
         public IActionResult ContactUs()
         {

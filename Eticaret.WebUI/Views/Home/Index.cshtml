@@ -3,13 +3,15 @@
     ViewData["Title"] = "Anasayfa";
 }
 
+<!-- Slider -->
 <partial name="_Slider" model="Model.Sliders" />
 
-@if (Model.Products is not null && Model.Products.Count>0) 
+<!-- Ürünler -->
+@if (Model.Products is not null && Model.Products.Count > 0)
 {
     <div class="my-3">
         <h1 class="text-center fw-bold mb-3" style="color: #ff6000;">Sana Özel Ürünlerimiz</h1>
-        <div class="row row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             @foreach (var item in Model.Products)
             {
                 <partial name="_ProductView" model="item" />
@@ -17,9 +19,11 @@
         </div>
     </div>
 }
+
+<!-- Kampanyalar -->
 <div class="col">
     <h1 class="text-center fw-bold mb-3" style="color: #ff6000;">Kampanyalarımız</h1>
-    <div class="row gx-3  justify-content-center">
+    <div class="row gx-3 justify-content-center">
         @if (Model.News != null && Model.News.Any())
         {
             @foreach (var item in Model.News)
@@ -43,3 +47,33 @@
     </div>
 </div>
 
+<!-- Sayfalama: En altta, kampanyalardan sonra -->
+@if (Model.TotalPages > 1)
+{
+    <div class="d-flex justify-content-center mt-4 mb-5">
+        <nav>
+            <ul class="pagination">
+                @if (Model.CurrentPage > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { page = Model.CurrentPage - 1 })">Önceki</a>
+                    </li>
+                }
+
+                @for (int i = 1; i <= Model.TotalPages; i++)
+                {
+                    <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                    </li>
+                }
+
+                @if (Model.CurrentPage < Model.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { page = Model.CurrentPage + 1 })">Sonraki</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+}

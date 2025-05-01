@@ -38,7 +38,7 @@
                 <span>Ürün Fiyatı: @Model.Product?.Price.ToString("c") </span>
                @if (Model.Product?.Stock > 0)
                 {
-                    if (Model.Product.Stock <= 3)
+                    if (Model.Product.Stock <= 5)
 
                     {
                         <span class="badge bg-warning text-dark ms-2">Son @Model.Product.Stock adet</span>
@@ -55,11 +55,11 @@
             </div>
             <div class="mb-3">
                 <strong class="text-info">Stok Durumu:</strong>
-                @if (Model.Product?.Stock > 0 && Model.Product.Stock > 3)
+                @if (Model.Product?.Stock > 0 && Model.Product.Stock > 5)
                 {
-                    <span class="text-success">Stokta (@Model.Product.Stock adet)</span>
+                    <span class="text-success">Stokta </span>
                 }
-                else if (Model.Product?.Stock > 0 && Model.Product.Stock <= 3)
+                else if (Model.Product?.Stock > 0 && Model.Product.Stock <= 5)
                 {
                     <span class="text-warning">Son @Model.Product.Stock adet</span>
                 }
@@ -92,9 +92,9 @@
                                    min="1"
                                    max="@Model.Product?.Stock"
                                    style="width: 80px; height: 40px;"
-                            @(Model.Product?.Stock == 0 ? "disabled" : "")>
+                            @(Model.Product?.Stock <= 0 ? "disabled" : "")>
                             <button class="btn btn-primary flex-shrink-0 px-4 py-2 shadow-sm" type="submit"
-                            @(Model.Product?.Stock == 0 ? "disabled" : "")>
+                            @(Model.Product?.Stock <= 0 ? "disabled" : "")>
 
                                 <i class="bi-cart-fill me-1"></i>
                                 Sepete Ekle
