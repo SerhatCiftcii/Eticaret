@@ -1,121 +1,139 @@
 ﻿@using Eticaret.WebUI.ExtensionMethods;
 <header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm py-1 mb-3">
         <div class="container">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Eticaret.WebUI</a>
+            <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Eticaret.WebUI</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <form action="/Products" class="col-4 col-lg-auto  " role="search">
+            <form action="/Products" class="col-4 col-lg-auto me-auto ms-lg-3" role="search">
                 <div class="input-group">
                     <!-- Arama Input -->
-                    <input name="search" type="search" class="form-control" placeholder="Ürün Ara..." aria-label="Search">
+                    <input name="search" type="search" class="form-control rounded-start" placeholder="Ürün Ara..." aria-label="Search">
                     <!-- Arama Butonu (İkonlu) -->
-                    <button class="btn custom-search-button" type="submit" aria-label="Search">
+                    <button class="btn custom-search-button rounded-end" type="submit" aria-label="Search">
                         <i class="bi bi-search"></i> <!-- Bootstrap Icons -->
                     </button>
                 </div>
             </form>
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-evenly">
-                <ul class="navbar-nav m-auto">
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Anasayfa</a>
+                        <a class="nav-link text-dark fw-medium" asp-controller="Home" asp-action="Index">Anasayfa</a>
                     </li>
                     @await Component.InvokeAsync("Categories")
-                    <li class="nav-item">
-
-                    </li>
                 </ul>
 
-                @if (Context.User.Identity.IsAuthenticated) //kullanıcı giriş yapmış ise
-                {
-                    <div class="dropdown ">
-                        <a class=" dropdown-toggle nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-person-fill"></i>    Hesabım
+                <div class="d-flex align-items-center gap-2">
+                    @if (Context.User.Identity.IsAuthenticated) //kullanıcı giriş yapmış ise
+                    {
+                        <div class="dropdown">
+                            <a class="dropdown-toggle nav-link text-dark d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-fill me-1"></i> Hesabım
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 rounded-3 overflow-hidden">
+                                <li>
+                                    <div class="dropdown-item bg-primary bg-opacity-10 text-center border-bottom pb-2 pt-2">
+                                        <span class="fw-bold text-primary">Merhaba @Context.User.Identity.Name</span>
+                                    </div>
+                                </li>
+                                <li><a class="dropdown-item py-2 border-start border-4 border-white hover-border-primary" href="/Account"><i class="bi bi-person-vcard me-2 text-primary"></i>Kullanıcı Bilgilerim</a></li>
+                                <li><a class="dropdown-item py-2 border-start border-4 border-white hover-border-primary" href="/MyAddresses"><i class="bi bi-geo-alt me-2 text-primary"></i>Kayıtlı Adreslerim</a></li>
+                                <li><a class="dropdown-item py-2 border-start border-4 border-white hover-border-primary" href="/Account/MyOrders"><i class="bi bi-box-seam me-2 text-primary"></i>Siparişlerim</a></li>
+
+                                <li><hr class="dropdown-divider my-1"></li>
+                                <li class="text-center p-2 bg-light"><a class="btn btn-danger btn-sm rounded-pill px-4" href="/Account/SignOut">Oturumu Kapat</a></li>
+                            </ul>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="dropdown">
+                            <a class="dropdown-toggle nav-link text-dark d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person me-1"></i> Giriş Yap
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 rounded-3 overflow-hidden">
+                                <li><a class="dropdown-item py-2 border-start border-4 border-white hover-border-primary" href="/Account/SignIn"><i class="bi bi-box-arrow-in-right me-2 text-primary"></i>Giriş</a></li>
+                                <li><a class="dropdown-item py-2 border-start border-4 border-white hover-border-primary" href="/Account/SignUp"><i class="bi bi-person-plus me-2 text-primary"></i>Üye Ol</a></li>
+                            </ul>
+                        </div>
+                    }
+
+                    <div class="dropdown mx-2">
+                        <a class="nav-link text-dark position-relative" href="/Favorites">
+                            @{
+                                var favorites = Context.Session.GetJson<List<Product>>("GetFavorites");
+                                if (favorites is not null && favorites.Count > 0)
+                                {
+                                    <i class="bi bi-heart-fill text-danger"></i>
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        @favorites.Count
+                                    </span>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-heart"></i>
+                                }
+                            }
                         </a>
-
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/Account">Kullanıcı Bilgilerim</a></li>
-                            <li><a class="dropdown-item" href="/MyAddresses">Kayıtlı Adreslerim</a></li>
-                            <li><a class="dropdown-item" href="/Account/MyOrders">Siparişlerim</a></li>
-                            <li><a class="dropdown-item" href="/Account/">Degerlendirmelerim</a></li>
-                            <li class="text-center"><a class="btn btn-danger " href="/Account/SignOut">Oturumu Kapat</a></li>
-
-                        </ul>
                     </div>
-                }
-                else
-                {
-                    <div class="dropdown ">
-                        <a class=" dropdown-toggle nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-person"></i>   Giriş Yap
-                        </a>
 
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/Account/SignIn">Giriş</a></li>
-                            <li><a class="dropdown-item" href="/Account/SignUp">Üye Ol</a></li>
-
-                        </ul>
-                    </div>
-                }
-                <div class="dropdown mx-3 ">
-                    <a class=" nav-link text-dark" href="/Favorites">
+                    <div class="dropdown mx-3">
                         @{
-                            var favorites =Context.Session.GetJson<List<Product>>("GetFavorites");
-                            if (favorites is not null && favorites.Count > 0)
+                            var cart = Context.Session.GetJson<Eticaret.Service.Concrete.CartService>("Cart");
+                            if (cart != null && cart.CartLines.Count > 0)
                             {
-                                 <i class="bi bi-heart-fill"></i> @:Favorilerim (@favorites.Count)
+                                <a class="dropdown-toggle nav-link text-dark position-relative" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-cart-fill text-primary"></i>
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        @cart.CartLines.Count
+                                    </span>
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-end shadow-sm border-0 rounded-3 overflow-hidden">
+                                    <li>
+                                        <div class="dropdown-item bg-primary bg-opacity-10 text-center border-bottom pb-2 pt-2">
+                                            <span class="fw-bold text-primary">Sepetim (@cart.CartLines.Count ürün)</span>
+                                        </div>
+                                    </li>
+                                    <div class="dropdown-cart-items" style="max-height: 300px; overflow-y: auto;">
+                                        @foreach (var item in cart.CartLines)
+                                        {
+                                        <li>
+                                            <a class="dropdown-item d-flex align-items-center py-2 border-bottom border-light" href="/Products/Details/@item.Product.Id">
+                                                <img src="/Img/Products/@item.Product.Image" alt="" class="me-2 rounded" height="40" width="40" style="object-fit: cover;" />
+                                                <div>
+                                                    <span class="d-block text-truncate" style="max-width: 200px;">@item.Product.Name</span>
+                                                    <small class="text-muted">@item.Quantity adet</small>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        }
+                            </div>
+                            <li><hr class="dropdown-divider my-1"></li>
+                            <li class="text-center p-2 bg-light d-flex justify-content-between">
+                                <a class="btn btn-outline-secondary btn-sm rounded-pill" href="/Cart"><i class="bi bi-eye me-1"></i>Sepeti Görüntüle</a>
+                               
+                            </li>
+                            </ul>
                             }
                             else
                             {
-                                <i class="bi bi-heart"></i> @:Favorilerim
+                            <a class="nav-link text-dark" href="/Cart">
+                                <i class="bi bi-cart"></i>
+                            </a>
                             }
                         }
-                      
-                    </a>
                 </div>
 
-                <div class="dropdown me-3 ">
-                    @{
-                        var cart = Context.Session.GetJson<Eticaret.Service.Concrete.CartService>("Cart");
-                        if (cart != null && cart.CartLines.Count > 0)
-                        {
-                            <a class=" dropdown-toggle nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="bi bi-cart-fill"></i> Sepetim
-                                <span class="badge bg-danger text-white ms-1 rounded-pill">
-                                    @cart.CartLines.Count
-                                </span>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                @foreach (var item in cart.CartLines)
-                                {
-                                    <li>
-                                        <a class="dropdown-item " href="/Products/Details/@item.Product.Id">
-                                            <img src="/Img/Products/@item.Product.Image" alt="" height="40" />
-                                            @item.Product.Name
-                                        </a>
-                                    </li>
-                                }
-                                <li class="text-center mt-2"><a class="btn btn-warning" href="/Cart">Sepete Git</a></li>
-
-                            </ul>
-                        }
-                        else
-                        {
-                            <div class="dropdown ">
-                                <a class=" nav-link text-dark" href="/Cart">
-                                    <i class="bi bi-cart"></i> Sepetim
-                                </a>
-                            </div>
-                        }
-
-                    }
-
-                </div>
-                <a class="nav-link text-dark" asp-controller="Home" asp-action="ContactUs">İletişim</a>
+                <a class="nav-link text-dark d-flex align-items-center" asp-controller="Home" asp-action="ContactUs">
+                    <i class="bi bi-envelope me-1"></i> İletişim
+                </a>
             </div>
+        </div>
         </div>
     </nav>
 </header>
@@ -132,4 +150,23 @@
         .custom-search-button:hover {
             background-color: #5a6268; /* Hover rengi için daha koyu gri */
         }
+
+    /* Dropdown menü öğeleri için hover efekti */
+    .dropdown-item:hover {
+        background-color: rgba(13, 110, 253, 0.05);
+    }
+
+    /* İkon renklerini daha belirgin hale getirme */
+    .dropdown-item i {
+        transition: transform 0.2s;
+    }
+
+    .dropdown-item:hover i {
+        transform: translateX(2px);
+    }
+
+    /* Sol kenar çizgisi animasyonu için */
+    .border-start.border-white.hover-border-primary:hover {
+        border-left-color: #0d6efd !important;
+    }
 </style>

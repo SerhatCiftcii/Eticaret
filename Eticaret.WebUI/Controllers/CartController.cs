@@ -28,7 +28,7 @@ namespace Eticaret.WebUI.Controllers
                               IService<AppUser> serviceAppUser,
                               IService<Order> seriveceOrder,
                               IEmailService emailService,
-                              IConfiguration configuration)  
+                              IConfiguration configuration)
         {
             _serviceProduct = serviceProduct;
             _seriveceAddress = serviceAddress;
@@ -102,7 +102,7 @@ namespace Eticaret.WebUI.Controllers
                 if (removedQuantity > 0) // Ürün sepetten başarıyla çıkarıldıysa
                 {
                     // Stoğu geri artır
-                 
+
                     _serviceProduct.Update(product); // Update metodu async değilse
                     _serviceProduct.SaveChanges();   // SaveChanges metodu async değilse
                 }
@@ -258,12 +258,12 @@ namespace Eticaret.WebUI.Controllers
                 });
             }
 
-            if(siparis.TotalPrice< 999) //KARGO ÜCRETİ
+            if (siparis.TotalPrice < 999) //KARGO ÜCRETİ
             {
                 basketItems.Add(new BasketItem
                 {
                     Id = "Kargo",
-                    Name ="kargo Ücreti",
+                    Name = "kargo Ücreti",
                     Category1 = "Collectibles",
                     ItemType = BasketItemType.VIRTUAL.ToString(),
                     Price = "99"
