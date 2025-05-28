@@ -110,7 +110,7 @@ Trusted_Connection=True; → Windows kimlik doğrulaması kullanılır.
 
 TrustServerCertificate=True; → SSL sertifikası doğrulamasını devre dışı bırakır, bu genellikle geliştirme ortamı için gereklidir.
 
--Migration işlemleri sonrası veritabanı EF Core tarafından otomatik olarak oluşturulur:
+-Migration işlemleri sonrası veritabanı EF Core tarafından otomatik olarak oluşturulur:.
 
 dotnet ef migrations add InitialCreate
 dotnet ef database update
